@@ -1,0 +1,11 @@
+D:\Subjects\11th\DataBase\Shop_manager_V2\bin\Debug\Shop_manager_V2.exe.config
+D:\Subjects\11th\DataBase\Shop_manager_V2\bin\Debug\Shop_manager_V2.exe
+D:\Subjects\11th\DataBase\Shop_manager_V2\bin\Debug\Shop_manager_V2.pdb
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.csproj.AssemblyReference.cache
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.csproj.SuggestedBindingRedirects.cache
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.mainForm.resources
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.Properties.Resources.resources
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.csproj.GenerateResource.cache
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.csproj.CoreCompileInputs.cache
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.exe
+D:\Subjects\11th\DataBase\Shop_manager_V2\obj\Debug\Shop_manager_V2.pdb
