@@ -61,16 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +124,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\singleArtboard 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singleArtboard 4%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singleMesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singleArtboard 1%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singleArtboard 1%402x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-elegant-background-with-copy-space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smalll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-concrete-wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FemaleStaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleStaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FalseCheckbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrueCheckbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
