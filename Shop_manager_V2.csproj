@@ -221,5 +221,47 @@
   <ItemGroup>
     <None Include="Resources\Textbox %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductsWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StaffWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HistoryWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightGrayBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleArrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleArrowRightWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleArrowLeftWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSmallWhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

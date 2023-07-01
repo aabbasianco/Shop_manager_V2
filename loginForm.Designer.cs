@@ -30,9 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.chkRememberme = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.picCloseLock = new System.Windows.Forms.PictureBox();
@@ -43,9 +46,6 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.picSmallLogo = new System.Windows.Forms.PictureBox();
             this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -57,6 +57,7 @@
             // 
             // pnlLogin
             // 
+            this.pnlLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pnlLogin.Controls.Add(this.textBox2);
             this.pnlLogin.Controls.Add(this.textBox1);
             this.pnlLogin.Controls.Add(this.btnLogin);
@@ -75,6 +76,19 @@
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(450, 611);
             this.pnlLogin.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.AccessibleDescription = "scsxdxc";
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Koodak", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(132, 309);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox2.Size = new System.Drawing.Size(228, 35);
+            this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
@@ -107,6 +121,30 @@
             this.chkRememberme.TabIndex = 3;
             this.chkRememberme.Text = "نمایش رمز";
             this.chkRememberme.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Koodak", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(202, 265);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 30);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "رمز عبور";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Koodak", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(202, 169);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "نام کاربری";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
@@ -209,8 +247,8 @@
             // picSmallLogo
             // 
             this.picSmallLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.small;
-            this.picSmallLogo.Location = new System.Drawing.Point(8, 8);
+            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.LogoSmall;
+            this.picSmallLogo.Location = new System.Drawing.Point(556, 17);
             this.picSmallLogo.Margin = new System.Windows.Forms.Padding(8);
             this.picSmallLogo.Name = "picSmallLogo";
             this.picSmallLogo.Size = new System.Drawing.Size(162, 160);
@@ -222,43 +260,6 @@
             // 
             this.tmrWelcomeLabel.Interval = 70;
             this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
-            // 
-            // textBox2
-            // 
-            this.textBox2.AccessibleDescription = "scsxdxc";
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Koodak", 15F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(132, 309);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(228, 35);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Koodak", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(202, 169);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "نام کاربری";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Koodak", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(202, 265);
-            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "رمز عبور";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // loginForm
             // 
