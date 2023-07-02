@@ -51,8 +51,18 @@
             this.picMenuLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
+            this.tabCtrlMain = new System.Windows.Forms.TabControl();
+            this.tabMainPage = new System.Windows.Forms.TabPage();
+            this.tabProducts = new System.Windows.Forms.TabPage();
+            this.tabSellReport = new System.Windows.Forms.TabPage();
+            this.tabRecivedProducts = new System.Windows.Forms.TabPage();
+            this.tabCart = new System.Windows.Forms.TabPage();
+            this.tabStaff = new System.Windows.Forms.TabPage();
+            this.tabSetting = new System.Windows.Forms.TabPage();
+            this.about = new System.Windows.Forms.TabPage();
             this.pnlMenubar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
+            this.tabCtrlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenubar
@@ -60,6 +70,8 @@
             this.pnlMenubar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.pnlMenubar.BackgroundImage = global::Shop_manager_V2.Properties.Resources.LightGrayBackground;
             this.pnlMenubar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlMenubar.Controls.Add(this.btnMenuMainPageLogo);
+            this.pnlMenubar.Controls.Add(this.btnMenuMainPage);
             this.pnlMenubar.Controls.Add(this.btnMenuAboutLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuSettingLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuStaffLogo);
@@ -68,7 +80,6 @@
             this.pnlMenubar.Controls.Add(this.btnMenuProductsLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuSellReportLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuLogout);
-            this.pnlMenubar.Controls.Add(this.btnMenuMainPageLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuAbout);
             this.pnlMenubar.Controls.Add(this.btnMenuSetting);
             this.pnlMenubar.Controls.Add(this.btnMenuCart);
@@ -76,13 +87,12 @@
             this.pnlMenubar.Controls.Add(this.btnMenuStaff);
             this.pnlMenubar.Controls.Add(this.btnMenuProducts);
             this.pnlMenubar.Controls.Add(this.btnMenuSellReport);
-            this.pnlMenubar.Controls.Add(this.btnMenuMainPage);
             this.pnlMenubar.Controls.Add(this.lblMenuColor);
             this.pnlMenubar.Controls.Add(this.label1);
             this.pnlMenubar.Controls.Add(this.picMenuLogo);
             this.pnlMenubar.Controls.Add(this.label2);
             this.pnlMenubar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlMenubar.Location = new System.Drawing.Point(884, 0);
+            this.pnlMenubar.Location = new System.Drawing.Point(1184, 0);
             this.pnlMenubar.Name = "pnlMenubar";
             this.pnlMenubar.Size = new System.Drawing.Size(300, 894);
             this.pnlMenubar.TabIndex = 0;
@@ -100,9 +110,11 @@
             this.btnMenuAboutLogo.Name = "btnMenuAboutLogo";
             this.btnMenuAboutLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuAboutLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuAboutLogo.TabIndex = 5;
+            this.btnMenuAboutLogo.TabIndex = 7;
+            this.btnMenuAboutLogo.Tag = "7";
             this.btnMenuAboutLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuAboutLogo.UseVisualStyleBackColor = false;
+            this.btnMenuAboutLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuSettingLogo
             // 
@@ -117,9 +129,11 @@
             this.btnMenuSettingLogo.Name = "btnMenuSettingLogo";
             this.btnMenuSettingLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuSettingLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuSettingLogo.TabIndex = 5;
+            this.btnMenuSettingLogo.TabIndex = 6;
+            this.btnMenuSettingLogo.Tag = "6";
             this.btnMenuSettingLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuSettingLogo.UseVisualStyleBackColor = false;
+            this.btnMenuSettingLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuStaffLogo
             // 
@@ -135,8 +149,10 @@
             this.btnMenuStaffLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuStaffLogo.Size = new System.Drawing.Size(35, 80);
             this.btnMenuStaffLogo.TabIndex = 5;
+            this.btnMenuStaffLogo.Tag = "5";
             this.btnMenuStaffLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuStaffLogo.UseVisualStyleBackColor = false;
+            this.btnMenuStaffLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuCartLogo
             // 
@@ -151,9 +167,11 @@
             this.btnMenuCartLogo.Name = "btnMenuCartLogo";
             this.btnMenuCartLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuCartLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuCartLogo.TabIndex = 5;
+            this.btnMenuCartLogo.TabIndex = 4;
+            this.btnMenuCartLogo.Tag = "4";
             this.btnMenuCartLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuCartLogo.UseVisualStyleBackColor = false;
+            this.btnMenuCartLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuRecivedProductsLogo
             // 
@@ -168,9 +186,11 @@
             this.btnMenuRecivedProductsLogo.Name = "btnMenuRecivedProductsLogo";
             this.btnMenuRecivedProductsLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuRecivedProductsLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuRecivedProductsLogo.TabIndex = 5;
+            this.btnMenuRecivedProductsLogo.TabIndex = 3;
+            this.btnMenuRecivedProductsLogo.Tag = "3";
             this.btnMenuRecivedProductsLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuRecivedProductsLogo.UseVisualStyleBackColor = false;
+            this.btnMenuRecivedProductsLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuProductsLogo
             // 
@@ -185,9 +205,11 @@
             this.btnMenuProductsLogo.Name = "btnMenuProductsLogo";
             this.btnMenuProductsLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuProductsLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuProductsLogo.TabIndex = 5;
+            this.btnMenuProductsLogo.TabIndex = 1;
+            this.btnMenuProductsLogo.Tag = "1";
             this.btnMenuProductsLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuProductsLogo.UseVisualStyleBackColor = false;
+            this.btnMenuProductsLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuSellReportLogo
             // 
@@ -202,9 +224,11 @@
             this.btnMenuSellReportLogo.Name = "btnMenuSellReportLogo";
             this.btnMenuSellReportLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuSellReportLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuSellReportLogo.TabIndex = 5;
+            this.btnMenuSellReportLogo.TabIndex = 2;
+            this.btnMenuSellReportLogo.Tag = "2";
             this.btnMenuSellReportLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuSellReportLogo.UseVisualStyleBackColor = false;
+            this.btnMenuSellReportLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuLogout
             // 
@@ -240,9 +264,11 @@
             this.btnMenuMainPageLogo.Name = "btnMenuMainPageLogo";
             this.btnMenuMainPageLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuMainPageLogo.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuMainPageLogo.TabIndex = 5;
+            this.btnMenuMainPageLogo.TabIndex = 0;
+            this.btnMenuMainPageLogo.Tag = "0";
             this.btnMenuMainPageLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuMainPageLogo.UseVisualStyleBackColor = false;
+            this.btnMenuMainPageLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuAbout
             // 
@@ -255,10 +281,12 @@
             this.btnMenuAbout.Name = "btnMenuAbout";
             this.btnMenuAbout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuAbout.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuAbout.TabIndex = 1;
+            this.btnMenuAbout.TabIndex = 7;
+            this.btnMenuAbout.Tag = "7";
             this.btnMenuAbout.Text = "درباره";
             this.btnMenuAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuAbout.UseVisualStyleBackColor = false;
+            this.btnMenuAbout.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuSetting
             // 
@@ -271,10 +299,12 @@
             this.btnMenuSetting.Name = "btnMenuSetting";
             this.btnMenuSetting.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuSetting.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuSetting.TabIndex = 1;
+            this.btnMenuSetting.TabIndex = 6;
+            this.btnMenuSetting.Tag = "6";
             this.btnMenuSetting.Text = "تنظیمات";
             this.btnMenuSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuSetting.UseVisualStyleBackColor = false;
+            this.btnMenuSetting.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuCart
             // 
@@ -287,10 +317,12 @@
             this.btnMenuCart.Name = "btnMenuCart";
             this.btnMenuCart.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuCart.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuCart.TabIndex = 1;
+            this.btnMenuCart.TabIndex = 4;
+            this.btnMenuCart.Tag = "4";
             this.btnMenuCart.Text = "سبد خرید";
             this.btnMenuCart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuCart.UseVisualStyleBackColor = false;
+            this.btnMenuCart.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuRecivedProducts
             // 
@@ -303,10 +335,12 @@
             this.btnMenuRecivedProducts.Name = "btnMenuRecivedProducts";
             this.btnMenuRecivedProducts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuRecivedProducts.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuRecivedProducts.TabIndex = 1;
+            this.btnMenuRecivedProducts.TabIndex = 3;
+            this.btnMenuRecivedProducts.Tag = "3";
             this.btnMenuRecivedProducts.Text = "حواله ورود محصول";
             this.btnMenuRecivedProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuRecivedProducts.UseVisualStyleBackColor = false;
+            this.btnMenuRecivedProducts.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuStaff
             // 
@@ -319,10 +353,12 @@
             this.btnMenuStaff.Name = "btnMenuStaff";
             this.btnMenuStaff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuStaff.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuStaff.TabIndex = 1;
+            this.btnMenuStaff.TabIndex = 5;
+            this.btnMenuStaff.Tag = "5";
             this.btnMenuStaff.Text = "کارکنان";
             this.btnMenuStaff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuStaff.UseVisualStyleBackColor = false;
+            this.btnMenuStaff.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuProducts
             // 
@@ -336,9 +372,11 @@
             this.btnMenuProducts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuProducts.Size = new System.Drawing.Size(240, 80);
             this.btnMenuProducts.TabIndex = 1;
+            this.btnMenuProducts.Tag = "1";
             this.btnMenuProducts.Text = "محصولات";
             this.btnMenuProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuProducts.UseVisualStyleBackColor = false;
+            this.btnMenuProducts.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuSellReport
             // 
@@ -351,10 +389,12 @@
             this.btnMenuSellReport.Name = "btnMenuSellReport";
             this.btnMenuSellReport.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuSellReport.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuSellReport.TabIndex = 1;
+            this.btnMenuSellReport.TabIndex = 2;
+            this.btnMenuSellReport.Tag = "2";
             this.btnMenuSellReport.Text = "گزارش فروش";
             this.btnMenuSellReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuSellReport.UseVisualStyleBackColor = false;
+            this.btnMenuSellReport.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // btnMenuMainPage
             // 
@@ -367,10 +407,12 @@
             this.btnMenuMainPage.Name = "btnMenuMainPage";
             this.btnMenuMainPage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenuMainPage.Size = new System.Drawing.Size(240, 80);
-            this.btnMenuMainPage.TabIndex = 1;
+            this.btnMenuMainPage.TabIndex = 0;
+            this.btnMenuMainPage.Tag = "0";
             this.btnMenuMainPage.Text = "صفحه اصلی";
             this.btnMenuMainPage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuMainPage.UseVisualStyleBackColor = false;
+            this.btnMenuMainPage.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
             // lblMenuColor
             // 
@@ -423,7 +465,7 @@
             this.btnMenubarDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMenubarDisplay.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
             this.btnMenubarDisplay.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMenubarDisplay.Location = new System.Drawing.Point(1184, 0);
+            this.btnMenubarDisplay.Location = new System.Drawing.Point(1484, 0);
             this.btnMenubarDisplay.Name = "btnMenubarDisplay";
             this.btnMenubarDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnMenubarDisplay.Size = new System.Drawing.Size(20, 894);
@@ -432,11 +474,108 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
+            // tabCtrlMain
+            // 
+            this.tabCtrlMain.Controls.Add(this.tabMainPage);
+            this.tabCtrlMain.Controls.Add(this.tabProducts);
+            this.tabCtrlMain.Controls.Add(this.tabSellReport);
+            this.tabCtrlMain.Controls.Add(this.tabRecivedProducts);
+            this.tabCtrlMain.Controls.Add(this.tabCart);
+            this.tabCtrlMain.Controls.Add(this.tabStaff);
+            this.tabCtrlMain.Controls.Add(this.tabSetting);
+            this.tabCtrlMain.Controls.Add(this.about);
+            this.tabCtrlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabCtrlMain.ItemSize = new System.Drawing.Size(93, 41);
+            this.tabCtrlMain.Location = new System.Drawing.Point(0, 0);
+            this.tabCtrlMain.Multiline = true;
+            this.tabCtrlMain.Name = "tabCtrlMain";
+            this.tabCtrlMain.Padding = new System.Drawing.Point(10, 3);
+            this.tabCtrlMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabCtrlMain.RightToLeftLayout = true;
+            this.tabCtrlMain.SelectedIndex = 0;
+            this.tabCtrlMain.Size = new System.Drawing.Size(1184, 894);
+            this.tabCtrlMain.TabIndex = 6;
+            // 
+            // tabMainPage
+            // 
+            this.tabMainPage.Location = new System.Drawing.Point(4, 45);
+            this.tabMainPage.Name = "tabMainPage";
+            this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMainPage.Size = new System.Drawing.Size(1176, 845);
+            this.tabMainPage.TabIndex = 0;
+            this.tabMainPage.Text = "صفحه اصلی";
+            this.tabMainPage.UseVisualStyleBackColor = true;
+            // 
+            // tabProducts
+            // 
+            this.tabProducts.Location = new System.Drawing.Point(4, 45);
+            this.tabProducts.Name = "tabProducts";
+            this.tabProducts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProducts.Size = new System.Drawing.Size(1176, 845);
+            this.tabProducts.TabIndex = 1;
+            this.tabProducts.Text = "محصولات";
+            this.tabProducts.UseVisualStyleBackColor = true;
+            // 
+            // tabSellReport
+            // 
+            this.tabSellReport.Location = new System.Drawing.Point(4, 45);
+            this.tabSellReport.Name = "tabSellReport";
+            this.tabSellReport.Size = new System.Drawing.Size(1176, 845);
+            this.tabSellReport.TabIndex = 2;
+            this.tabSellReport.Text = "گزارش فروش";
+            this.tabSellReport.UseVisualStyleBackColor = true;
+            // 
+            // tabRecivedProducts
+            // 
+            this.tabRecivedProducts.Location = new System.Drawing.Point(4, 45);
+            this.tabRecivedProducts.Name = "tabRecivedProducts";
+            this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 845);
+            this.tabRecivedProducts.TabIndex = 3;
+            this.tabRecivedProducts.Text = "حواله ورود محصول";
+            this.tabRecivedProducts.UseVisualStyleBackColor = true;
+            // 
+            // tabCart
+            // 
+            this.tabCart.Location = new System.Drawing.Point(4, 45);
+            this.tabCart.Name = "tabCart";
+            this.tabCart.Size = new System.Drawing.Size(1176, 845);
+            this.tabCart.TabIndex = 4;
+            this.tabCart.Text = "سبد خرید";
+            this.tabCart.UseVisualStyleBackColor = true;
+            // 
+            // tabStaff
+            // 
+            this.tabStaff.Location = new System.Drawing.Point(4, 45);
+            this.tabStaff.Name = "tabStaff";
+            this.tabStaff.Size = new System.Drawing.Size(1176, 845);
+            this.tabStaff.TabIndex = 5;
+            this.tabStaff.Text = "کارکنان";
+            this.tabStaff.UseVisualStyleBackColor = true;
+            // 
+            // tabSetting
+            // 
+            this.tabSetting.Location = new System.Drawing.Point(4, 45);
+            this.tabSetting.Name = "tabSetting";
+            this.tabSetting.Size = new System.Drawing.Size(1176, 845);
+            this.tabSetting.TabIndex = 6;
+            this.tabSetting.Text = "تنظیمات";
+            this.tabSetting.UseVisualStyleBackColor = true;
+            // 
+            // about
+            // 
+            this.about.Location = new System.Drawing.Point(4, 45);
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(1176, 845);
+            this.about.TabIndex = 7;
+            this.about.Text = "درباره";
+            this.about.UseVisualStyleBackColor = true;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1204, 894);
+            this.ClientSize = new System.Drawing.Size(1504, 894);
+            this.Controls.Add(this.tabCtrlMain);
             this.Controls.Add(this.pnlMenubar);
             this.Controls.Add(this.btnMenubarDisplay);
             this.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -451,6 +590,7 @@
             this.SizeChanged += new System.EventHandler(this.mainForm_SizeChanged);
             this.pnlMenubar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
+            this.tabCtrlMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -480,6 +620,15 @@
         private System.Windows.Forms.Button btnMenuSellReportLogo;
         private System.Windows.Forms.Button btnMenuLogout;
         private System.Windows.Forms.Button btnMenuProductsLogo;
+        private System.Windows.Forms.TabControl tabCtrlMain;
+        private System.Windows.Forms.TabPage tabMainPage;
+        private System.Windows.Forms.TabPage tabProducts;
+        private System.Windows.Forms.TabPage tabSellReport;
+        private System.Windows.Forms.TabPage tabRecivedProducts;
+        private System.Windows.Forms.TabPage tabCart;
+        private System.Windows.Forms.TabPage tabStaff;
+        private System.Windows.Forms.TabPage tabSetting;
+        private System.Windows.Forms.TabPage about;
     }
 }
 

@@ -80,13 +80,22 @@ namespace Shop_manager_V2
         void MenuButtonsLeftFunc(int x)
         {
             btnMenuMainPageLogo.Left = x;
-            btnMenuProductsLogo.Left =x;
-            btnMenuSellReportLogo.Left =x;
-            btnMenuRecivedProductsLogo.Left =x;
-            btnMenuCartLogo.Left =x;
-            btnMenuStaffLogo.Left =x;
-            btnMenuSettingLogo.Left =x;
-            btnMenuAboutLogo.Left =x;
+            btnMenuProductsLogo.Left = x;
+            btnMenuSellReportLogo.Left = x;
+            btnMenuRecivedProductsLogo.Left = x;
+            btnMenuCartLogo.Left = x;
+            btnMenuStaffLogo.Left = x;
+            btnMenuSettingLogo.Left = x;
+            btnMenuAboutLogo.Left = x;
+        }
+
+        private void btnMenuMainPage_Click(object sender, EventArgs e)
+        {
+            int tabIndex = Convert.ToInt32(((Button)sender).Tag);
+            if (tabCtrlMain.SelectedIndex != tabIndex)
+            {
+                tabCtrlMain.SelectedIndex = tabIndex;
+            }
         }
     }
 }
