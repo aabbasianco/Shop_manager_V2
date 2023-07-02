@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,7 +24,7 @@ namespace Shop_manager_V2
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
-            userPicProp=new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
+            userPicProp = new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
@@ -54,9 +55,9 @@ namespace Shop_manager_V2
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
                 picMenuUser.Width = userPicProp[0];
-                picMenuUser.Left =userPicProp[1];
-                picMenuUser.Height =userPicProp[2];
-                picMenuUser.Top =userPicProp[3];
+                picMenuUser.Left = userPicProp[1];
+                picMenuUser.Height = userPicProp[2];
+                picMenuUser.Top = userPicProp[3];
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
         }
@@ -84,6 +85,34 @@ namespace Shop_manager_V2
             btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
         }
 
+        // COSTUMERS TAB ON SIZE CHANGE ------------------------------------------------------
+
+        private void tabCostumers_SizeChanged(object sender, EventArgs e)
+        {
+            AddressTextboxHeight();
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                pnlCostumerInfo.SetFlowBreak(txtCostumerUsername, true);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerHomePhone, true);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerProvince, true);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerId, false);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, false);
+            }
+            else
+            {
+                pnlCostumerInfo.SetFlowBreak(txtCostumerUsername, false);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerHomePhone, false);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerProvince, false);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerId, true);
+                pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
+            }
+        }
+
         // FUNCTIONS #########################################################################
+
+        void AddressTextboxHeight()
+        {
+            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Size.Width, (txtCostumerAddress.Top + txtCostumerAddress.Height + pnlCostumerInfo.Padding.Top));
+        }
     }
 }

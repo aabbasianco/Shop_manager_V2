@@ -32,7 +32,26 @@
             this.tabMainPage = new System.Windows.Forms.TabPage();
             this.tabProducts = new System.Windows.Forms.TabPage();
             this.tabCostumers = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbCostumerType = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCostumerFirstName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCostumerLastName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtCostumerUsername = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCostumerId = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCostumerHomePhone = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtCostumerCellPhone = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtCostumerEmail = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.tabSellReport = new System.Windows.Forms.TabPage();
             this.tabRecivedProducts = new System.Windows.Forms.TabPage();
             this.tabCart = new System.Windows.Forms.TabPage();
@@ -65,8 +84,14 @@
             this.picMenuLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtCostumerProvince = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtCostumerCity = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCostumerPostCode = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtCostumerAddress = new System.Windows.Forms.RichTextBox();
             this.tabCtrlMain.SuspendLayout();
             this.tabCostumers.SuspendLayout();
             this.pnlCostumerInfo.SuspendLayout();
@@ -121,6 +146,7 @@
             // tabCostumers
             // 
             this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabCostumers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabCostumers.Controls.Add(this.label3);
             this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
@@ -129,6 +155,18 @@
             this.tabCostumers.TabIndex = 8;
             this.tabCostumers.Text = "مشتریان";
             this.tabCostumers.UseVisualStyleBackColor = true;
+            this.tabCostumers.SizeChanged += new System.EventHandler(this.tabCostumers_SizeChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(982, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 30);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "اطلاعات کاربران";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlCostumerInfo
             // 
@@ -136,11 +174,203 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlCostumerInfo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.RectangleFrame;
             this.pnlCostumerInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlCostumerInfo.Controls.Add(this.label10);
+            this.pnlCostumerInfo.Controls.Add(this.cmbCostumerType);
             this.pnlCostumerInfo.Controls.Add(this.label4);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerFirstName);
+            this.pnlCostumerInfo.Controls.Add(this.label5);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerLastName);
+            this.pnlCostumerInfo.Controls.Add(this.label6);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerUsername);
+            this.pnlCostumerInfo.Controls.Add(this.label7);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerId);
+            this.pnlCostumerInfo.Controls.Add(this.label11);
+            this.pnlCostumerInfo.Controls.Add(this.txtCompanyName);
+            this.pnlCostumerInfo.Controls.Add(this.label8);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerHomePhone);
+            this.pnlCostumerInfo.Controls.Add(this.label12);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerCellPhone);
+            this.pnlCostumerInfo.Controls.Add(this.label9);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerEmail);
+            this.pnlCostumerInfo.Controls.Add(this.label13);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerProvince);
+            this.pnlCostumerInfo.Controls.Add(this.label14);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerCity);
+            this.pnlCostumerInfo.Controls.Add(this.label15);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerPostCode);
+            this.pnlCostumerInfo.Controls.Add(this.label16);
+            this.pnlCostumerInfo.Controls.Add(this.txtCostumerAddress);
             this.pnlCostumerInfo.Location = new System.Drawing.Point(34, 30);
             this.pnlCostumerInfo.Name = "pnlCostumerInfo";
-            this.pnlCostumerInfo.Size = new System.Drawing.Size(1116, 291);
+            this.pnlCostumerInfo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.pnlCostumerInfo.Size = new System.Drawing.Size(1114, 414);
             this.pnlCostumerInfo.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Location = new System.Drawing.Point(961, 10);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(150, 47);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "نوع مشتری :";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cmbCostumerType
+            // 
+            this.pnlCostumerInfo.SetFlowBreak(this.cmbCostumerType, true);
+            this.cmbCostumerType.FormattingEnabled = true;
+            this.cmbCostumerType.Items.AddRange(new object[] {
+            "عادی",
+            "شرکت"});
+            this.cmbCostumerType.Location = new System.Drawing.Point(755, 13);
+            this.cmbCostumerType.Name = "cmbCostumerType";
+            this.cmbCostumerType.Size = new System.Drawing.Size(200, 44);
+            this.cmbCostumerType.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Location = new System.Drawing.Point(961, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 47);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "نام :";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerFirstName
+            // 
+            this.txtCostumerFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerFirstName.Location = new System.Drawing.Point(755, 63);
+            this.txtCostumerFirstName.Name = "txtCostumerFirstName";
+            this.txtCostumerFirstName.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerFirstName.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Location = new System.Drawing.Point(599, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 47);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "نام خانوادگی :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerLastName
+            // 
+            this.txtCostumerLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerLastName.Location = new System.Drawing.Point(393, 63);
+            this.txtCostumerLastName.Name = "txtCostumerLastName";
+            this.txtCostumerLastName.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerLastName.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Location = new System.Drawing.Point(237, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(150, 47);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "نام کاربری :";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerUsername
+            // 
+            this.txtCostumerUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerUsername.Location = new System.Drawing.Point(31, 63);
+            this.txtCostumerUsername.Name = "txtCostumerUsername";
+            this.txtCostumerUsername.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerUsername.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Location = new System.Drawing.Point(961, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 47);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "کد ملی :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerId
+            // 
+            this.txtCostumerId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerId.Location = new System.Drawing.Point(755, 113);
+            this.txtCostumerId.Name = "txtCostumerId";
+            this.txtCostumerId.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerId.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Location = new System.Drawing.Point(237, 110);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(150, 47);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "تلفن ثابت :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerHomePhone
+            // 
+            this.txtCostumerHomePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerHomePhone.Location = new System.Drawing.Point(31, 113);
+            this.txtCostumerHomePhone.Name = "txtCostumerHomePhone";
+            this.txtCostumerHomePhone.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerHomePhone.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Location = new System.Drawing.Point(961, 160);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(150, 47);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "تلفن همراه :";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerCellPhone
+            // 
+            this.txtCostumerCellPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerCellPhone.Location = new System.Drawing.Point(755, 163);
+            this.txtCostumerCellPhone.Name = "txtCostumerCellPhone";
+            this.txtCostumerCellPhone.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerCellPhone.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Location = new System.Drawing.Point(599, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(150, 47);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "ایمیل :";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerEmail
+            // 
+            this.txtCostumerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerEmail.Location = new System.Drawing.Point(393, 163);
+            this.txtCostumerEmail.Name = "txtCostumerEmail";
+            this.txtCostumerEmail.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerEmail.TabIndex = 13;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Location = new System.Drawing.Point(599, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(150, 47);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "نام شرکت :";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCompanyName
+            // 
+            this.txtCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCompanyName.Location = new System.Drawing.Point(393, 113);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Size = new System.Drawing.Size(200, 44);
+            this.txtCompanyName.TabIndex = 17;
             // 
             // tabSellReport
             // 
@@ -642,6 +872,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(53, 150);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -668,25 +899,80 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
-            // label3
+            // label13
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Location = new System.Drawing.Point(984, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 27);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "اطلاعات کاربران";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Location = new System.Drawing.Point(237, 160);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(150, 47);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "استان :";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label4
+            // txtCostumerProvince
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(1063, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 50);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "نام :";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtCostumerProvince.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerProvince.Location = new System.Drawing.Point(31, 163);
+            this.txtCostumerProvince.Name = "txtCostumerProvince";
+            this.txtCostumerProvince.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerProvince.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Location = new System.Drawing.Point(961, 210);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 47);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "شهر :";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerCity
+            // 
+            this.txtCostumerCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerCity.Location = new System.Drawing.Point(755, 213);
+            this.txtCostumerCity.Name = "txtCostumerCity";
+            this.txtCostumerCity.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerCity.TabIndex = 24;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.Location = new System.Drawing.Point(599, 210);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(150, 47);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "کد پستی :";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerPostCode
+            // 
+            this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
+            this.txtCostumerPostCode.Location = new System.Drawing.Point(393, 213);
+            this.txtCostumerPostCode.Name = "txtCostumerPostCode";
+            this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerPostCode.TabIndex = 26;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.Location = new System.Drawing.Point(961, 260);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(150, 47);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "آدرس :";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCostumerAddress
+            // 
+            this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F);
+            this.txtCostumerAddress.Location = new System.Drawing.Point(31, 263);
+            this.txtCostumerAddress.Name = "txtCostumerAddress";
+            this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
+            this.txtCostumerAddress.TabIndex = 29;
+            this.txtCostumerAddress.Text = "";
             // 
             // mainForm
             // 
@@ -708,6 +994,7 @@
             this.tabCtrlMain.ResumeLayout(false);
             this.tabCostumers.ResumeLayout(false);
             this.pnlCostumerInfo.ResumeLayout(false);
+            this.pnlCostumerInfo.PerformLayout();
             this.pnlMenubar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
@@ -756,6 +1043,31 @@
         private System.Windows.Forms.FlowLayoutPanel pnlCostumerInfo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbCostumerType;
+        private System.Windows.Forms.TextBox txtCostumerFirstName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCostumerLastName;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCostumerUsername;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCostumerId;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtCostumerHomePhone;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtCostumerEmail;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtCompanyName;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtCostumerCellPhone;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtCostumerProvince;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtCostumerCity;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtCostumerPostCode;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.RichTextBox txtCostumerAddress;
     }
 }
 
