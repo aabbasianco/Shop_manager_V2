@@ -353,9 +353,9 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maleStaff {
+        internal static System.Drawing.Bitmap MaleStaff {
             get {
-                object obj = ResourceManager.GetObject("maleStaff", resourceCulture);
+                object obj = ResourceManager.GetObject("MaleStaff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -456,6 +456,16 @@ namespace Shop_manager_V2.Properties {
         internal static System.Drawing.Bitmap RecivedProductsWhite {
             get {
                 object obj = ResourceManager.GetObject("RecivedProductsWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RectangleFrame {
+            get {
+                object obj = ResourceManager.GetObject("RectangleFrame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

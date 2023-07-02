@@ -15,6 +15,7 @@ namespace Shop_manager_V2
         // VARIABLES -------------------------------------------------------------------------
 
         bool menubarDisplayButtonBool;
+        int[] userPicProp;
 
         // INITIALIZE COMPONENT --------------------------------------------------------------
 
@@ -22,6 +23,7 @@ namespace Shop_manager_V2
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
+            userPicProp=new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
@@ -40,25 +42,34 @@ namespace Shop_manager_V2
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
-                MenuButtonsLeftFunc(13);
-                picMenuLogo.Width = 60;
-                picMenuLogo.Top += 10;
-                picMenuLogo.Height -= 100;
-                picMenuLogo.BackgroundImage = Properties.Resources.MainLogoSmall;
                 btnMenuRecivedProducts.Text = null;
+                picMenuUser.Width = picMenuLogo.Width;
+                picMenuUser.Left = picMenuLogo.Left;
+                picMenuUser.Height = picMenuLogo.Height;
+                picMenuUser.Top = picMenuLogo.Top + picMenuUser.Height + 60;
             }
             else
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
-                MenuButtonsLeftFunc(btnMenuMainPage.Width + 13);
-                picMenuLogo.Width = pnlMenubar.Width;
-                picMenuLogo.Top -= 10;
-                picMenuLogo.Height += 100;
-                picMenuLogo.BackgroundImage = Properties.Resources.MainLogoBig;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
+                picMenuUser.Width = userPicProp[0];
+                picMenuUser.Left =userPicProp[1];
+                picMenuUser.Height =userPicProp[2];
+                picMenuUser.Top =userPicProp[3];
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
+        }
+
+        // MENU BUTTONS & TAB CONTROL SYNC----------------------------------------------------
+
+        private void btnMenuMainPage_Click(object sender, EventArgs e)
+        {
+            int tabIndex = Convert.ToInt32(((Button)sender).Tag);
+            if (tabCtrlMain.SelectedIndex != tabIndex)
+            {
+                tabCtrlMain.SelectedIndex = tabIndex;
+            }
         }
 
         // LOGOUT MENU BUTTON MOUSE DOWN/UP --------------------------------------------------
@@ -74,28 +85,5 @@ namespace Shop_manager_V2
         }
 
         // FUNCTIONS #########################################################################
-
-        // MENU BUTTONS LEFT FUNCTION --------------------------------------------------------
-
-        void MenuButtonsLeftFunc(int x)
-        {
-            btnMenuMainPageLogo.Left = x;
-            btnMenuProductsLogo.Left = x;
-            btnMenuSellReportLogo.Left = x;
-            btnMenuRecivedProductsLogo.Left = x;
-            btnMenuCartLogo.Left = x;
-            btnMenuStaffLogo.Left = x;
-            btnMenuSettingLogo.Left = x;
-            btnMenuAboutLogo.Left = x;
-        }
-
-        private void btnMenuMainPage_Click(object sender, EventArgs e)
-        {
-            int tabIndex = Convert.ToInt32(((Button)sender).Tag);
-            if (tabCtrlMain.SelectedIndex != tabIndex)
-            {
-                tabCtrlMain.SelectedIndex = tabIndex;
-            }
-        }
     }
 }
