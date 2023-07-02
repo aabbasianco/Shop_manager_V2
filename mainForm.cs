@@ -40,30 +40,42 @@ namespace Shop_manager_V2
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
-
                 MenuButtonsLeftFunc(13);
-
                 picMenuLogo.Width = 60;
-
+                picMenuLogo.Top += 10;
+                picMenuLogo.Height -= 100;
+                picMenuLogo.BackgroundImage = Properties.Resources.MainLogoSmall;
                 btnMenuRecivedProducts.Text = null;
             }
             else
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
-
                 MenuButtonsLeftFunc(btnMenuMainPage.Width + 13);
-
                 picMenuLogo.Width = pnlMenubar.Width;
-
+                picMenuLogo.Top -= 10;
+                picMenuLogo.Height += 100;
+                picMenuLogo.BackgroundImage = Properties.Resources.MainLogoBig;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
         }
 
-        // FUNCTIONS -------------------------------------------------------------------------------------------------------
+        // LOGOUT MENU BUTTON MOUSE DOWN/UP --------------------------------------------------
 
-        // MENU BUTTONS LEFT FUNCTION -------------------------------------------------------------------------
+        private void btnMenuLogout_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRed;
+        }
+
+        private void btnMenuLogout_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
+        }
+
+        // FUNCTIONS #########################################################################
+
+        // MENU BUTTONS LEFT FUNCTION --------------------------------------------------------
 
         void MenuButtonsLeftFunc(int x)
         {

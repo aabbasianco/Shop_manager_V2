@@ -263,5 +263,38 @@
   <ItemGroup>
     <None Include="Resources\LogoSmallWhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecivedProductsWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecivedProducts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DollarSignWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DollarSign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckPaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckPaperWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singlejwewjhghgfvc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singlewaefc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginLightGreen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

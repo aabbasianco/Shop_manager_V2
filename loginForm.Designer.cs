@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
             this.picCloseLock = new System.Windows.Forms.PictureBox();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.picPasswordTextbox = new System.Windows.Forms.PictureBox();
@@ -45,7 +46,6 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.picSmallLogo = new System.Windows.Forms.PictureBox();
-            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -104,13 +104,14 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogin.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
             this.btnLogin.Location = new System.Drawing.Point(81, 444);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(298, 55);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "ورود";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // chkRememberme
             // 
@@ -169,6 +170,11 @@
             this.label2.Size = new System.Drawing.Size(5, 611);
             this.label2.TabIndex = 1;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tmrWelcomeLabel
+            // 
+            this.tmrWelcomeLabel.Interval = 70;
+            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
             // 
             // picCloseLock
             // 
@@ -247,7 +253,7 @@
             // picSmallLogo
             // 
             this.picSmallLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.LogoSmall;
+            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.MainLogoSmall;
             this.picSmallLogo.Location = new System.Drawing.Point(556, 17);
             this.picSmallLogo.Margin = new System.Windows.Forms.Padding(8);
             this.picSmallLogo.Name = "picSmallLogo";
@@ -255,11 +261,6 @@
             this.picSmallLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSmallLogo.TabIndex = 0;
             this.picSmallLogo.TabStop = false;
-            // 
-            // tmrWelcomeLabel
-            // 
-            this.tmrWelcomeLabel.Interval = 70;
-            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
             // 
             // loginForm
             // 

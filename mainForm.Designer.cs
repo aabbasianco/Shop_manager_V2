@@ -35,8 +35,8 @@
             this.btnMenuCartLogo = new System.Windows.Forms.Button();
             this.btnMenuRecivedProductsLogo = new System.Windows.Forms.Button();
             this.btnMenuProductsLogo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnMenuSellReportLogo = new System.Windows.Forms.Button();
+            this.btnMenuLogout = new System.Windows.Forms.Button();
             this.btnMenuMainPageLogo = new System.Windows.Forms.Button();
             this.btnMenuAbout = new System.Windows.Forms.Button();
             this.btnMenuSetting = new System.Windows.Forms.Button();
@@ -51,7 +51,6 @@
             this.picMenuLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
-            this.btnMenuLogout = new System.Windows.Forms.Button();
             this.pnlMenubar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +66,6 @@
             this.pnlMenubar.Controls.Add(this.btnMenuCartLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuRecivedProductsLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuProductsLogo);
-            this.pnlMenubar.Controls.Add(this.button1);
             this.pnlMenubar.Controls.Add(this.btnMenuSellReportLogo);
             this.pnlMenubar.Controls.Add(this.btnMenuLogout);
             this.pnlMenubar.Controls.Add(this.btnMenuMainPageLogo);
@@ -92,7 +90,7 @@
             // btnMenuAboutLogo
             // 
             this.btnMenuAboutLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnMenuAboutLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.LogoSmallWhite;
+            this.btnMenuAboutLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.MainLogoSmallWhite;
             this.btnMenuAboutLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuAboutLogo.FlatAppearance.BorderSize = 0;
             this.btnMenuAboutLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -160,7 +158,7 @@
             // btnMenuRecivedProductsLogo
             // 
             this.btnMenuRecivedProductsLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnMenuRecivedProductsLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.HomeWhite;
+            this.btnMenuRecivedProductsLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.CheckPaperWhite;
             this.btnMenuRecivedProductsLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuRecivedProductsLogo.FlatAppearance.BorderSize = 0;
             this.btnMenuRecivedProductsLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -191,27 +189,10 @@
             this.btnMenuProductsLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuProductsLogo.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button1.BackgroundImage = global::Shop_manager_V2.Properties.Resources.HomeWhite;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(253, 307);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(35, 80);
-            this.button1.TabIndex = 5;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btnMenuSellReportLogo
             // 
             this.btnMenuSellReportLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnMenuSellReportLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.HistoryWhite;
+            this.btnMenuSellReportLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.DollarSignWhite;
             this.btnMenuSellReportLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuSellReportLogo.FlatAppearance.BorderSize = 0;
             this.btnMenuSellReportLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -224,6 +205,27 @@
             this.btnMenuSellReportLogo.TabIndex = 5;
             this.btnMenuSellReportLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuSellReportLogo.UseVisualStyleBackColor = false;
+            // 
+            // btnMenuLogout
+            // 
+            this.btnMenuLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuLogout.BackgroundImage = global::Shop_manager_V2.Properties.Resources.LogoutDarkRed;
+            this.btnMenuLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
+            this.btnMenuLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenuLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenuLogout.Location = new System.Drawing.Point(12, 170);
+            this.btnMenuLogout.Name = "btnMenuLogout";
+            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenuLogout.Size = new System.Drawing.Size(35, 41);
+            this.btnMenuLogout.TabIndex = 5;
+            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuLogout.UseVisualStyleBackColor = false;
+            this.btnMenuLogout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseDown);
+            this.btnMenuLogout.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseUp);
             // 
             // btnMenuMainPageLogo
             // 
@@ -392,7 +394,7 @@
             // picMenuLogo
             // 
             this.picMenuLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picMenuLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.MainLogo;
+            this.picMenuLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.MainLogoBig;
             this.picMenuLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picMenuLogo.Location = new System.Drawing.Point(0, 14);
             this.picMenuLogo.Name = "picMenuLogo";
@@ -429,23 +431,6 @@
             this.btnMenubarDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
-            // 
-            // btnMenuLogout
-            // 
-            this.btnMenuLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnMenuLogout.BackgroundImage = global::Shop_manager_V2.Properties.Resources.HomeWhite;
-            this.btnMenuLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
-            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMenuLogout.Location = new System.Drawing.Point(12, 150);
-            this.btnMenuLogout.Name = "btnMenuLogout";
-            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnMenuLogout.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuLogout.TabIndex = 5;
-            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuLogout.UseVisualStyleBackColor = false;
             // 
             // mainForm
             // 
@@ -492,10 +477,9 @@
         private System.Windows.Forms.Button btnMenuStaffLogo;
         private System.Windows.Forms.Button btnMenuCartLogo;
         private System.Windows.Forms.Button btnMenuRecivedProductsLogo;
-        private System.Windows.Forms.Button btnMenuProductsLogo;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnMenuSellReportLogo;
         private System.Windows.Forms.Button btnMenuLogout;
+        private System.Windows.Forms.Button btnMenuProductsLogo;
     }
 }
 
