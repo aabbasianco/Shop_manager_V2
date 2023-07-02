@@ -32,6 +32,7 @@
             this.tabMainPage = new System.Windows.Forms.TabPage();
             this.tabProducts = new System.Windows.Forms.TabPage();
             this.tabCostumers = new System.Windows.Forms.TabPage();
+            this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.tabSellReport = new System.Windows.Forms.TabPage();
             this.tabRecivedProducts = new System.Windows.Forms.TabPage();
             this.tabCart = new System.Windows.Forms.TabPage();
@@ -64,7 +65,11 @@
             this.picMenuLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabCtrlMain.SuspendLayout();
+            this.tabCostumers.SuspendLayout();
+            this.pnlCostumerInfo.SuspendLayout();
             this.pnlMenubar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
@@ -115,12 +120,27 @@
             // 
             // tabCostumers
             // 
+            this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabCostumers.Controls.Add(this.label3);
+            this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
             this.tabCostumers.Name = "tabCostumers";
             this.tabCostumers.Size = new System.Drawing.Size(1176, 928);
             this.tabCostumers.TabIndex = 8;
             this.tabCostumers.Text = "مشتریان";
             this.tabCostumers.UseVisualStyleBackColor = true;
+            // 
+            // pnlCostumerInfo
+            // 
+            this.pnlCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlCostumerInfo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.RectangleFrame;
+            this.pnlCostumerInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlCostumerInfo.Controls.Add(this.label4);
+            this.pnlCostumerInfo.Location = new System.Drawing.Point(34, 30);
+            this.pnlCostumerInfo.Name = "pnlCostumerInfo";
+            this.pnlCostumerInfo.Size = new System.Drawing.Size(1116, 291);
+            this.pnlCostumerInfo.TabIndex = 0;
             // 
             // tabSellReport
             // 
@@ -648,6 +668,26 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Location = new System.Drawing.Point(984, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 27);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "اطلاعات کاربران";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Location = new System.Drawing.Point(1063, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 50);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "نام :";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
@@ -663,10 +703,11 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "برنامه مدیریت فروشگاه";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.SizeChanged += new System.EventHandler(this.mainForm_SizeChanged);
             this.tabCtrlMain.ResumeLayout(false);
+            this.tabCostumers.ResumeLayout(false);
+            this.pnlCostumerInfo.ResumeLayout(false);
             this.pnlMenubar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
@@ -712,6 +753,9 @@
         private System.Windows.Forms.Button btnMenuCostumersLogo;
         private System.Windows.Forms.Button btnMenuCostumers;
         private System.Windows.Forms.PictureBox picMenuUser;
+        private System.Windows.Forms.FlowLayoutPanel pnlCostumerInfo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
