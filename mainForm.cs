@@ -114,5 +114,35 @@ namespace Shop_manager_V2
         {
             pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Size.Width, (txtCostumerAddress.Top + txtCostumerAddress.Height + pnlCostumerInfo.Padding.Top));
         }
+
+
+
+        private void cmbCostumerType_Leave(object sender, EventArgs e)
+        {
+            if (cmbCostumerType.Text.Length > 0)
+            {
+                bool costumerTypeCheck = false;
+                foreach (var item in cmbCostumerType.Items)
+                {
+                    if (cmbCostumerType.Text == item.ToString())
+                    {
+                        costumerTypeCheck = true;
+                    }
+                }
+                if (costumerTypeCheck == false)
+                {
+                    pnlCostumerInfo.SetFlowBreak(cmbCostumerType, false);
+                    pnlCostumerInfo.SetFlowBreak(lblCostumerTypeAlert, true);
+                    lblCostumerTypeAlert.Visible = true;
+                    cmbCostumerType.Text = null;
+                }
+                else
+                {
+                    lblCostumerTypeAlert.Visible = false;
+                    pnlCostumerInfo.SetFlowBreak(lblCostumerTypeAlert, false);
+                    pnlCostumerInfo.SetFlowBreak(cmbCostumerType, true);
+                }
+            }
+        }
     }
 }
