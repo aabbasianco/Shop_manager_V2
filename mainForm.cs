@@ -89,7 +89,6 @@ namespace Shop_manager_V2
 
         private void tabCostumers_SizeChanged(object sender, EventArgs e)
         {
-            AddressTextboxHeight();
             if (this.WindowState != FormWindowState.Maximized)
             {
                 pnlCostumerInfo.SetFlowBreak(txtCostumerUsername, true);
@@ -106,16 +105,10 @@ namespace Shop_manager_V2
                 pnlCostumerInfo.SetFlowBreak(txtCostumerId, true);
                 pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
             }
+            CostumerInfoPanelHeight();
         }
 
-        // FUNCTIONS #########################################################################
-
-        void AddressTextboxHeight()
-        {
-            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Size.Width, (txtCostumerAddress.Top + txtCostumerAddress.Height + pnlCostumerInfo.Padding.Top));
-        }
-
-
+        // COSTUMER TYPE COMBO BOX CHECK -----------------------------------------------------
 
         private void cmbCostumerType_Leave(object sender, EventArgs e)
         {
@@ -144,5 +137,14 @@ namespace Shop_manager_V2
                 }
             }
         }
+        // FUNCTIONS #########################################################################
+
+        void CostumerInfoPanelHeight()
+        {
+            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Size.Width, (btnCostumerInfoChooseAsBuyer.Top +
+                btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top));
+        }
+
+
     }
 }
