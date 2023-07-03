@@ -32,7 +32,7 @@
             this.tabMainPage = new System.Windows.Forms.TabPage();
             this.tabProducts = new System.Windows.Forms.TabPage();
             this.tabCostumers = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCostumerInfo = new System.Windows.Forms.Label();
             this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbCostumerType = new System.Windows.Forms.ComboBox();
@@ -98,12 +98,17 @@
             this.btnCostumerInfoUpdate = new System.Windows.Forms.Button();
             this.btnCostumerInfoDelete = new System.Windows.Forms.Button();
             this.btnCostumerInfoChooseAsBuyer = new System.Windows.Forms.Button();
+            this.pnlCostumersDatabase = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblCostumersDatabase = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cmb = new System.Windows.Forms.ComboBox();
             this.tabCtrlMain.SuspendLayout();
             this.tabCostumers.SuspendLayout();
             this.pnlCostumerInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).BeginInit();
             this.pnlMenubar.SuspendLayout();
+            this.pnlCostumersDatabase.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCtrlMain
@@ -153,8 +158,10 @@
             // 
             this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabCostumers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabCostumers.Controls.Add(this.label3);
+            this.tabCostumers.Controls.Add(this.lblCostumersDatabase);
+            this.tabCostumers.Controls.Add(this.lblCostumerInfo);
             this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
+            this.tabCostumers.Controls.Add(this.pnlCostumersDatabase);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
             this.tabCostumers.Name = "tabCostumers";
             this.tabCostumers.Size = new System.Drawing.Size(1176, 928);
@@ -163,16 +170,16 @@
             this.tabCostumers.UseVisualStyleBackColor = true;
             this.tabCostumers.SizeChanged += new System.EventHandler(this.tabCostumers_SizeChanged);
             // 
-            // label3
+            // lblCostumerInfo
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(982, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 30);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "اطلاعات کاربران";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
+            this.lblCostumerInfo.Location = new System.Drawing.Point(995, 11);
+            this.lblCostumerInfo.Name = "lblCostumerInfo";
+            this.lblCostumerInfo.Size = new System.Drawing.Size(133, 30);
+            this.lblCostumerInfo.TabIndex = 1;
+            this.lblCostumerInfo.Text = "اطلاعات کاربر";
+            this.lblCostumerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlCostumerInfo
             // 
@@ -1059,6 +1066,59 @@
             this.btnCostumerInfoChooseAsBuyer.Text = "انتخاب به عنوان خریدار";
             this.btnCostumerInfoChooseAsBuyer.UseVisualStyleBackColor = false;
             // 
+            // pnlCostumersDatabase
+            // 
+            this.pnlCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlCostumersDatabase.BackgroundImage = global::Shop_manager_V2.Properties.Resources.RectangleFrame;
+            this.pnlCostumersDatabase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlCostumersDatabase.Controls.Add(this.label18);
+            this.pnlCostumersDatabase.Controls.Add(this.cmb);
+            this.pnlCostumersDatabase.Location = new System.Drawing.Point(34, 522);
+            this.pnlCostumersDatabase.Name = "pnlCostumersDatabase";
+            this.pnlCostumersDatabase.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
+            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1114, 379);
+            this.pnlCostumersDatabase.TabIndex = 36;
+            // 
+            // lblCostumersDatabase
+            // 
+            this.lblCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumersDatabase.ForeColor = System.Drawing.Color.Black;
+            this.lblCostumersDatabase.Location = new System.Drawing.Point(1018, 503);
+            this.lblCostumersDatabase.Name = "lblCostumersDatabase";
+            this.lblCostumersDatabase.Size = new System.Drawing.Size(110, 30);
+            this.lblCostumersDatabase.TabIndex = 2;
+            this.lblCostumersDatabase.Text = "پایگاه داده";
+            this.lblCostumersDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.Location = new System.Drawing.Point(946, 10);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(150, 47);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "جستجو بر اساس :";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cmb
+            // 
+            this.cmb.AutoCompleteCustomSource.AddRange(new string[] {
+            "عادی",
+            "شرکت"});
+            this.cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cmb.FormattingEnabled = true;
+            this.cmb.Items.AddRange(new object[] {
+            "عادی",
+            "شرکت"});
+            this.cmb.Location = new System.Drawing.Point(740, 13);
+            this.cmb.Name = "cmb";
+            this.cmb.Size = new System.Drawing.Size(200, 44);
+            this.cmb.TabIndex = 20;
+            this.cmb.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
@@ -1083,6 +1143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).EndInit();
             this.pnlMenubar.ResumeLayout(false);
+            this.pnlCostumersDatabase.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1100,7 +1161,7 @@
         private System.Windows.Forms.TabPage about;
         private System.Windows.Forms.TabPage tabCostumers;
         private System.Windows.Forms.FlowLayoutPanel pnlCostumerInfo;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCostumerInfo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbCostumerType;
@@ -1158,6 +1219,10 @@
         private System.Windows.Forms.Button btnCostumerInfoErase;
         private System.Windows.Forms.Button btnCostumerInfoDelete;
         private System.Windows.Forms.Button btnCostumerInfoChooseAsBuyer;
+        private System.Windows.Forms.Label lblCostumersDatabase;
+        private System.Windows.Forms.FlowLayoutPanel pnlCostumersDatabase;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cmb;
     }
 }
 

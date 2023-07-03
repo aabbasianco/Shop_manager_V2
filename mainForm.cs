@@ -19,7 +19,6 @@ namespace Shop_manager_V2
         int[] userPicProp;
 
         // INITIALIZE COMPONENT --------------------------------------------------------------
-
         public mainForm()
         {
             InitializeComponent();
@@ -28,7 +27,6 @@ namespace Shop_manager_V2
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
-
         private void mainForm_SizeChanged(object sender, EventArgs e)
         {
             lblMenuColor.Height = this.Height - btnMenuMainPage.Top;
@@ -36,7 +34,6 @@ namespace Shop_manager_V2
         }
 
         // MENUBAR DISPLAY BUTTON CLICK ------------------------------------------------------
-
         private void btnMenubarDisplay_Click(object sender, EventArgs e)
         {
             if (menubarDisplayButtonBool == true)
@@ -63,7 +60,6 @@ namespace Shop_manager_V2
         }
 
         // MENU BUTTONS & TAB CONTROL SYNC----------------------------------------------------
-
         private void btnMenuMainPage_Click(object sender, EventArgs e)
         {
             int tabIndex = Convert.ToInt32(((Button)sender).Tag);
@@ -74,7 +70,6 @@ namespace Shop_manager_V2
         }
 
         // LOGOUT MENU BUTTON MOUSE DOWN/UP --------------------------------------------------
-
         private void btnMenuLogout_MouseDown(object sender, MouseEventArgs e)
         {
             btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRed;
@@ -86,7 +81,6 @@ namespace Shop_manager_V2
         }
 
         // COSTUMERS TAB ON SIZE CHANGE ------------------------------------------------------
-
         private void tabCostumers_SizeChanged(object sender, EventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)
@@ -106,45 +100,60 @@ namespace Shop_manager_V2
                 pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
             }
             CostumerInfoPanelHeight();
+            DatabasePanelHeightAndTopFunc(pnlCostumersDatabase, pnlCostumerInfo, tabCostumers, lblCostumersDatabase);
         }
 
-        // COSTUMER TYPE COMBO BOX CHECK -----------------------------------------------------
-
+        // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
         private void cmbCostumerType_Leave(object sender, EventArgs e)
         {
-            if (cmbCostumerType.Text.Length > 0)
+            ComboboxCheckerFunc(cmbCostumerType, lblCostumerTypeAlert, pnlCostumerInfo);
+        }
+
+        // FUNCTIONS *************************************************************************
+
+        // COSTUMER INFO PANEL HIGHT SETTER FUNCTION -----------------------------------------
+        void CostumerInfoPanelHeight()
+        {
+            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Width, (btnCostumerInfoChooseAsBuyer.Top +
+                btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top));
+        }
+
+        // COSTUMERS DATABASE PANEL HIGHT AND TOP SETTER FUNCTION ----------------------------
+        void DatabasePanelHeightAndTopFunc(Control mainPanel, Control topPanel, Control parent, Label title)
+        {
+            mainPanel.Size = new Size(mainPanel.Width, (parent.Height - (topPanel.Top * 3 + topPanel.Height)));
+            mainPanel.Top = topPanel.Top * 2 + topPanel.Height;
+            title.Top = mainPanel.Top - 16;
+        }
+
+        // COMBO BOX CHECKER FUNCTION --------------------------------------------------------
+        void ComboboxCheckerFunc(ComboBox cmb, Control lblAlert, FlowLayoutPanel pnl)
+        {
+            if (cmb.Text.Length > 0)
             {
                 bool costumerTypeCheck = false;
-                foreach (var item in cmbCostumerType.Items)
+                foreach (var item in cmb.Items)
                 {
-                    if (cmbCostumerType.Text == item.ToString())
+                    if (cmb.Text == item.ToString())
                     {
                         costumerTypeCheck = true;
                     }
                 }
                 if (costumerTypeCheck == false)
                 {
-                    pnlCostumerInfo.SetFlowBreak(cmbCostumerType, false);
-                    pnlCostumerInfo.SetFlowBreak(lblCostumerTypeAlert, true);
-                    lblCostumerTypeAlert.Visible = true;
-                    cmbCostumerType.Text = null;
+                    pnl.SetFlowBreak(cmb, false);
+                    pnl.SetFlowBreak(lblAlert, true);
+                    lblAlert.Visible = true;
+                    cmb.Text = null;
                 }
                 else
                 {
-                    lblCostumerTypeAlert.Visible = false;
-                    pnlCostumerInfo.SetFlowBreak(lblCostumerTypeAlert, false);
-                    pnlCostumerInfo.SetFlowBreak(cmbCostumerType, true);
+                    lblAlert.Visible = false;
+                    pnl.SetFlowBreak(lblAlert, false);
+                    pnl.SetFlowBreak(cmb, true);
                 }
             }
         }
-        // FUNCTIONS #########################################################################
-
-        void CostumerInfoPanelHeight()
-        {
-            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Size.Width, (btnCostumerInfoChooseAsBuyer.Top +
-                btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top));
-        }
-
 
     }
 }
