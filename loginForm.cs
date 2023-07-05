@@ -12,8 +12,8 @@ namespace Shop_manager_V2
 {
     public partial class loginForm : Form
     {
-        int remembermeCounter;
         int welcomeTimerCounter = 0;
+        bool showPasswordButtonBool = false;
         public loginForm()
         {
             InitializeComponent();
@@ -30,6 +30,19 @@ namespace Shop_manager_V2
             else
             {
                 tmrWelcomeLabel.Enabled = false;
+            }
+        }
+
+        private void chkRememberme_CheckedChanged(object sender, EventArgs e)
+        {
+            showPasswordButtonBool = !showPasswordButtonBool;
+            if (showPasswordButtonBool == true)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = char.Parse("*");
             }
         }
     }
