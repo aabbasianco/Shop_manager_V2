@@ -36,12 +36,10 @@
             this.tabRecivedProducts = new System.Windows.Forms.TabPage();
             this.tabSellReport = new System.Windows.Forms.TabPage();
             this.tabCostumers = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblCostumersDatabase = new System.Windows.Forms.Label();
+            this.pnlDateAndTime = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblCostumerInfo = new System.Windows.Forms.Label();
-            this.picMenuUser = new System.Windows.Forms.PictureBox();
             this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.label20 = new System.Windows.Forms.Label();
             this.lblCostumerSignupDate = new System.Windows.Forms.Label();
@@ -122,8 +120,15 @@
             this.btnMenuSetting = new System.Windows.Forms.Button();
             this.btnMenuAbout = new System.Windows.Forms.Button();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
+            this.pnlActiveStaffInfo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblActiveStaffStaffcode = new System.Windows.Forms.Label();
+            this.lblActiveStaffFullname = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabCostumers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).BeginInit();
+            this.pnlDateAndTime.SuspendLayout();
             this.pnlCostumerInfo.SuspendLayout();
             this.pnlCostumersDatabase.SuspendLayout();
             this.tabCtrlMain.SuspendLayout();
@@ -131,13 +136,15 @@
             this.pnlMenuUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
             this.pnlMenuDown.SuspendLayout();
+            this.pnlActiveStaffInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabSetting
             // 
             this.tabSetting.Location = new System.Drawing.Point(4, 45);
             this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(1176, 928);
+            this.tabSetting.Size = new System.Drawing.Size(1176, 919);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "تنظیمات";
             this.tabSetting.UseVisualStyleBackColor = true;
@@ -146,7 +153,7 @@
             // 
             this.about.Location = new System.Drawing.Point(4, 45);
             this.about.Name = "about";
-            this.about.Size = new System.Drawing.Size(1176, 928);
+            this.about.Size = new System.Drawing.Size(1176, 919);
             this.about.TabIndex = 7;
             this.about.Text = "درباره";
             this.about.UseVisualStyleBackColor = true;
@@ -155,7 +162,7 @@
             // 
             this.tabStaff.Location = new System.Drawing.Point(4, 45);
             this.tabStaff.Name = "tabStaff";
-            this.tabStaff.Size = new System.Drawing.Size(1176, 928);
+            this.tabStaff.Size = new System.Drawing.Size(1176, 919);
             this.tabStaff.TabIndex = 5;
             this.tabStaff.Text = "کارکنان";
             this.tabStaff.UseVisualStyleBackColor = true;
@@ -164,7 +171,7 @@
             // 
             this.tabCart.Location = new System.Drawing.Point(4, 45);
             this.tabCart.Name = "tabCart";
-            this.tabCart.Size = new System.Drawing.Size(1176, 928);
+            this.tabCart.Size = new System.Drawing.Size(1176, 919);
             this.tabCart.TabIndex = 4;
             this.tabCart.Text = "سبد خرید";
             this.tabCart.UseVisualStyleBackColor = true;
@@ -173,7 +180,7 @@
             // 
             this.tabRecivedProducts.Location = new System.Drawing.Point(4, 45);
             this.tabRecivedProducts.Name = "tabRecivedProducts";
-            this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 928);
+            this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 919);
             this.tabRecivedProducts.TabIndex = 3;
             this.tabRecivedProducts.Text = "حواله ورود محصول";
             this.tabRecivedProducts.UseVisualStyleBackColor = true;
@@ -182,7 +189,7 @@
             // 
             this.tabSellReport.Location = new System.Drawing.Point(4, 45);
             this.tabSellReport.Name = "tabSellReport";
-            this.tabSellReport.Size = new System.Drawing.Size(1176, 928);
+            this.tabSellReport.Size = new System.Drawing.Size(1176, 919);
             this.tabSellReport.TabIndex = 2;
             this.tabSellReport.Text = "گزارش فروش";
             this.tabSellReport.UseVisualStyleBackColor = true;
@@ -192,12 +199,10 @@
             this.tabCostumers.AutoScroll = true;
             this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabCostumers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabCostumers.Controls.Add(this.panel1);
-            this.tabCostumers.Controls.Add(this.label2);
-            this.tabCostumers.Controls.Add(this.label1);
             this.tabCostumers.Controls.Add(this.lblCostumersDatabase);
+            this.tabCostumers.Controls.Add(this.pnlActiveStaffInfo);
+            this.tabCostumers.Controls.Add(this.pnlDateAndTime);
             this.tabCostumers.Controls.Add(this.lblCostumerInfo);
-            this.tabCostumers.Controls.Add(this.picMenuUser);
             this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
             this.tabCostumers.Controls.Add(this.pnlCostumersDatabase);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
@@ -207,38 +212,6 @@
             this.tabCostumers.Text = "مشتریان";
             this.tabCostumers.UseVisualStyleBackColor = true;
             this.tabCostumers.SizeChanged += new System.EventHandler(this.tabCostumers_SizeChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(34, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1105, 81);
-            this.panel1.TabIndex = 37;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(867, 124);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(170, 80);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "نام کاربر";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(1056, 106);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(80, 80);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "کاربر :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCostumersDatabase
             // 
@@ -251,30 +224,39 @@
             this.lblCostumersDatabase.Text = "پایگاه داده";
             this.lblCostumersDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pnlDateAndTime
+            // 
+            this.pnlDateAndTime.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDateAndTime.BackgroundImage")));
+            this.pnlDateAndTime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlDateAndTime.Controls.Add(this.label2);
+            this.pnlDateAndTime.Controls.Add(this.label1);
+            this.pnlDateAndTime.Location = new System.Drawing.Point(42, 30);
+            this.pnlDateAndTime.Name = "pnlDateAndTime";
+            this.pnlDateAndTime.Size = new System.Drawing.Size(510, 140);
+            this.pnlDateAndTime.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(364, 12);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(130, 50);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "تاریخ :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // lblCostumerInfo
             // 
             this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumerInfo.Location = new System.Drawing.Point(964, 235);
+            this.lblCostumerInfo.Location = new System.Drawing.Point(949, 235);
             this.lblCostumerInfo.Name = "lblCostumerInfo";
-            this.lblCostumerInfo.Size = new System.Drawing.Size(133, 30);
+            this.lblCostumerInfo.Size = new System.Drawing.Size(148, 30);
             this.lblCostumerInfo.TabIndex = 1;
-            this.lblCostumerInfo.Text = "اطلاعات کاربر";
+            this.lblCostumerInfo.Text = "اطلاعات مشتری";
             this.lblCostumerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picMenuUser
-            // 
-            this.picMenuUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMenuUser.BackColor = System.Drawing.Color.White;
-            this.picMenuUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picMenuUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picMenuUser.Image = global::Shop_manager_V2.Properties.Resources.MaleStaff;
-            this.picMenuUser.Location = new System.Drawing.Point(604, 117);
-            this.picMenuUser.Name = "picMenuUser";
-            this.picMenuUser.Size = new System.Drawing.Size(113, 142);
-            this.picMenuUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMenuUser.TabIndex = 0;
-            this.picMenuUser.TabStop = false;
             // 
             // pnlCostumerInfo
             // 
@@ -320,16 +302,16 @@
             this.pnlCostumerInfo.Controls.Add(this.btnCostumerInfoDelete);
             this.pnlCostumerInfo.Controls.Add(this.btnCostumerInfoErase);
             this.pnlCostumerInfo.Controls.Add(this.btnCostumerInfoChooseAsBuyer);
-            this.pnlCostumerInfo.Location = new System.Drawing.Point(34, 254);
+            this.pnlCostumerInfo.Location = new System.Drawing.Point(42, 254);
             this.pnlCostumerInfo.Name = "pnlCostumerInfo";
             this.pnlCostumerInfo.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.pnlCostumerInfo.Size = new System.Drawing.Size(1083, 575);
+            this.pnlCostumerInfo.Size = new System.Drawing.Size(1100, 575);
             this.pnlCostumerInfo.TabIndex = 0;
             // 
             // label20
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.Location = new System.Drawing.Point(915, 10);
+            this.label20.Location = new System.Drawing.Point(932, 10);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(150, 47);
             this.label20.TabIndex = 2;
@@ -340,7 +322,7 @@
             // 
             this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupDate.Location = new System.Drawing.Point(709, 10);
+            this.lblCostumerSignupDate.Location = new System.Drawing.Point(726, 10);
             this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
             this.lblCostumerSignupDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupDate.Size = new System.Drawing.Size(200, 47);
@@ -350,7 +332,7 @@
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.Location = new System.Drawing.Point(553, 10);
+            this.label19.Location = new System.Drawing.Point(570, 10);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(150, 47);
             this.label19.TabIndex = 36;
@@ -361,7 +343,7 @@
             // 
             this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupTime.Location = new System.Drawing.Point(347, 10);
+            this.lblCostumerSignupTime.Location = new System.Drawing.Point(364, 10);
             this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
             this.lblCostumerSignupTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupTime.Size = new System.Drawing.Size(200, 47);
@@ -371,7 +353,7 @@
             // label17
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.Location = new System.Drawing.Point(191, 10);
+            this.label17.Location = new System.Drawing.Point(208, 10);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(150, 47);
             this.label17.TabIndex = 2;
@@ -383,7 +365,7 @@
             this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
-            this.lblCostumerSignupDay.Location = new System.Drawing.Point(865, 57);
+            this.lblCostumerSignupDay.Location = new System.Drawing.Point(882, 57);
             this.lblCostumerSignupDay.Name = "lblCostumerSignupDay";
             this.lblCostumerSignupDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupDay.Size = new System.Drawing.Size(200, 47);
@@ -393,7 +375,7 @@
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.Location = new System.Drawing.Point(915, 104);
+            this.label10.Location = new System.Drawing.Point(932, 104);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(150, 47);
             this.label10.TabIndex = 14;
@@ -413,7 +395,7 @@
             "عادی",
             "شرکت",
             "همکار"});
-            this.cmbCostumerType.Location = new System.Drawing.Point(709, 107);
+            this.cmbCostumerType.Location = new System.Drawing.Point(726, 107);
             this.cmbCostumerType.Name = "cmbCostumerType";
             this.cmbCostumerType.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumerType.TabIndex = 20;
@@ -424,7 +406,7 @@
             this.lblCostumerTypeAlert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerTypeAlert.Font = new System.Drawing.Font("Koodak", 14F);
             this.lblCostumerTypeAlert.ForeColor = System.Drawing.Color.Red;
-            this.lblCostumerTypeAlert.Location = new System.Drawing.Point(709, 154);
+            this.lblCostumerTypeAlert.Location = new System.Drawing.Point(726, 154);
             this.lblCostumerTypeAlert.Name = "lblCostumerTypeAlert";
             this.lblCostumerTypeAlert.Size = new System.Drawing.Size(356, 47);
             this.lblCostumerTypeAlert.TabIndex = 30;
@@ -435,7 +417,7 @@
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(553, 154);
+            this.label4.Location = new System.Drawing.Point(570, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 47);
             this.label4.TabIndex = 2;
@@ -445,7 +427,7 @@
             // txtCostumerFirstName
             // 
             this.txtCostumerFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerFirstName.Location = new System.Drawing.Point(347, 157);
+            this.txtCostumerFirstName.Location = new System.Drawing.Point(364, 157);
             this.txtCostumerFirstName.Name = "txtCostumerFirstName";
             this.txtCostumerFirstName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerFirstName.TabIndex = 3;
@@ -453,7 +435,7 @@
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Location = new System.Drawing.Point(191, 154);
+            this.label5.Location = new System.Drawing.Point(208, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 47);
             this.label5.TabIndex = 4;
@@ -463,7 +445,7 @@
             // txtCostumerLastName
             // 
             this.txtCostumerLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerLastName.Location = new System.Drawing.Point(865, 207);
+            this.txtCostumerLastName.Location = new System.Drawing.Point(882, 207);
             this.txtCostumerLastName.Name = "txtCostumerLastName";
             this.txtCostumerLastName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerLastName.TabIndex = 5;
@@ -471,7 +453,7 @@
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Location = new System.Drawing.Point(709, 204);
+            this.label6.Location = new System.Drawing.Point(726, 204);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 47);
             this.label6.TabIndex = 6;
@@ -481,7 +463,7 @@
             // txtCostumerUsername
             // 
             this.txtCostumerUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerUsername.Location = new System.Drawing.Point(503, 207);
+            this.txtCostumerUsername.Location = new System.Drawing.Point(520, 207);
             this.txtCostumerUsername.Name = "txtCostumerUsername";
             this.txtCostumerUsername.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerUsername.TabIndex = 7;
@@ -489,7 +471,7 @@
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(347, 204);
+            this.label7.Location = new System.Drawing.Point(364, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 47);
             this.label7.TabIndex = 8;
@@ -499,7 +481,7 @@
             // txtCostumerId
             // 
             this.txtCostumerId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerId.Location = new System.Drawing.Point(141, 207);
+            this.txtCostumerId.Location = new System.Drawing.Point(158, 207);
             this.txtCostumerId.Name = "txtCostumerId";
             this.txtCostumerId.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerId.TabIndex = 9;
@@ -507,7 +489,7 @@
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Location = new System.Drawing.Point(915, 254);
+            this.label11.Location = new System.Drawing.Point(932, 254);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 47);
             this.label11.TabIndex = 16;
@@ -517,7 +499,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompanyName.Location = new System.Drawing.Point(709, 257);
+            this.txtCompanyName.Location = new System.Drawing.Point(726, 257);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(200, 44);
             this.txtCompanyName.TabIndex = 17;
@@ -525,7 +507,7 @@
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.Location = new System.Drawing.Point(553, 254);
+            this.label8.Location = new System.Drawing.Point(570, 254);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 47);
             this.label8.TabIndex = 10;
@@ -535,7 +517,7 @@
             // txtCostumerHomePhone
             // 
             this.txtCostumerHomePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerHomePhone.Location = new System.Drawing.Point(347, 257);
+            this.txtCostumerHomePhone.Location = new System.Drawing.Point(364, 257);
             this.txtCostumerHomePhone.Name = "txtCostumerHomePhone";
             this.txtCostumerHomePhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerHomePhone.TabIndex = 11;
@@ -543,7 +525,7 @@
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Location = new System.Drawing.Point(191, 254);
+            this.label12.Location = new System.Drawing.Point(208, 254);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 47);
             this.label12.TabIndex = 18;
@@ -553,7 +535,7 @@
             // txtCostumerCellPhone
             // 
             this.txtCostumerCellPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCellPhone.Location = new System.Drawing.Point(865, 307);
+            this.txtCostumerCellPhone.Location = new System.Drawing.Point(882, 307);
             this.txtCostumerCellPhone.Name = "txtCostumerCellPhone";
             this.txtCostumerCellPhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCellPhone.TabIndex = 19;
@@ -561,7 +543,7 @@
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(709, 304);
+            this.label9.Location = new System.Drawing.Point(726, 304);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(150, 47);
             this.label9.TabIndex = 12;
@@ -571,7 +553,7 @@
             // txtCostumerEmail
             // 
             this.txtCostumerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerEmail.Location = new System.Drawing.Point(503, 307);
+            this.txtCostumerEmail.Location = new System.Drawing.Point(520, 307);
             this.txtCostumerEmail.Name = "txtCostumerEmail";
             this.txtCostumerEmail.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerEmail.TabIndex = 13;
@@ -579,7 +561,7 @@
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.Location = new System.Drawing.Point(347, 304);
+            this.label13.Location = new System.Drawing.Point(364, 304);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(150, 47);
             this.label13.TabIndex = 21;
@@ -589,7 +571,7 @@
             // txtCostumerProvince
             // 
             this.txtCostumerProvince.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerProvince.Location = new System.Drawing.Point(141, 307);
+            this.txtCostumerProvince.Location = new System.Drawing.Point(158, 307);
             this.txtCostumerProvince.Name = "txtCostumerProvince";
             this.txtCostumerProvince.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerProvince.TabIndex = 22;
@@ -597,7 +579,7 @@
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.Location = new System.Drawing.Point(915, 354);
+            this.label14.Location = new System.Drawing.Point(932, 354);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(150, 47);
             this.label14.TabIndex = 23;
@@ -607,7 +589,7 @@
             // txtCostumerCity
             // 
             this.txtCostumerCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCity.Location = new System.Drawing.Point(709, 357);
+            this.txtCostumerCity.Location = new System.Drawing.Point(726, 357);
             this.txtCostumerCity.Name = "txtCostumerCity";
             this.txtCostumerCity.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCity.TabIndex = 24;
@@ -615,7 +597,7 @@
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.Location = new System.Drawing.Point(553, 354);
+            this.label15.Location = new System.Drawing.Point(570, 354);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 47);
             this.label15.TabIndex = 25;
@@ -626,7 +608,7 @@
             // 
             this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
-            this.txtCostumerPostCode.Location = new System.Drawing.Point(347, 357);
+            this.txtCostumerPostCode.Location = new System.Drawing.Point(364, 357);
             this.txtCostumerPostCode.Name = "txtCostumerPostCode";
             this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerPostCode.TabIndex = 26;
@@ -634,7 +616,7 @@
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.Location = new System.Drawing.Point(915, 404);
+            this.label16.Location = new System.Drawing.Point(932, 404);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 47);
             this.label16.TabIndex = 27;
@@ -646,7 +628,7 @@
             this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerAddress, true);
             this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtCostumerAddress.Location = new System.Drawing.Point(141, 454);
+            this.txtCostumerAddress.Location = new System.Drawing.Point(158, 454);
             this.txtCostumerAddress.Name = "txtCostumerAddress";
             this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
             this.txtCostumerAddress.TabIndex = 29;
@@ -656,7 +638,7 @@
             // 
             this.btnCostumerInfoSave.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCostumerInfoSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoSave.Location = new System.Drawing.Point(890, 548);
+            this.btnCostumerInfoSave.Location = new System.Drawing.Point(907, 548);
             this.btnCostumerInfoSave.Name = "btnCostumerInfoSave";
             this.btnCostumerInfoSave.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoSave.TabIndex = 31;
@@ -666,7 +648,7 @@
             // btnCostumerInfoUpdate
             // 
             this.btnCostumerInfoUpdate.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(709, 548);
+            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(726, 548);
             this.btnCostumerInfoUpdate.Name = "btnCostumerInfoUpdate";
             this.btnCostumerInfoUpdate.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoUpdate.TabIndex = 33;
@@ -677,7 +659,7 @@
             // 
             this.btnCostumerInfoDelete.BackColor = System.Drawing.Color.Red;
             this.btnCostumerInfoDelete.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(528, 548);
+            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(545, 548);
             this.btnCostumerInfoDelete.Name = "btnCostumerInfoDelete";
             this.btnCostumerInfoDelete.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoDelete.TabIndex = 34;
@@ -688,7 +670,7 @@
             // 
             this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoErase, true);
             this.btnCostumerInfoErase.ForeColor = System.Drawing.Color.Red;
-            this.btnCostumerInfoErase.Location = new System.Drawing.Point(347, 548);
+            this.btnCostumerInfoErase.Location = new System.Drawing.Point(364, 548);
             this.btnCostumerInfoErase.Name = "btnCostumerInfoErase";
             this.btnCostumerInfoErase.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoErase.TabIndex = 32;
@@ -698,7 +680,7 @@
             // btnCostumerInfoChooseAsBuyer
             // 
             this.btnCostumerInfoChooseAsBuyer.ForeColor = System.Drawing.Color.BlueViolet;
-            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(347, 601);
+            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(364, 601);
             this.btnCostumerInfoChooseAsBuyer.Name = "btnCostumerInfoChooseAsBuyer";
             this.btnCostumerInfoChooseAsBuyer.Size = new System.Drawing.Size(718, 47);
             this.btnCostumerInfoChooseAsBuyer.TabIndex = 35;
@@ -723,16 +705,16 @@
             this.pnlCostumersDatabase.Controls.Add(this.lblCostumersDatabaseFilterStandardAlert);
             this.pnlCostumersDatabase.Controls.Add(this.maskedTextBox1);
             this.pnlCostumersDatabase.Controls.Add(this.maskedTextBox2);
-            this.pnlCostumersDatabase.Location = new System.Drawing.Point(34, 851);
+            this.pnlCostumersDatabase.Location = new System.Drawing.Point(42, 851);
             this.pnlCostumersDatabase.Name = "pnlCostumersDatabase";
             this.pnlCostumersDatabase.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1125, 271);
+            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1100, 271);
             this.pnlCostumersDatabase.TabIndex = 36;
             // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.Location = new System.Drawing.Point(957, 10);
+            this.label18.Location = new System.Drawing.Point(932, 10);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(150, 47);
             this.label18.TabIndex = 27;
@@ -754,7 +736,7 @@
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(751, 13);
+            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(726, 13);
             this.cmbCostumersDatabaseSearchStandardGroup.Name = "cmbCostumersDatabaseSearchStandardGroup";
             this.cmbCostumersDatabaseSearchStandardGroup.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardGroup.TabIndex = 20;
@@ -764,7 +746,7 @@
             // 
             this.txtCostumersDatabaseSearchNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCostumersDatabaseSearchNormal.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(545, 13);
+            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(520, 13);
             this.txtCostumersDatabaseSearchNormal.Name = "txtCostumersDatabaseSearchNormal";
             this.txtCostumersDatabaseSearchNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtCostumersDatabaseSearchNormal.Size = new System.Drawing.Size(200, 32);
@@ -787,7 +769,7 @@
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(339, 13);
+            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(314, 13);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Name = "cmbCostumersDatabaseSearchStandardPersonalInfo";
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.TabIndex = 32;
@@ -811,7 +793,7 @@
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(133, 13);
+            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(108, 13);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Name = "cmbCostumersDatabaseSearchStandardPlaceInfo";
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.TabIndex = 35;
@@ -835,7 +817,7 @@
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(907, 63);
+            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(882, 63);
             this.cmbCostumersDatabaseSearchStandardDate.Name = "cmbCostumersDatabaseSearchStandardDate";
             this.cmbCostumersDatabaseSearchStandardDate.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardDate.TabIndex = 36;
@@ -846,7 +828,7 @@
             this.pnlCostumersDatabase.SetFlowBreak(this.lblCostumersDatabaseSearchStandardAlert, true);
             this.lblCostumersDatabaseSearchStandardAlert.Font = new System.Drawing.Font("Koodak", 14F);
             this.lblCostumersDatabaseSearchStandardAlert.ForeColor = System.Drawing.Color.Red;
-            this.lblCostumersDatabaseSearchStandardAlert.Location = new System.Drawing.Point(545, 60);
+            this.lblCostumersDatabaseSearchStandardAlert.Location = new System.Drawing.Point(520, 60);
             this.lblCostumersDatabaseSearchStandardAlert.Name = "lblCostumersDatabaseSearchStandardAlert";
             this.lblCostumersDatabaseSearchStandardAlert.Size = new System.Drawing.Size(356, 47);
             this.lblCostumersDatabaseSearchStandardAlert.TabIndex = 31;
@@ -857,7 +839,7 @@
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Location = new System.Drawing.Point(957, 110);
+            this.label3.Location = new System.Drawing.Point(932, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 47);
             this.label3.TabIndex = 33;
@@ -870,7 +852,7 @@
             this.pnlCostumersDatabase.SetFlowBreak(this.lblCostumersDatabaseFilterStandardAlert, true);
             this.lblCostumersDatabaseFilterStandardAlert.Font = new System.Drawing.Font("Koodak", 14F);
             this.lblCostumersDatabaseFilterStandardAlert.ForeColor = System.Drawing.Color.Red;
-            this.lblCostumersDatabaseFilterStandardAlert.Location = new System.Drawing.Point(595, 110);
+            this.lblCostumersDatabaseFilterStandardAlert.Location = new System.Drawing.Point(570, 110);
             this.lblCostumersDatabaseFilterStandardAlert.Name = "lblCostumersDatabaseFilterStandardAlert";
             this.lblCostumersDatabaseFilterStandardAlert.Size = new System.Drawing.Size(356, 47);
             this.lblCostumersDatabaseFilterStandardAlert.TabIndex = 34;
@@ -883,7 +865,7 @@
             this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(907, 160);
+            this.maskedTextBox1.Location = new System.Drawing.Point(882, 160);
             this.maskedTextBox1.Mask = "0000/00/00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -898,7 +880,7 @@
             this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox2.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(701, 160);
+            this.maskedTextBox2.Location = new System.Drawing.Point(676, 160);
             this.maskedTextBox2.Mask = "00:00";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -912,7 +894,7 @@
             this.tabProducts.Location = new System.Drawing.Point(4, 45);
             this.tabProducts.Name = "tabProducts";
             this.tabProducts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProducts.Size = new System.Drawing.Size(1176, 928);
+            this.tabProducts.Size = new System.Drawing.Size(1176, 919);
             this.tabProducts.TabIndex = 1;
             this.tabProducts.Text = "محصولات";
             this.tabProducts.UseVisualStyleBackColor = true;
@@ -922,7 +904,7 @@
             this.tabMainPage.Location = new System.Drawing.Point(4, 45);
             this.tabMainPage.Name = "tabMainPage";
             this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainPage.Size = new System.Drawing.Size(1176, 892);
+            this.tabMainPage.Size = new System.Drawing.Size(1176, 919);
             this.tabMainPage.TabIndex = 0;
             this.tabMainPage.Text = "صفحه اصلی";
             this.tabMainPage.UseVisualStyleBackColor = true;
@@ -1437,6 +1419,95 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
+            // pnlActiveStaffInfo
+            // 
+            this.pnlActiveStaffInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlActiveStaffInfo.BackgroundImage")));
+            this.pnlActiveStaffInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo.Controls.Add(this.pictureBox1);
+            this.pnlActiveStaffInfo.Controls.Add(this.lblActiveStaffStaffcode);
+            this.pnlActiveStaffInfo.Controls.Add(this.lblActiveStaffFullname);
+            this.pnlActiveStaffInfo.Controls.Add(this.label24);
+            this.pnlActiveStaffInfo.Controls.Add(this.label25);
+            this.pnlActiveStaffInfo.Location = new System.Drawing.Point(632, 30);
+            this.pnlActiveStaffInfo.Name = "pnlActiveStaffInfo";
+            this.pnlActiveStaffInfo.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo.TabIndex = 37;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(392, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblActiveStaffStaffcode
+            // 
+            this.lblActiveStaffStaffcode.BackColor = System.Drawing.Color.Transparent;
+            this.lblActiveStaffStaffcode.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.lblActiveStaffStaffcode.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblActiveStaffStaffcode.Location = new System.Drawing.Point(39, 80);
+            this.lblActiveStaffStaffcode.Name = "lblActiveStaffStaffcode";
+            this.lblActiveStaffStaffcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblActiveStaffStaffcode.Size = new System.Drawing.Size(220, 50);
+            this.lblActiveStaffStaffcode.TabIndex = 2;
+            this.lblActiveStaffStaffcode.Text = "کد کاربر";
+            this.lblActiveStaffStaffcode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblActiveStaffFullname
+            // 
+            this.lblActiveStaffFullname.BackColor = System.Drawing.Color.Transparent;
+            this.lblActiveStaffFullname.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.lblActiveStaffFullname.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblActiveStaffFullname.Location = new System.Drawing.Point(99, 12);
+            this.lblActiveStaffFullname.Name = "lblActiveStaffFullname";
+            this.lblActiveStaffFullname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblActiveStaffFullname.Size = new System.Drawing.Size(220, 50);
+            this.lblActiveStaffFullname.TabIndex = 2;
+            this.lblActiveStaffFullname.Text = "نام کاربر";
+            this.lblActiveStaffFullname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(254, 80);
+            this.label24.Name = "label24";
+            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label24.Size = new System.Drawing.Size(130, 50);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "کد کاربری :";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.label25.Location = new System.Drawing.Point(254, 12);
+            this.label25.Name = "label25";
+            this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label25.Size = new System.Drawing.Size(130, 50);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "کاربر :";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(364, 80);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(130, 50);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "تاریخ :";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
@@ -1456,7 +1527,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.SizeChanged += new System.EventHandler(this.mainForm_SizeChanged);
             this.tabCostumers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).EndInit();
+            this.pnlDateAndTime.ResumeLayout(false);
             this.pnlCostumerInfo.ResumeLayout(false);
             this.pnlCostumerInfo.PerformLayout();
             this.pnlCostumersDatabase.ResumeLayout(false);
@@ -1466,6 +1537,8 @@
             this.pnlMenuUp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
             this.pnlMenuDown.ResumeLayout(false);
+            this.pnlActiveStaffInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1479,8 +1552,7 @@
         private System.Windows.Forms.TabPage tabRecivedProducts;
         private System.Windows.Forms.TabPage tabSellReport;
         private System.Windows.Forms.TabPage tabCostumers;
-        private System.Windows.Forms.PictureBox picMenuUser;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlDateAndTime;
         private System.Windows.Forms.Label lblCostumersDatabase;
         private System.Windows.Forms.Label lblCostumerInfo;
         private System.Windows.Forms.FlowLayoutPanel pnlCostumerInfo;
@@ -1541,7 +1613,6 @@
         private System.Windows.Forms.Panel pnlMenuUp;
         private System.Windows.Forms.PictureBox picMenuLogo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlMenuDown;
         private System.Windows.Forms.Button btnMenuMainPage;
         private System.Windows.Forms.Button btnMenuMainPageLogo;
@@ -1564,6 +1635,13 @@
         private System.Windows.Forms.Button btnMenuTheme;
         private System.Windows.Forms.Button btnMenuLogoutLogo;
         private System.Windows.Forms.Button btnMenuLogout;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblActiveStaffStaffcode;
+        private System.Windows.Forms.Label lblActiveStaffFullname;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label2;
     }
 }
 
