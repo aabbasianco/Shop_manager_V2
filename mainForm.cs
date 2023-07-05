@@ -38,20 +38,18 @@ namespace Shop_manager_V2
         {
             if (menubarDisplayButtonBool == true)
             {
+                pnlMenuUp.BackgroundImage = null;
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
                 btnMenuRecivedProducts.Text = null;
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
-                pnlMenuUp.BackgroundImage = null;
                 btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
             }
             else
             {
+                pnlMenuUp.BackgroundImage = Properties.Resources.BackgroundEvening;
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
-                pnlMenuUp.BackgroundImage = Properties.Resources.BackgroundEvening;
                 btnMenuTheme.BackgroundImage = Properties.Resources.LightMode;
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
@@ -70,27 +68,12 @@ namespace Shop_manager_V2
         // LOGOUT MENU BUTTON MOUSE DOWN/UP --------------------------------------------------
         private void btnMenuLogout_MouseDown(object sender, MouseEventArgs e)
         {
-
-            if (menubarDisplayButtonBool == true)
-            {
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRed;
-            }
-            else
-            {
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRedWhite;
-            }
+            btnMenuLogoutLogo.BackgroundImage = Properties.Resources.LogoutLightRedWhite;
         }
 
         private void btnMenuLogout_MouseUp(object sender, MouseEventArgs e)
         {
-            if (menubarDisplayButtonBool == true)
-            {
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
-            }
-            else
-            {
-                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
-            }
+                btnMenuLogoutLogo.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
         }
 
         // COSTUMERS TAB ON SIZE CHANGE ------------------------------------------------------

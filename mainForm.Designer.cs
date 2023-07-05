@@ -103,7 +103,7 @@
             this.pnlMenuDown = new System.Windows.Forms.Panel();
             this.btnMenuMainPageLogo = new System.Windows.Forms.Button();
             this.btnMenuAboutLogo = new System.Windows.Forms.Button();
-            this.btnMenuLogout = new System.Windows.Forms.Button();
+            this.btnMenuLogoutLogo = new System.Windows.Forms.Button();
             this.btnMenuSettingLogo = new System.Windows.Forms.Button();
             this.btnMenuStaffLogo = new System.Windows.Forms.Button();
             this.btnMenuCartLogo = new System.Windows.Forms.Button();
@@ -118,7 +118,7 @@
             this.btnMenuStaff = new System.Windows.Forms.Button();
             this.btnMenuRecivedProducts = new System.Windows.Forms.Button();
             this.btnMenuCart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMenuLogout = new System.Windows.Forms.Button();
             this.btnMenuSetting = new System.Windows.Forms.Button();
             this.btnMenuAbout = new System.Windows.Forms.Button();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
@@ -202,7 +202,7 @@
             this.tabCostumers.Controls.Add(this.pnlCostumersDatabase);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
             this.tabCostumers.Name = "tabCostumers";
-            this.tabCostumers.Size = new System.Drawing.Size(1176, 928);
+            this.tabCostumers.Size = new System.Drawing.Size(1176, 919);
             this.tabCostumers.TabIndex = 8;
             this.tabCostumers.Text = "مشتریان";
             this.tabCostumers.UseVisualStyleBackColor = true;
@@ -244,7 +244,7 @@
             // 
             this.lblCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumersDatabase.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumersDatabase.Location = new System.Drawing.Point(1029, 832);
+            this.lblCostumersDatabase.Location = new System.Drawing.Point(987, 832);
             this.lblCostumersDatabase.Name = "lblCostumersDatabase";
             this.lblCostumersDatabase.Size = new System.Drawing.Size(110, 30);
             this.lblCostumersDatabase.TabIndex = 2;
@@ -255,7 +255,7 @@
             // 
             this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumerInfo.Location = new System.Drawing.Point(1006, 235);
+            this.lblCostumerInfo.Location = new System.Drawing.Point(964, 235);
             this.lblCostumerInfo.Name = "lblCostumerInfo";
             this.lblCostumerInfo.Size = new System.Drawing.Size(133, 30);
             this.lblCostumerInfo.TabIndex = 1;
@@ -268,8 +268,8 @@
             this.picMenuUser.BackColor = System.Drawing.Color.White;
             this.picMenuUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picMenuUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picMenuUser.Image = ((System.Drawing.Image)(resources.GetObject("picMenuUser.Image")));
-            this.picMenuUser.Location = new System.Drawing.Point(590, 106);
+            this.picMenuUser.Image = global::Shop_manager_V2.Properties.Resources.MaleStaff;
+            this.picMenuUser.Location = new System.Drawing.Point(604, 117);
             this.picMenuUser.Name = "picMenuUser";
             this.picMenuUser.Size = new System.Drawing.Size(113, 142);
             this.picMenuUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -323,13 +323,13 @@
             this.pnlCostumerInfo.Location = new System.Drawing.Point(34, 254);
             this.pnlCostumerInfo.Name = "pnlCostumerInfo";
             this.pnlCostumerInfo.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.pnlCostumerInfo.Size = new System.Drawing.Size(1125, 575);
+            this.pnlCostumerInfo.Size = new System.Drawing.Size(1083, 575);
             this.pnlCostumerInfo.TabIndex = 0;
             // 
             // label20
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.Location = new System.Drawing.Point(957, 10);
+            this.label20.Location = new System.Drawing.Point(915, 10);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(150, 47);
             this.label20.TabIndex = 2;
@@ -340,7 +340,7 @@
             // 
             this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupDate.Location = new System.Drawing.Point(751, 10);
+            this.lblCostumerSignupDate.Location = new System.Drawing.Point(709, 10);
             this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
             this.lblCostumerSignupDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupDate.Size = new System.Drawing.Size(200, 47);
@@ -350,7 +350,7 @@
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.Location = new System.Drawing.Point(595, 10);
+            this.label19.Location = new System.Drawing.Point(553, 10);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(150, 47);
             this.label19.TabIndex = 36;
@@ -361,7 +361,7 @@
             // 
             this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupTime.Location = new System.Drawing.Point(389, 10);
+            this.lblCostumerSignupTime.Location = new System.Drawing.Point(347, 10);
             this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
             this.lblCostumerSignupTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupTime.Size = new System.Drawing.Size(200, 47);
@@ -371,7 +371,7 @@
             // label17
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.Location = new System.Drawing.Point(233, 10);
+            this.label17.Location = new System.Drawing.Point(191, 10);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(150, 47);
             this.label17.TabIndex = 2;
@@ -383,7 +383,7 @@
             this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
-            this.lblCostumerSignupDay.Location = new System.Drawing.Point(27, 10);
+            this.lblCostumerSignupDay.Location = new System.Drawing.Point(865, 57);
             this.lblCostumerSignupDay.Name = "lblCostumerSignupDay";
             this.lblCostumerSignupDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCostumerSignupDay.Size = new System.Drawing.Size(200, 47);
@@ -393,7 +393,7 @@
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.Location = new System.Drawing.Point(957, 57);
+            this.label10.Location = new System.Drawing.Point(915, 104);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(150, 47);
             this.label10.TabIndex = 14;
@@ -413,7 +413,7 @@
             "عادی",
             "شرکت",
             "همکار"});
-            this.cmbCostumerType.Location = new System.Drawing.Point(751, 60);
+            this.cmbCostumerType.Location = new System.Drawing.Point(709, 107);
             this.cmbCostumerType.Name = "cmbCostumerType";
             this.cmbCostumerType.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumerType.TabIndex = 20;
@@ -424,7 +424,7 @@
             this.lblCostumerTypeAlert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerTypeAlert.Font = new System.Drawing.Font("Koodak", 14F);
             this.lblCostumerTypeAlert.ForeColor = System.Drawing.Color.Red;
-            this.lblCostumerTypeAlert.Location = new System.Drawing.Point(751, 107);
+            this.lblCostumerTypeAlert.Location = new System.Drawing.Point(709, 154);
             this.lblCostumerTypeAlert.Name = "lblCostumerTypeAlert";
             this.lblCostumerTypeAlert.Size = new System.Drawing.Size(356, 47);
             this.lblCostumerTypeAlert.TabIndex = 30;
@@ -435,7 +435,7 @@
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(595, 107);
+            this.label4.Location = new System.Drawing.Point(553, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 47);
             this.label4.TabIndex = 2;
@@ -445,7 +445,7 @@
             // txtCostumerFirstName
             // 
             this.txtCostumerFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerFirstName.Location = new System.Drawing.Point(389, 110);
+            this.txtCostumerFirstName.Location = new System.Drawing.Point(347, 157);
             this.txtCostumerFirstName.Name = "txtCostumerFirstName";
             this.txtCostumerFirstName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerFirstName.TabIndex = 3;
@@ -453,7 +453,7 @@
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Location = new System.Drawing.Point(233, 107);
+            this.label5.Location = new System.Drawing.Point(191, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 47);
             this.label5.TabIndex = 4;
@@ -463,7 +463,7 @@
             // txtCostumerLastName
             // 
             this.txtCostumerLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerLastName.Location = new System.Drawing.Point(27, 110);
+            this.txtCostumerLastName.Location = new System.Drawing.Point(865, 207);
             this.txtCostumerLastName.Name = "txtCostumerLastName";
             this.txtCostumerLastName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerLastName.TabIndex = 5;
@@ -471,7 +471,7 @@
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Location = new System.Drawing.Point(957, 157);
+            this.label6.Location = new System.Drawing.Point(709, 204);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 47);
             this.label6.TabIndex = 6;
@@ -481,7 +481,7 @@
             // txtCostumerUsername
             // 
             this.txtCostumerUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerUsername.Location = new System.Drawing.Point(751, 160);
+            this.txtCostumerUsername.Location = new System.Drawing.Point(503, 207);
             this.txtCostumerUsername.Name = "txtCostumerUsername";
             this.txtCostumerUsername.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerUsername.TabIndex = 7;
@@ -489,7 +489,7 @@
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(595, 157);
+            this.label7.Location = new System.Drawing.Point(347, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 47);
             this.label7.TabIndex = 8;
@@ -499,7 +499,7 @@
             // txtCostumerId
             // 
             this.txtCostumerId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerId.Location = new System.Drawing.Point(389, 160);
+            this.txtCostumerId.Location = new System.Drawing.Point(141, 207);
             this.txtCostumerId.Name = "txtCostumerId";
             this.txtCostumerId.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerId.TabIndex = 9;
@@ -507,7 +507,7 @@
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Location = new System.Drawing.Point(233, 157);
+            this.label11.Location = new System.Drawing.Point(915, 254);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 47);
             this.label11.TabIndex = 16;
@@ -517,7 +517,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompanyName.Location = new System.Drawing.Point(27, 160);
+            this.txtCompanyName.Location = new System.Drawing.Point(709, 257);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(200, 44);
             this.txtCompanyName.TabIndex = 17;
@@ -525,7 +525,7 @@
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.Location = new System.Drawing.Point(957, 207);
+            this.label8.Location = new System.Drawing.Point(553, 254);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 47);
             this.label8.TabIndex = 10;
@@ -535,7 +535,7 @@
             // txtCostumerHomePhone
             // 
             this.txtCostumerHomePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerHomePhone.Location = new System.Drawing.Point(751, 210);
+            this.txtCostumerHomePhone.Location = new System.Drawing.Point(347, 257);
             this.txtCostumerHomePhone.Name = "txtCostumerHomePhone";
             this.txtCostumerHomePhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerHomePhone.TabIndex = 11;
@@ -543,7 +543,7 @@
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Location = new System.Drawing.Point(595, 207);
+            this.label12.Location = new System.Drawing.Point(191, 254);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 47);
             this.label12.TabIndex = 18;
@@ -553,7 +553,7 @@
             // txtCostumerCellPhone
             // 
             this.txtCostumerCellPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCellPhone.Location = new System.Drawing.Point(389, 210);
+            this.txtCostumerCellPhone.Location = new System.Drawing.Point(865, 307);
             this.txtCostumerCellPhone.Name = "txtCostumerCellPhone";
             this.txtCostumerCellPhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCellPhone.TabIndex = 19;
@@ -561,7 +561,7 @@
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(233, 207);
+            this.label9.Location = new System.Drawing.Point(709, 304);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(150, 47);
             this.label9.TabIndex = 12;
@@ -571,7 +571,7 @@
             // txtCostumerEmail
             // 
             this.txtCostumerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerEmail.Location = new System.Drawing.Point(27, 210);
+            this.txtCostumerEmail.Location = new System.Drawing.Point(503, 307);
             this.txtCostumerEmail.Name = "txtCostumerEmail";
             this.txtCostumerEmail.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerEmail.TabIndex = 13;
@@ -579,7 +579,7 @@
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.Location = new System.Drawing.Point(957, 257);
+            this.label13.Location = new System.Drawing.Point(347, 304);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(150, 47);
             this.label13.TabIndex = 21;
@@ -589,7 +589,7 @@
             // txtCostumerProvince
             // 
             this.txtCostumerProvince.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerProvince.Location = new System.Drawing.Point(751, 260);
+            this.txtCostumerProvince.Location = new System.Drawing.Point(141, 307);
             this.txtCostumerProvince.Name = "txtCostumerProvince";
             this.txtCostumerProvince.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerProvince.TabIndex = 22;
@@ -597,7 +597,7 @@
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.Location = new System.Drawing.Point(595, 257);
+            this.label14.Location = new System.Drawing.Point(915, 354);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(150, 47);
             this.label14.TabIndex = 23;
@@ -607,7 +607,7 @@
             // txtCostumerCity
             // 
             this.txtCostumerCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCity.Location = new System.Drawing.Point(389, 260);
+            this.txtCostumerCity.Location = new System.Drawing.Point(709, 357);
             this.txtCostumerCity.Name = "txtCostumerCity";
             this.txtCostumerCity.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCity.TabIndex = 24;
@@ -615,7 +615,7 @@
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.Location = new System.Drawing.Point(233, 257);
+            this.label15.Location = new System.Drawing.Point(553, 354);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 47);
             this.label15.TabIndex = 25;
@@ -626,7 +626,7 @@
             // 
             this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
-            this.txtCostumerPostCode.Location = new System.Drawing.Point(27, 260);
+            this.txtCostumerPostCode.Location = new System.Drawing.Point(347, 357);
             this.txtCostumerPostCode.Name = "txtCostumerPostCode";
             this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerPostCode.TabIndex = 26;
@@ -634,7 +634,7 @@
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.Location = new System.Drawing.Point(957, 307);
+            this.label16.Location = new System.Drawing.Point(915, 404);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 47);
             this.label16.TabIndex = 27;
@@ -646,7 +646,7 @@
             this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerAddress, true);
             this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtCostumerAddress.Location = new System.Drawing.Point(27, 310);
+            this.txtCostumerAddress.Location = new System.Drawing.Point(141, 454);
             this.txtCostumerAddress.Name = "txtCostumerAddress";
             this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
             this.txtCostumerAddress.TabIndex = 29;
@@ -656,7 +656,7 @@
             // 
             this.btnCostumerInfoSave.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCostumerInfoSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoSave.Location = new System.Drawing.Point(932, 404);
+            this.btnCostumerInfoSave.Location = new System.Drawing.Point(890, 548);
             this.btnCostumerInfoSave.Name = "btnCostumerInfoSave";
             this.btnCostumerInfoSave.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoSave.TabIndex = 31;
@@ -666,7 +666,7 @@
             // btnCostumerInfoUpdate
             // 
             this.btnCostumerInfoUpdate.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(751, 404);
+            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(709, 548);
             this.btnCostumerInfoUpdate.Name = "btnCostumerInfoUpdate";
             this.btnCostumerInfoUpdate.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoUpdate.TabIndex = 33;
@@ -677,7 +677,7 @@
             // 
             this.btnCostumerInfoDelete.BackColor = System.Drawing.Color.Red;
             this.btnCostumerInfoDelete.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(570, 404);
+            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(528, 548);
             this.btnCostumerInfoDelete.Name = "btnCostumerInfoDelete";
             this.btnCostumerInfoDelete.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoDelete.TabIndex = 34;
@@ -688,7 +688,7 @@
             // 
             this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoErase, true);
             this.btnCostumerInfoErase.ForeColor = System.Drawing.Color.Red;
-            this.btnCostumerInfoErase.Location = new System.Drawing.Point(389, 404);
+            this.btnCostumerInfoErase.Location = new System.Drawing.Point(347, 548);
             this.btnCostumerInfoErase.Name = "btnCostumerInfoErase";
             this.btnCostumerInfoErase.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoErase.TabIndex = 32;
@@ -698,7 +698,7 @@
             // btnCostumerInfoChooseAsBuyer
             // 
             this.btnCostumerInfoChooseAsBuyer.ForeColor = System.Drawing.Color.BlueViolet;
-            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(389, 457);
+            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(347, 601);
             this.btnCostumerInfoChooseAsBuyer.Name = "btnCostumerInfoChooseAsBuyer";
             this.btnCostumerInfoChooseAsBuyer.Size = new System.Drawing.Size(718, 47);
             this.btnCostumerInfoChooseAsBuyer.TabIndex = 35;
@@ -726,7 +726,7 @@
             this.pnlCostumersDatabase.Location = new System.Drawing.Point(34, 851);
             this.pnlCostumersDatabase.Name = "pnlCostumersDatabase";
             this.pnlCostumersDatabase.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1125, 280);
+            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1125, 271);
             this.pnlCostumersDatabase.TabIndex = 36;
             // 
             // label18
@@ -922,7 +922,7 @@
             this.tabMainPage.Location = new System.Drawing.Point(4, 45);
             this.tabMainPage.Name = "tabMainPage";
             this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainPage.Size = new System.Drawing.Size(1176, 928);
+            this.tabMainPage.Size = new System.Drawing.Size(1176, 892);
             this.tabMainPage.TabIndex = 0;
             this.tabMainPage.Text = "صفحه اصلی";
             this.tabMainPage.UseVisualStyleBackColor = true;
@@ -947,7 +947,7 @@
             this.tabCtrlMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabCtrlMain.RightToLeftLayout = true;
             this.tabCtrlMain.SelectedIndex = 0;
-            this.tabCtrlMain.Size = new System.Drawing.Size(1184, 977);
+            this.tabCtrlMain.Size = new System.Drawing.Size(1184, 968);
             this.tabCtrlMain.TabIndex = 6;
             // 
             // pnlMenubar
@@ -959,7 +959,7 @@
             this.pnlMenubar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlMenubar.Location = new System.Drawing.Point(1184, 0);
             this.pnlMenubar.Name = "pnlMenubar";
-            this.pnlMenubar.Size = new System.Drawing.Size(300, 977);
+            this.pnlMenubar.Size = new System.Drawing.Size(300, 968);
             this.pnlMenubar.TabIndex = 0;
             // 
             // pnlMenuUp
@@ -1013,7 +1013,7 @@
             this.pnlMenuDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pnlMenuDown.Controls.Add(this.btnMenuMainPageLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuAboutLogo);
-            this.pnlMenuDown.Controls.Add(this.btnMenuLogout);
+            this.pnlMenuDown.Controls.Add(this.btnMenuLogoutLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuSettingLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuStaffLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuCartLogo);
@@ -1028,13 +1028,13 @@
             this.pnlMenuDown.Controls.Add(this.btnMenuStaff);
             this.pnlMenuDown.Controls.Add(this.btnMenuRecivedProducts);
             this.pnlMenuDown.Controls.Add(this.btnMenuCart);
-            this.pnlMenuDown.Controls.Add(this.button1);
+            this.pnlMenuDown.Controls.Add(this.btnMenuLogout);
             this.pnlMenuDown.Controls.Add(this.btnMenuSetting);
             this.pnlMenuDown.Controls.Add(this.btnMenuAbout);
             this.pnlMenuDown.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlMenuDown.Location = new System.Drawing.Point(0, 167);
+            this.pnlMenuDown.Location = new System.Drawing.Point(0, 168);
             this.pnlMenuDown.Name = "pnlMenuDown";
-            this.pnlMenuDown.Size = new System.Drawing.Size(300, 810);
+            this.pnlMenuDown.Size = new System.Drawing.Size(300, 800);
             this.pnlMenuDown.TabIndex = 38;
             // 
             // btnMenuMainPageLogo
@@ -1077,26 +1077,27 @@
             this.btnMenuAboutLogo.UseVisualStyleBackColor = false;
             this.btnMenuAboutLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
-            // btnMenuLogout
+            // btnMenuLogoutLogo
             // 
-            this.btnMenuLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMenuLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnMenuLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuLogout.BackgroundImage")));
-            this.btnMenuLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
-            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMenuLogout.Location = new System.Drawing.Point(253, 720);
-            this.btnMenuLogout.Name = "btnMenuLogout";
-            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnMenuLogout.Size = new System.Drawing.Size(35, 80);
-            this.btnMenuLogout.TabIndex = 6;
-            this.btnMenuLogout.Tag = "8";
-            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuLogout.UseVisualStyleBackColor = false;
-            this.btnMenuLogout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseDown);
-            this.btnMenuLogout.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseUp);
+            this.btnMenuLogoutLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenuLogoutLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnMenuLogoutLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuLogoutLogo.BackgroundImage")));
+            this.btnMenuLogoutLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuLogoutLogo.FlatAppearance.BorderSize = 0;
+            this.btnMenuLogoutLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenuLogoutLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLogoutLogo.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenuLogoutLogo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenuLogoutLogo.Location = new System.Drawing.Point(253, 720);
+            this.btnMenuLogoutLogo.Name = "btnMenuLogoutLogo";
+            this.btnMenuLogoutLogo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenuLogoutLogo.Size = new System.Drawing.Size(35, 80);
+            this.btnMenuLogoutLogo.TabIndex = 6;
+            this.btnMenuLogoutLogo.Tag = "8";
+            this.btnMenuLogoutLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuLogoutLogo.UseVisualStyleBackColor = false;
+            this.btnMenuLogoutLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseDown);
+            this.btnMenuLogoutLogo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseUp);
             // 
             // btnMenuSettingLogo
             // 
@@ -1364,22 +1365,22 @@
             this.btnMenuCart.UseVisualStyleBackColor = false;
             this.btnMenuCart.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
-            // button1
+            // btnMenuLogout
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(0, 720);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(240, 80);
-            this.button1.TabIndex = 6;
-            this.button1.Tag = "8";
-            this.button1.Text = "خروج";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMenuLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
+            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenuLogout.Location = new System.Drawing.Point(0, 720);
+            this.btnMenuLogout.Name = "btnMenuLogout";
+            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenuLogout.Size = new System.Drawing.Size(240, 80);
+            this.btnMenuLogout.TabIndex = 6;
+            this.btnMenuLogout.Tag = "8";
+            this.btnMenuLogout.Text = "خروج";
+            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuLogout.UseVisualStyleBackColor = false;
             // 
             // btnMenuSetting
             // 
@@ -1430,7 +1431,7 @@
             this.btnMenubarDisplay.Location = new System.Drawing.Point(1484, 0);
             this.btnMenubarDisplay.Name = "btnMenubarDisplay";
             this.btnMenubarDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnMenubarDisplay.Size = new System.Drawing.Size(20, 977);
+            this.btnMenubarDisplay.Size = new System.Drawing.Size(20, 968);
             this.btnMenubarDisplay.TabIndex = 5;
             this.btnMenubarDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
@@ -1441,7 +1442,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1504, 977);
+            this.ClientSize = new System.Drawing.Size(1504, 968);
             this.Controls.Add(this.tabCtrlMain);
             this.Controls.Add(this.pnlMenubar);
             this.Controls.Add(this.btnMenubarDisplay);
@@ -1561,8 +1562,8 @@
         private System.Windows.Forms.Button btnMenuSellReportLogo;
         private System.Windows.Forms.Button btnMenuRecivedProductsLogo;
         private System.Windows.Forms.Button btnMenuTheme;
+        private System.Windows.Forms.Button btnMenuLogoutLogo;
         private System.Windows.Forms.Button btnMenuLogout;
-        private System.Windows.Forms.Button button1;
     }
 }
 
