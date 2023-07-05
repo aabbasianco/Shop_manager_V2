@@ -23,14 +23,14 @@ namespace Shop_manager_V2
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
-            userPicProp = new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
+            //MessageBox.Show(btnMenuLogout.Location.ToString());
+            //userPicProp = new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
         private void mainForm_SizeChanged(object sender, EventArgs e)
         {
-            lblMenuColor.Height = this.Height - btnMenuMainPage.Top;
-            lblMenuColor.Top = btnMenuMainPage.Top;
+            pnlMenuDown.Height=this.Height-206;
         }
 
         // MENUBAR DISPLAY BUTTON CLICK ------------------------------------------------------
@@ -41,20 +41,12 @@ namespace Shop_manager_V2
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
                 btnMenuRecivedProducts.Text = null;
-                picMenuUser.Width = picMenuLogo.Width;
-                picMenuUser.Left = picMenuLogo.Left;
-                picMenuUser.Height = picMenuLogo.Height;
-                picMenuUser.Top = picMenuLogo.Top + picMenuUser.Height + 60;
             }
             else
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
-                picMenuUser.Width = userPicProp[0];
-                picMenuUser.Left = userPicProp[1];
-                picMenuUser.Height = userPicProp[2];
-                picMenuUser.Top = userPicProp[3];
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
         }
@@ -106,7 +98,7 @@ namespace Shop_manager_V2
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
         private void cmbCostumerType_Leave(object sender, EventArgs e)
         {
-            ComboboxCheckerFunc(cmbCostumerType, lblCostumerTypeAlert, pnlCostumerInfo);
+            ComboboxCheckerFunc(cmbCostumerType, lblCostumerTypeAlert, pnlCostumerInfo, true);
         }
 
         // FUNCTIONS *************************************************************************
@@ -121,25 +113,25 @@ namespace Shop_manager_V2
         // COSTUMERS DATABASE PANEL HIGHT AND TOP SETTER FUNCTION ----------------------------
         void DatabasePanelHeightAndTopFunc(Control mainPanel, Control topPanel, Control parent, Label title)
         {
-            mainPanel.Size = new Size(mainPanel.Width, (parent.Height - (topPanel.Top * 3 + topPanel.Height)));
-            mainPanel.Top = topPanel.Top * 2 + topPanel.Height;
-            title.Top = mainPanel.Top - 16;
+            //mainPanel.Size = new Size(mainPanel.Width, 600);
+            //mainPanel.Top = topPanel.Top + topPanel.Height+20;
+            //title.Top = mainPanel.Top - 16;
         }
 
         // COMBO BOX CHECKER FUNCTION --------------------------------------------------------
-        void ComboboxCheckerFunc(ComboBox cmb, Control lblAlert, FlowLayoutPanel pnl)
+        void ComboboxCheckerFunc(ComboBox cmb, Control lblAlert, FlowLayoutPanel pnl, bool nextLine)
         {
             if (cmb.Text.Length > 0)
             {
-                bool costumerTypeCheck = false;
+                bool checkBool = false;
                 foreach (var item in cmb.Items)
                 {
                     if (cmb.Text == item.ToString())
                     {
-                        costumerTypeCheck = true;
+                        checkBool = true;
                     }
                 }
-                if (costumerTypeCheck == false)
+                if (checkBool == false && nextLine == true)
                 {
                     pnl.SetFlowBreak(cmb, false);
                     pnl.SetFlowBreak(lblAlert, true);
@@ -154,6 +146,5 @@ namespace Shop_manager_V2
                 }
             }
         }
-
     }
 }
