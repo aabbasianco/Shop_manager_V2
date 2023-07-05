@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.btnMenubarDisplay = new System.Windows.Forms.Button();
             this.tabSetting = new System.Windows.Forms.TabPage();
             this.about = new System.Windows.Forms.TabPage();
             this.tabStaff = new System.Windows.Forms.TabPage();
@@ -37,13 +36,12 @@
             this.tabRecivedProducts = new System.Windows.Forms.TabPage();
             this.tabSellReport = new System.Windows.Forms.TabPage();
             this.tabCostumers = new System.Windows.Forms.TabPage();
-            this.picMenuUser = new System.Windows.Forms.PictureBox();
-            this.btnMenuLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCostumersDatabase = new System.Windows.Forms.Label();
             this.lblCostumerInfo = new System.Windows.Forms.Label();
+            this.picMenuUser = new System.Windows.Forms.PictureBox();
             this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.label20 = new System.Windows.Forms.Label();
             this.lblCostumerSignupDate = new System.Windows.Forms.Label();
@@ -100,10 +98,12 @@
             this.tabCtrlMain = new System.Windows.Forms.TabControl();
             this.pnlMenubar = new System.Windows.Forms.Panel();
             this.pnlMenuUp = new System.Windows.Forms.Panel();
+            this.btnMenuTheme = new System.Windows.Forms.Button();
             this.picMenuLogo = new System.Windows.Forms.PictureBox();
             this.pnlMenuDown = new System.Windows.Forms.Panel();
             this.btnMenuMainPageLogo = new System.Windows.Forms.Button();
             this.btnMenuAboutLogo = new System.Windows.Forms.Button();
+            this.btnMenuLogout = new System.Windows.Forms.Button();
             this.btnMenuSettingLogo = new System.Windows.Forms.Button();
             this.btnMenuStaffLogo = new System.Windows.Forms.Button();
             this.btnMenuCartLogo = new System.Windows.Forms.Button();
@@ -118,8 +118,10 @@
             this.btnMenuStaff = new System.Windows.Forms.Button();
             this.btnMenuRecivedProducts = new System.Windows.Forms.Button();
             this.btnMenuCart = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnMenuSetting = new System.Windows.Forms.Button();
             this.btnMenuAbout = new System.Windows.Forms.Button();
+            this.btnMenubarDisplay = new System.Windows.Forms.Button();
             this.tabCostumers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuUser)).BeginInit();
             this.pnlCostumerInfo.SuspendLayout();
@@ -131,29 +133,11 @@
             this.pnlMenuDown.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnMenubarDisplay
-            // 
-            this.btnMenubarDisplay.BackColor = System.Drawing.Color.Black;
-            this.btnMenubarDisplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenubarDisplay.BackgroundImage")));
-            this.btnMenubarDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenubarDisplay.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMenubarDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMenubarDisplay.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.btnMenubarDisplay.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMenubarDisplay.Location = new System.Drawing.Point(1489, 0);
-            this.btnMenubarDisplay.Name = "btnMenubarDisplay";
-            this.btnMenubarDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnMenubarDisplay.Size = new System.Drawing.Size(15, 977);
-            this.btnMenubarDisplay.TabIndex = 5;
-            this.btnMenubarDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenubarDisplay.UseVisualStyleBackColor = false;
-            this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
-            // 
             // tabSetting
             // 
             this.tabSetting.Location = new System.Drawing.Point(4, 45);
             this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(1181, 928);
+            this.tabSetting.Size = new System.Drawing.Size(1176, 928);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "تنظیمات";
             this.tabSetting.UseVisualStyleBackColor = true;
@@ -162,7 +146,7 @@
             // 
             this.about.Location = new System.Drawing.Point(4, 45);
             this.about.Name = "about";
-            this.about.Size = new System.Drawing.Size(1181, 928);
+            this.about.Size = new System.Drawing.Size(1176, 928);
             this.about.TabIndex = 7;
             this.about.Text = "درباره";
             this.about.UseVisualStyleBackColor = true;
@@ -171,7 +155,7 @@
             // 
             this.tabStaff.Location = new System.Drawing.Point(4, 45);
             this.tabStaff.Name = "tabStaff";
-            this.tabStaff.Size = new System.Drawing.Size(1181, 928);
+            this.tabStaff.Size = new System.Drawing.Size(1176, 928);
             this.tabStaff.TabIndex = 5;
             this.tabStaff.Text = "کارکنان";
             this.tabStaff.UseVisualStyleBackColor = true;
@@ -180,7 +164,7 @@
             // 
             this.tabCart.Location = new System.Drawing.Point(4, 45);
             this.tabCart.Name = "tabCart";
-            this.tabCart.Size = new System.Drawing.Size(1181, 928);
+            this.tabCart.Size = new System.Drawing.Size(1176, 928);
             this.tabCart.TabIndex = 4;
             this.tabCart.Text = "سبد خرید";
             this.tabCart.UseVisualStyleBackColor = true;
@@ -189,7 +173,7 @@
             // 
             this.tabRecivedProducts.Location = new System.Drawing.Point(4, 45);
             this.tabRecivedProducts.Name = "tabRecivedProducts";
-            this.tabRecivedProducts.Size = new System.Drawing.Size(1181, 928);
+            this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 928);
             this.tabRecivedProducts.TabIndex = 3;
             this.tabRecivedProducts.Text = "حواله ورود محصول";
             this.tabRecivedProducts.UseVisualStyleBackColor = true;
@@ -198,7 +182,7 @@
             // 
             this.tabSellReport.Location = new System.Drawing.Point(4, 45);
             this.tabSellReport.Name = "tabSellReport";
-            this.tabSellReport.Size = new System.Drawing.Size(1181, 928);
+            this.tabSellReport.Size = new System.Drawing.Size(1176, 928);
             this.tabSellReport.TabIndex = 2;
             this.tabSellReport.Text = "گزارش فروش";
             this.tabSellReport.UseVisualStyleBackColor = true;
@@ -208,56 +192,21 @@
             this.tabCostumers.AutoScroll = true;
             this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabCostumers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabCostumers.Controls.Add(this.picMenuUser);
             this.tabCostumers.Controls.Add(this.panel1);
             this.tabCostumers.Controls.Add(this.label2);
             this.tabCostumers.Controls.Add(this.label1);
             this.tabCostumers.Controls.Add(this.lblCostumersDatabase);
             this.tabCostumers.Controls.Add(this.lblCostumerInfo);
+            this.tabCostumers.Controls.Add(this.picMenuUser);
             this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
             this.tabCostumers.Controls.Add(this.pnlCostumersDatabase);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
             this.tabCostumers.Name = "tabCostumers";
-            this.tabCostumers.Size = new System.Drawing.Size(1181, 928);
+            this.tabCostumers.Size = new System.Drawing.Size(1176, 928);
             this.tabCostumers.TabIndex = 8;
             this.tabCostumers.Text = "مشتریان";
             this.tabCostumers.UseVisualStyleBackColor = true;
             this.tabCostumers.SizeChanged += new System.EventHandler(this.tabCostumers_SizeChanged);
-            // 
-            // picMenuUser
-            // 
-            this.picMenuUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMenuUser.BackColor = System.Drawing.Color.White;
-            this.picMenuUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picMenuUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picMenuUser.Image = ((System.Drawing.Image)(resources.GetObject("picMenuUser.Image")));
-            this.picMenuUser.Location = new System.Drawing.Point(590, 106);
-            this.picMenuUser.Name = "picMenuUser";
-            this.picMenuUser.Size = new System.Drawing.Size(113, 142);
-            this.picMenuUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMenuUser.TabIndex = 0;
-            this.picMenuUser.TabStop = false;
-            // 
-            // btnMenuLogout
-            // 
-            this.btnMenuLogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuLogout.BackgroundImage")));
-            this.btnMenuLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
-            this.btnMenuLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
-            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMenuLogout.Location = new System.Drawing.Point(253, 124);
-            this.btnMenuLogout.Name = "btnMenuLogout";
-            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnMenuLogout.Size = new System.Drawing.Size(35, 41);
-            this.btnMenuLogout.TabIndex = 5;
-            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuLogout.UseVisualStyleBackColor = false;
-            this.btnMenuLogout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseDown);
-            this.btnMenuLogout.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseUp);
             // 
             // panel1
             // 
@@ -312,6 +261,20 @@
             this.lblCostumerInfo.TabIndex = 1;
             this.lblCostumerInfo.Text = "اطلاعات کاربر";
             this.lblCostumerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picMenuUser
+            // 
+            this.picMenuUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMenuUser.BackColor = System.Drawing.Color.White;
+            this.picMenuUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picMenuUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picMenuUser.Image = ((System.Drawing.Image)(resources.GetObject("picMenuUser.Image")));
+            this.picMenuUser.Location = new System.Drawing.Point(590, 106);
+            this.picMenuUser.Name = "picMenuUser";
+            this.picMenuUser.Size = new System.Drawing.Size(113, 142);
+            this.picMenuUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMenuUser.TabIndex = 0;
+            this.picMenuUser.TabStop = false;
             // 
             // pnlCostumerInfo
             // 
@@ -949,7 +912,7 @@
             this.tabProducts.Location = new System.Drawing.Point(4, 45);
             this.tabProducts.Name = "tabProducts";
             this.tabProducts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProducts.Size = new System.Drawing.Size(1181, 928);
+            this.tabProducts.Size = new System.Drawing.Size(1176, 928);
             this.tabProducts.TabIndex = 1;
             this.tabProducts.Text = "محصولات";
             this.tabProducts.UseVisualStyleBackColor = true;
@@ -959,7 +922,7 @@
             this.tabMainPage.Location = new System.Drawing.Point(4, 45);
             this.tabMainPage.Name = "tabMainPage";
             this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainPage.Size = new System.Drawing.Size(1181, 928);
+            this.tabMainPage.Size = new System.Drawing.Size(1176, 928);
             this.tabMainPage.TabIndex = 0;
             this.tabMainPage.Text = "صفحه اصلی";
             this.tabMainPage.UseVisualStyleBackColor = true;
@@ -984,7 +947,7 @@
             this.tabCtrlMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabCtrlMain.RightToLeftLayout = true;
             this.tabCtrlMain.SelectedIndex = 0;
-            this.tabCtrlMain.Size = new System.Drawing.Size(1189, 977);
+            this.tabCtrlMain.Size = new System.Drawing.Size(1184, 977);
             this.tabCtrlMain.TabIndex = 6;
             // 
             // pnlMenubar
@@ -994,7 +957,7 @@
             this.pnlMenubar.Controls.Add(this.pnlMenuUp);
             this.pnlMenubar.Controls.Add(this.pnlMenuDown);
             this.pnlMenubar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlMenubar.Location = new System.Drawing.Point(1189, 0);
+            this.pnlMenubar.Location = new System.Drawing.Point(1184, 0);
             this.pnlMenubar.Name = "pnlMenubar";
             this.pnlMenubar.Size = new System.Drawing.Size(300, 977);
             this.pnlMenubar.TabIndex = 0;
@@ -1003,13 +966,34 @@
             // 
             this.pnlMenuUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuUp.BackgroundImage")));
             this.pnlMenuUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMenuUp.Controls.Add(this.btnMenuTheme);
             this.pnlMenuUp.Controls.Add(this.picMenuLogo);
-            this.pnlMenuUp.Controls.Add(this.btnMenuLogout);
             this.pnlMenuUp.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenuUp.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuUp.Name = "pnlMenuUp";
             this.pnlMenuUp.Size = new System.Drawing.Size(300, 168);
             this.pnlMenuUp.TabIndex = 38;
+            // 
+            // btnMenuTheme
+            // 
+            this.btnMenuTheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenuTheme.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuTheme.BackgroundImage = global::Shop_manager_V2.Properties.Resources.LightMode;
+            this.btnMenuTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuTheme.FlatAppearance.BorderSize = 0;
+            this.btnMenuTheme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenuTheme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenuTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuTheme.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenuTheme.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenuTheme.Location = new System.Drawing.Point(253, 88);
+            this.btnMenuTheme.Name = "btnMenuTheme";
+            this.btnMenuTheme.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenuTheme.Size = new System.Drawing.Size(35, 80);
+            this.btnMenuTheme.TabIndex = 1;
+            this.btnMenuTheme.Tag = "0";
+            this.btnMenuTheme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuTheme.UseVisualStyleBackColor = false;
             // 
             // picMenuLogo
             // 
@@ -1017,7 +1001,7 @@
             this.picMenuLogo.BackColor = System.Drawing.Color.Transparent;
             this.picMenuLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picMenuLogo.BackgroundImage")));
             this.picMenuLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picMenuLogo.Location = new System.Drawing.Point(90, 10);
+            this.picMenuLogo.Location = new System.Drawing.Point(90, 0);
             this.picMenuLogo.Name = "picMenuLogo";
             this.picMenuLogo.Size = new System.Drawing.Size(120, 120);
             this.picMenuLogo.TabIndex = 0;
@@ -1029,6 +1013,7 @@
             this.pnlMenuDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pnlMenuDown.Controls.Add(this.btnMenuMainPageLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuAboutLogo);
+            this.pnlMenuDown.Controls.Add(this.btnMenuLogout);
             this.pnlMenuDown.Controls.Add(this.btnMenuSettingLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuStaffLogo);
             this.pnlMenuDown.Controls.Add(this.btnMenuCartLogo);
@@ -1043,6 +1028,7 @@
             this.pnlMenuDown.Controls.Add(this.btnMenuStaff);
             this.pnlMenuDown.Controls.Add(this.btnMenuRecivedProducts);
             this.pnlMenuDown.Controls.Add(this.btnMenuCart);
+            this.pnlMenuDown.Controls.Add(this.button1);
             this.pnlMenuDown.Controls.Add(this.btnMenuSetting);
             this.pnlMenuDown.Controls.Add(this.btnMenuAbout);
             this.pnlMenuDown.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1090,6 +1076,27 @@
             this.btnMenuAboutLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuAboutLogo.UseVisualStyleBackColor = false;
             this.btnMenuAboutLogo.Click += new System.EventHandler(this.btnMenuMainPage_Click);
+            // 
+            // btnMenuLogout
+            // 
+            this.btnMenuLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenuLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnMenuLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuLogout.BackgroundImage")));
+            this.btnMenuLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuLogout.FlatAppearance.BorderSize = 0;
+            this.btnMenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLogout.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenuLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenuLogout.Location = new System.Drawing.Point(253, 720);
+            this.btnMenuLogout.Name = "btnMenuLogout";
+            this.btnMenuLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenuLogout.Size = new System.Drawing.Size(35, 80);
+            this.btnMenuLogout.TabIndex = 6;
+            this.btnMenuLogout.Tag = "8";
+            this.btnMenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuLogout.UseVisualStyleBackColor = false;
+            this.btnMenuLogout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseDown);
+            this.btnMenuLogout.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenuLogout_MouseUp);
             // 
             // btnMenuSettingLogo
             // 
@@ -1357,6 +1364,23 @@
             this.btnMenuCart.UseVisualStyleBackColor = false;
             this.btnMenuCart.Click += new System.EventHandler(this.btnMenuMainPage_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(0, 720);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(240, 80);
+            this.button1.TabIndex = 6;
+            this.button1.Tag = "8";
+            this.button1.Text = "خروج";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // btnMenuSetting
             // 
             this.btnMenuSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -1392,6 +1416,25 @@
             this.btnMenuAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuAbout.UseVisualStyleBackColor = false;
             this.btnMenuAbout.Click += new System.EventHandler(this.btnMenuMainPage_Click);
+            // 
+            // btnMenubarDisplay
+            // 
+            this.btnMenubarDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnMenubarDisplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenubarDisplay.BackgroundImage")));
+            this.btnMenubarDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenubarDisplay.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMenubarDisplay.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.btnMenubarDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenubarDisplay.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold);
+            this.btnMenubarDisplay.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMenubarDisplay.Location = new System.Drawing.Point(1484, 0);
+            this.btnMenubarDisplay.Name = "btnMenubarDisplay";
+            this.btnMenubarDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenubarDisplay.Size = new System.Drawing.Size(20, 977);
+            this.btnMenubarDisplay.TabIndex = 5;
+            this.btnMenubarDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenubarDisplay.UseVisualStyleBackColor = false;
+            this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
             // mainForm
             // 
@@ -1496,7 +1539,6 @@
         private System.Windows.Forms.Panel pnlMenubar;
         private System.Windows.Forms.Panel pnlMenuUp;
         private System.Windows.Forms.PictureBox picMenuLogo;
-        private System.Windows.Forms.Button btnMenuLogout;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlMenuDown;
@@ -1518,6 +1560,9 @@
         private System.Windows.Forms.Button btnMenuProductsLogo;
         private System.Windows.Forms.Button btnMenuSellReportLogo;
         private System.Windows.Forms.Button btnMenuRecivedProductsLogo;
+        private System.Windows.Forms.Button btnMenuTheme;
+        private System.Windows.Forms.Button btnMenuLogout;
+        private System.Windows.Forms.Button button1;
     }
 }
 

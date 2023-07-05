@@ -16,21 +16,21 @@ namespace Shop_manager_V2
         // VARIABLES -------------------------------------------------------------------------
 
         bool menubarDisplayButtonBool;
+        int[] menuLogoPicProp;
         int[] userPicProp;
 
-        // INITIALIZE COMPONENT --------------------------------------------------------------
+        // MAIN FORM ON LOAD --------------------------------------------------------------
         public mainForm()
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
-            //MessageBox.Show(btnMenuLogout.Location.ToString());
             //userPicProp = new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
         private void mainForm_SizeChanged(object sender, EventArgs e)
         {
-            pnlMenuDown.Height=this.Height-(pnlMenuUp.Height+39);
+            pnlMenuDown.Height = this.Height - (pnlMenuUp.Height + 39);
         }
 
         // MENUBAR DISPLAY BUTTON CLICK ------------------------------------------------------
@@ -41,12 +41,18 @@ namespace Shop_manager_V2
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
                 btnMenuRecivedProducts.Text = null;
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
+                pnlMenuUp.BackgroundImage = null;
+                btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
             }
             else
             {
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
+                pnlMenuUp.BackgroundImage = Properties.Resources.BackgroundEvening;
+                btnMenuTheme.BackgroundImage = Properties.Resources.LightMode;
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
         }
@@ -64,12 +70,27 @@ namespace Shop_manager_V2
         // LOGOUT MENU BUTTON MOUSE DOWN/UP --------------------------------------------------
         private void btnMenuLogout_MouseDown(object sender, MouseEventArgs e)
         {
-            btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRed;
+
+            if (menubarDisplayButtonBool == true)
+            {
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRed;
+            }
+            else
+            {
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutLightRedWhite;
+            }
         }
 
         private void btnMenuLogout_MouseUp(object sender, MouseEventArgs e)
         {
-            btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
+            if (menubarDisplayButtonBool == true)
+            {
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRed;
+            }
+            else
+            {
+                btnMenuLogout.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
+            }
         }
 
         // COSTUMERS TAB ON SIZE CHANGE ------------------------------------------------------
