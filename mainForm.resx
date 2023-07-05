@@ -2750,6 +2750,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHIAAACPCAYAAAAm0Y+6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
@@ -3002,4 +3003,6 @@
         VvRjJ8HQvHv5Bwof6ymv+6/+AAAAAElFTkSuQmCC
 </value>
   </data>
+=======
+>>>>>>> 60ac0f1edad86f4138791fed79301c4fc95efd50
 </root>
