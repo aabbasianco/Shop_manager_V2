@@ -47,6 +47,7 @@ namespace Shop_manager_V2
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
                 btnMenuRecivedProducts.Text = null;
                 btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
+
             }
             else
             {
@@ -100,7 +101,7 @@ namespace Shop_manager_V2
                 pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
             }
             CostumerInfoPanelHeight();
-            DatabasePanelHeightAndTopFunc(pnlCostumersDatabase, pnlCostumerInfo, tabCostumers, lblCostumersDatabase);
+            CostumerInfoPanelHeightAndTopFunc( pnlCostumerInfo, pnlCostumersDatabase, tabCostumers, lblCostumerInfo);
         }
 
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
@@ -131,15 +132,14 @@ namespace Shop_manager_V2
         // COSTUMER INFO PANEL HIGHT SETTER FUNCTION -----------------------------------------
         void CostumerInfoPanelHeight()
         {
-            pnlCostumerInfo.Size = new Size(pnlCostumerInfo.Width, (btnCostumerInfoChooseAsBuyer.Top +
-                btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top));
+            pnlCostumerInfo.Height = btnCostumerInfoChooseAsBuyer.Top + btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top;
         }
 
         // COSTUMERS DATABASE PANEL HIGHT AND TOP SETTER FUNCTION ----------------------------
-        void DatabasePanelHeightAndTopFunc(Control mainPanel, Control topPanel, Control parent, Label title)
+        void CostumerInfoPanelHeightAndTopFunc(Control mainPanel, Control topPanel, Control parent, Label title)
         {
             //mainPanel.Size = new Size(mainPanel.Width, 600);
-            mainPanel.Top = topPanel.Top + topPanel.Height + 20;
+            mainPanel.Top = topPanel.Top + topPanel.Height + 30;
             title.Top = mainPanel.Top - 16;
         }
 
