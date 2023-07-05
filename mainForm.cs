@@ -24,7 +24,6 @@ namespace Shop_manager_V2
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
-            //userPicProp = new int[4] { picMenuUser.Width, picMenuUser.Left, picMenuUser.Height, picMenuUser.Top };
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
@@ -118,8 +117,8 @@ namespace Shop_manager_V2
         void DatabasePanelHeightAndTopFunc(Control mainPanel, Control topPanel, Control parent, Label title)
         {
             //mainPanel.Size = new Size(mainPanel.Width, 600);
-            //mainPanel.Top = topPanel.Top + topPanel.Height+20;
-            //title.Top = mainPanel.Top - 16;
+            mainPanel.Top = topPanel.Top + topPanel.Height + 20;
+            title.Top = mainPanel.Top - 16;
         }
 
         // COMBO BOX CHECKER FUNCTION --------------------------------------------------------
