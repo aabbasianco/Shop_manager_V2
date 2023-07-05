@@ -30,7 +30,7 @@ namespace Shop_manager_V2
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
         private void mainForm_SizeChanged(object sender, EventArgs e)
         {
-            pnlMenuDown.Height=this.Height-206;
+            pnlMenuDown.Height=this.Height-(pnlMenuUp.Height+39);
         }
 
         // MENUBAR DISPLAY BUTTON CLICK ------------------------------------------------------
