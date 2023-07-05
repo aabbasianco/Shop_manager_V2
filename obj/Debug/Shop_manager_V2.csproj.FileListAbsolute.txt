@@ -21,3 +21,15 @@ D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.exe
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.pdb
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.loginForm.resources
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\bin\Debug\Shop_manager_V2.exe.config
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\bin\Debug\Shop_manager_V2.exe
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\bin\Debug\Shop_manager_V2.pdb
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.csproj.AssemblyReference.cache
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.csproj.SuggestedBindingRedirects.cache
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.loginForm.resources
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.mainForm.resources
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.Properties.Resources.resources
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.csproj.GenerateResource.cache
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.csproj.CoreCompileInputs.cache
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.exe
+C:\Users\IDEAPAD\Downloads\Shop_manager_V2-5cfff37ef62db97098bbab121121542696da95ff\obj\Debug\Shop_manager_V2.pdb

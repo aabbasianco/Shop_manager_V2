@@ -101,14 +101,10 @@ namespace Shop_manager_V2
                 pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
             }
             CostumerInfoPanelHeight();
-<<<<<<< HEAD
             CostumerInfoPanelHeightAndTopFunc(pnlCostumerInfo, pnlCostumersDatabase, tabCostumers, lblCostumerInfo);
             pnlCostumersDatabaseSearch.Height = lblCostumersDatabaseSearchStandardHour.Top +90+ lblCostumersDatabaseSearchStandardHour.Height+
                 cmbCostumersDatabaseSearchStandardGroup.Top;
             dgvAllCostumers.Height = pnlCostumersDatabase.Height - pnlCostumersDatabaseSearch.Height - pnlCostumersDatabaseSearch.Top- 10; 
-=======
-            CostumerInfoPanelHeightAndTopFunc( pnlCostumerInfo, pnlCostumersDatabase, tabCostumers, lblCostumerInfo);
->>>>>>> 60ac0f1edad86f4138791fed79301c4fc95efd50
         }
 
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
