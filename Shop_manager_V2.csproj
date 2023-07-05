@@ -299,5 +299,35 @@
   <ItemGroup>
     <None Include="Resources\RectangleFrame.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-11-1280x720-landscape-microsoft-4k-24110.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surface-1280x720-windows-10x-microsoft-4k-23138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutLightRedWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutDarkRedWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DarkMode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DarkModeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightMode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightModeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangleFrame2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

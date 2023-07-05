@@ -73,6 +73,26 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackgroundEvening {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundEvening", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BackgroundMorning {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundMorning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cart {
             get {
                 object obj = ResourceManager.GetObject("Cart", resourceCulture);
@@ -116,6 +136,26 @@ namespace Shop_manager_V2.Properties {
         internal static System.Drawing.Bitmap CloseLock {
             get {
                 object obj = ResourceManager.GetObject("CloseLock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkMode {
+            get {
+                object obj = ResourceManager.GetObject("DarkMode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkModeWhite {
+            get {
+                object obj = ResourceManager.GetObject("DarkModeWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +313,26 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LightMode {
+            get {
+                object obj = ResourceManager.GetObject("LightMode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightModeWhite {
+            get {
+                object obj = ResourceManager.GetObject("LightModeWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginFormBackground {
             get {
                 object obj = ResourceManager.GetObject("LoginFormBackground", resourceCulture);
@@ -303,9 +363,29 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoutDarkRedWhite {
+            get {
+                object obj = ResourceManager.GetObject("LogoutDarkRedWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoutLightRed {
             get {
                 object obj = ResourceManager.GetObject("LogoutLightRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoutLightRedWhite {
+            get {
+                object obj = ResourceManager.GetObject("LogoutLightRedWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,6 +553,16 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RectangleFrame2 {
+            get {
+                object obj = ResourceManager.GetObject("RectangleFrame2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Save {
             get {
                 object obj = ResourceManager.GetObject("Save", resourceCulture);
@@ -543,9 +633,9 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Textbox__2_ {
+        internal static System.Drawing.Bitmap Textbox2 {
             get {
-                object obj = ResourceManager.GetObject("Textbox__2_", resourceCulture);
+                object obj = ResourceManager.GetObject("Textbox2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

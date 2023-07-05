@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.chkRememberme = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
             this.picCloseLock = new System.Windows.Forms.PictureBox();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.picPasswordTextbox = new System.Windows.Forms.PictureBox();
             this.picUsernameTextbox = new System.Windows.Forms.PictureBox();
+            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.picSmallLogo = new System.Windows.Forms.PictureBox();
@@ -58,8 +58,8 @@
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pnlLogin.Controls.Add(this.textBox2);
-            this.pnlLogin.Controls.Add(this.textBox1);
+            this.pnlLogin.Controls.Add(this.txtPassword);
+            this.pnlLogin.Controls.Add(this.txtUsername);
             this.pnlLogin.Controls.Add(this.btnLogin);
             this.pnlLogin.Controls.Add(this.chkRememberme);
             this.pnlLogin.Controls.Add(this.label3);
@@ -77,30 +77,28 @@
             this.pnlLogin.Size = new System.Drawing.Size(450, 611);
             this.pnlLogin.TabIndex = 0;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.AccessibleDescription = "scsxdxc";
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Koodak", 15F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(132, 309);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(228, 35);
-            this.textBox2.TabIndex = 5;
+            this.txtPassword.AccessibleDescription = "scsxdxc";
+            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 16F);
+            this.txtPassword.Location = new System.Drawing.Point(132, 312);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(228, 27);
+            this.txtPassword.TabIndex = 5;
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.AccessibleDescription = "scsxdxc";
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Koodak", 15F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(132, 213);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(228, 35);
-            this.textBox1.TabIndex = 5;
+            this.txtUsername.AccessibleDescription = "scsxdxc";
+            this.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Montserrat", 16F);
+            this.txtUsername.Location = new System.Drawing.Point(132, 216);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(228, 27);
+            this.txtUsername.TabIndex = 5;
             // 
             // btnLogin
             // 
@@ -122,6 +120,7 @@
             this.chkRememberme.TabIndex = 3;
             this.chkRememberme.Text = "نمایش رمز";
             this.chkRememberme.UseVisualStyleBackColor = true;
+            this.chkRememberme.CheckedChanged += new System.EventHandler(this.chkRememberme_CheckedChanged);
             // 
             // label3
             // 
@@ -171,11 +170,6 @@
             this.label2.TabIndex = 1;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tmrWelcomeLabel
-            // 
-            this.tmrWelcomeLabel.Interval = 70;
-            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
-            // 
             // picCloseLock
             // 
             this.picCloseLock.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -223,6 +217,11 @@
             this.picUsernameTextbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUsernameTextbox.TabIndex = 0;
             this.picUsernameTextbox.TabStop = false;
+            // 
+            // tmrWelcomeLabel
+            // 
+            this.tmrWelcomeLabel.Interval = 70;
+            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
             // 
             // pnlLogo
             // 
@@ -276,6 +275,7 @@
             this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "loginForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "صفحه ورود";
             this.TopMost = true;
             this.pnlLogin.ResumeLayout(false);
@@ -304,10 +304,10 @@
         private System.Windows.Forms.PictureBox picPasswordTextbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox chkRememberme;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Timer tmrWelcomeLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
     }
