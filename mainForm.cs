@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,12 +19,16 @@ namespace Shop_manager_V2
         bool menubarDisplayButtonBool;
         int[] menuLogoPicProp;
         int[] userPicProp;
+        Control[] costumersDatabaseSearchControlsArr;
 
         // MAIN FORM ON LOAD --------------------------------------------------------------
         public mainForm()
         {
             InitializeComponent();
             menubarDisplayButtonBool = true;
+            costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
+            cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
+            lblCostumersDatabaseSearchStandardHour};
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------
@@ -72,7 +77,7 @@ namespace Shop_manager_V2
 
         private void btnMenuLogout_MouseUp(object sender, MouseEventArgs e)
         {
-                btnMenuLogoutLogo.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
+            btnMenuLogoutLogo.BackgroundImage = Properties.Resources.LogoutDarkRedWhite;
         }
 
         // COSTUMERS TAB ON SIZE CHANGE ------------------------------------------------------
@@ -101,7 +106,138 @@ namespace Shop_manager_V2
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
         private void cmbCostumerType_Leave(object sender, EventArgs e)
         {
-            ComboboxCheckerFunc(cmbCostumerType, lblCostumerTypeAlert, pnlCostumerInfo, true);
+            if (((ComboBox)sender).Text.Length > 0)
+            {
+                bool checkBool = false;
+                foreach (var item in ((ComboBox)sender).Items)
+                {
+                    if (((ComboBox)sender).Text == item.ToString())
+                    {
+                        checkBool = true;
+                    }
+                }
+                if (checkBool == false)
+                {
+                    MessageBox.Show("لطفا تنها از مقادیر تعریف شده استفاده نمایید", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ((ComboBox)sender).Text = null;
+                    ((ComboBox)sender).Focus();
+                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, txtCostumersDatabaseSearchNormal, false);
+                }
+            }
+
+            switch (((ComboBox)sender).Name)
+            {
+                case "cmbCostumersDatabaseSearchStandardGroup":
+                    {
+                        switch (((ComboBox)sender).SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, txtCostumersDatabaseSearchNormal, true);
+                                }
+                                break;
+                            case 1:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPersonalInfo, true);
+                                }
+                                break;
+                            case 2:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPlaceInfo, true);
+                                }
+                                break;
+                            case 3:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardDate, true);
+                                }
+                                break;
+                        }
+                    }
+                    break;
+                case "cmbCostumersDatabaseSearchStandardPersonalInfo":
+                    {
+                        switch (((ComboBox)sender).SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, txtCostumersDatabaseSearchNormal, true);
+                                }
+                                break;
+                            case 1:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPersonalInfo, true);
+                                }
+                                break;
+                            case 2:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPlaceInfo, true);
+                                }
+                                break;
+                            case 3:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardDate, true);
+                                }
+                                break;
+                        }
+                    }
+                    break;
+                case "cmbCostumersDatabaseSearchStandardPlaceInfo":
+                    {
+                        switch (((ComboBox)sender).SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, txtCostumersDatabaseSearchNormal, true);
+                                }
+                                break;
+                            case 1:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPersonalInfo, true);
+                                }
+                                break;
+                            case 2:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPlaceInfo, true);
+                                }
+                                break;
+                            case 3:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardDate, true);
+                                }
+                                break;
+                        }
+                    }
+                    break;
+                case "cmbCostumersDatabaseSearchStandardDate":
+                    {
+                        switch (((ComboBox)sender).SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, txtCostumersDatabaseSearchNormal, true);
+                                }
+                                break;
+                            case 1:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPersonalInfo, true);
+                                }
+                                break;
+                            case 2:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardPlaceInfo, true);
+                                }
+                                break;
+                            case 3:
+                                {
+                                    InvisibleSetterFunc(costumersDatabaseSearchControlsArr, cmbCostumersDatabaseSearchStandardDate, true);
+                                }
+                                break;
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         // FUNCTIONS *************************************************************************
@@ -121,32 +257,28 @@ namespace Shop_manager_V2
             title.Top = mainPanel.Top - 16;
         }
 
-        // COMBO BOX CHECKER FUNCTION --------------------------------------------------------
-        void ComboboxCheckerFunc(ComboBox cmb, Control lblAlert, FlowLayoutPanel pnl, bool nextLine)
+        // INVISIBLE SETTER FUNCTION --------------------------------------------------------
+        static void InvisibleSetterFunc(Control[] _invisibleArray, Control[] _visibleControls, bool _boolean)
         {
-            if (cmb.Text.Length > 0)
+            foreach (var item in _invisibleArray)
             {
-                bool checkBool = false;
-                foreach (var item in cmb.Items)
-                {
-                    if (cmb.Text == item.ToString())
-                    {
-                        checkBool = true;
-                    }
-                }
-                if (checkBool == false && nextLine == true)
-                {
-                    pnl.SetFlowBreak(cmb, false);
-                    pnl.SetFlowBreak(lblAlert, true);
-                    lblAlert.Visible = true;
-                    cmb.Text = null;
-                }
-                else
-                {
-                    lblAlert.Visible = false;
-                    pnl.SetFlowBreak(lblAlert, false);
-                    pnl.SetFlowBreak(cmb, true);
-                }
+                item.Visible = false;
+            }
+            if (_boolean == true)
+            {
+                foreach (var item in _visibleControls)
+                    item.Visible = true;
+            }
+        }
+        static void InvisibleSetterFunc(Control[] invisibleArray, Control visibleControl, bool _boolean)
+        {
+            foreach (var item in invisibleArray)
+            {
+                item.Visible = false;
+            }
+            if (_boolean == true)
+            {
+                visibleControl.Visible = true;
             }
         }
     }
