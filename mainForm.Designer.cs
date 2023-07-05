@@ -127,6 +127,7 @@
             this.btnMenuSetting = new System.Windows.Forms.Button();
             this.btnMenuAbout = new System.Windows.Forms.Button();
             this.btnMenubarDisplay = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabCostumers.SuspendLayout();
             this.pnlCostumersDatabase.SuspendLayout();
             this.pnlCostumersDatabaseSearch.SuspendLayout();
@@ -139,6 +140,7 @@
             this.pnlMenuUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
             this.pnlMenuDown.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabSetting
@@ -218,15 +220,17 @@
             // 
             this.lblCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumersDatabase.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumersDatabase.Location = new System.Drawing.Point(918, 707);
+            this.lblCostumersDatabase.Location = new System.Drawing.Point(981, 710);
             this.lblCostumersDatabase.Name = "lblCostumersDatabase";
-            this.lblCostumersDatabase.Size = new System.Drawing.Size(110, 30);
+            this.lblCostumersDatabase.Size = new System.Drawing.Size(140, 30);
             this.lblCostumersDatabase.TabIndex = 2;
-            this.lblCostumersDatabase.Text = "پایگاه داده";
+            this.lblCostumersDatabase.Text = "لیست مشتریان";
             this.lblCostumersDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlCostumersDatabase
             // 
+            this.pnlCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlCostumersDatabase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumersDatabase.Controls.Add(this.pnlCostumersDatabaseSearch);
             this.pnlCostumersDatabase.Location = new System.Drawing.Point(20, 727);
@@ -238,22 +242,17 @@
             // 
             this.pnlCostumersDatabaseSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.cmbCostumersDatabaseSearchStandardGroup);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.lblCostumersDatabaseSearchStandardHour);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.lblCostumersDatabaseSearchStandardDate);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.txtCostumersDatabaseSearchNormal);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.cmbCostumersDatabaseSearchStandardDate);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.cmbCostumersDatabaseSearchStandardPlaceInfo);
-            this.pnlCostumersDatabaseSearch.Controls.Add(this.cmbCostumersDatabaseSearchStandardPersonalInfo);
+            this.pnlCostumersDatabaseSearch.Controls.Add(this.flowLayoutPanel1);
             this.pnlCostumersDatabaseSearch.Location = new System.Drawing.Point(17, 23);
             this.pnlCostumersDatabaseSearch.Name = "pnlCostumersDatabaseSearch";
-            this.pnlCostumersDatabaseSearch.Size = new System.Drawing.Size(1083, 176);
+            this.pnlCostumersDatabaseSearch.Size = new System.Drawing.Size(1083, 150);
             this.pnlCostumersDatabaseSearch.TabIndex = 104;
             this.pnlCostumersDatabaseSearch.TabStop = false;
             this.pnlCostumersDatabaseSearch.Text = "جستجو بر اساس";
             // 
             // cmbCostumersDatabaseSearchStandardGroup
             // 
+            this.cmbCostumersDatabaseSearchStandardGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCostumersDatabaseSearchStandardGroup.AutoCompleteCustomSource.AddRange(new string[] {
             "نام کاربری",
             "مشخصات فرد",
@@ -267,7 +266,7 @@
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(785, 43);
+            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(859, 3);
             this.cmbCostumersDatabaseSearchStandardGroup.Name = "cmbCostumersDatabaseSearchStandardGroup";
             this.cmbCostumersDatabaseSearchStandardGroup.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardGroup.TabIndex = 20;
@@ -276,11 +275,12 @@
             // 
             // lblCostumersDatabaseSearchStandardHour
             // 
+            this.lblCostumersDatabaseSearchStandardHour.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumersDatabaseSearchStandardHour.BeepOnError = true;
             this.lblCostumersDatabaseSearchStandardHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardHour.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardHour.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(373, 106);
+            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(653, 53);
             this.lblCostumersDatabaseSearchStandardHour.Mask = "00:00";
             this.lblCostumersDatabaseSearchStandardHour.Name = "lblCostumersDatabaseSearchStandardHour";
             this.lblCostumersDatabaseSearchStandardHour.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -288,14 +288,14 @@
             this.lblCostumersDatabaseSearchStandardHour.TabIndex = 103;
             this.lblCostumersDatabaseSearchStandardHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lblCostumersDatabaseSearchStandardHour.ValidatingType = typeof(System.DateTime);
-            this.lblCostumersDatabaseSearchStandardHour.Visible = false;
             // 
             // lblCostumersDatabaseSearchStandardDate
             // 
+            this.lblCostumersDatabaseSearchStandardDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumersDatabaseSearchStandardDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardDate.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardDate.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(579, 106);
+            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(859, 53);
             this.lblCostumersDatabaseSearchStandardDate.Mask = "0000/00/00";
             this.lblCostumersDatabaseSearchStandardDate.Name = "lblCostumersDatabaseSearchStandardDate";
             this.lblCostumersDatabaseSearchStandardDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -303,22 +303,22 @@
             this.lblCostumersDatabaseSearchStandardDate.TabIndex = 102;
             this.lblCostumersDatabaseSearchStandardDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lblCostumersDatabaseSearchStandardDate.ValidatingType = typeof(System.DateTime);
-            this.lblCostumersDatabaseSearchStandardDate.Visible = false;
             // 
             // txtCostumersDatabaseSearchNormal
             // 
+            this.txtCostumersDatabaseSearchNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostumersDatabaseSearchNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCostumersDatabaseSearchNormal.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(785, 106);
+            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(35, 3);
             this.txtCostumersDatabaseSearchNormal.Multiline = true;
             this.txtCostumersDatabaseSearchNormal.Name = "txtCostumersDatabaseSearchNormal";
             this.txtCostumersDatabaseSearchNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtCostumersDatabaseSearchNormal.Size = new System.Drawing.Size(200, 44);
             this.txtCostumersDatabaseSearchNormal.TabIndex = 22;
-            this.txtCostumersDatabaseSearchNormal.Visible = false;
             // 
             // cmbCostumersDatabaseSearchStandardDate
             // 
+            this.cmbCostumersDatabaseSearchStandardDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCostumersDatabaseSearchStandardDate.AutoCompleteCustomSource.AddRange(new string[] {
             "امروز",
             "دیروز",
@@ -336,16 +336,16 @@
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(167, 43);
+            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(241, 3);
             this.cmbCostumersDatabaseSearchStandardDate.Name = "cmbCostumersDatabaseSearchStandardDate";
             this.cmbCostumersDatabaseSearchStandardDate.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardDate.TabIndex = 36;
-            this.cmbCostumersDatabaseSearchStandardDate.Visible = false;
             this.cmbCostumersDatabaseSearchStandardDate.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
             this.cmbCostumersDatabaseSearchStandardDate.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // cmbCostumersDatabaseSearchStandardPlaceInfo
             // 
+            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.AutoCompleteCustomSource.AddRange(new string[] {
             "نام شرکت",
             "تلفن ثابت",
@@ -363,16 +363,16 @@
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(373, 43);
+            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(447, 3);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Name = "cmbCostumersDatabaseSearchStandardPlaceInfo";
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.TabIndex = 35;
-            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Visible = false;
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // cmbCostumersDatabaseSearchStandardPersonalInfo
             // 
+            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.AutoCompleteCustomSource.AddRange(new string[] {
             "نام",
             "نام خانوادگی",
@@ -388,11 +388,10 @@
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(579, 43);
+            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(653, 3);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Name = "cmbCostumersDatabaseSearchStandardPersonalInfo";
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.TabIndex = 32;
-            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Visible = false;
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
@@ -429,6 +428,7 @@
             // 
             this.labelCostumersTabTodayDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayDate.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayDate.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(269, 24);
@@ -454,6 +454,7 @@
             // 
             this.labelCostumersTabTodayHour.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayHour.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayHour.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayHour.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayHour.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(27, 24);
@@ -479,6 +480,7 @@
             // 
             this.labelCostumersTabTodayWeekday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayWeekday.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayWeekday.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayWeekday.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayWeekday.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(269, 69);
@@ -519,9 +521,10 @@
             // lblActiveStaffStaffcode
             // 
             this.lblActiveStaffStaffcode.BackColor = System.Drawing.Color.Transparent;
+            this.lblActiveStaffStaffcode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblActiveStaffStaffcode.Font = new System.Drawing.Font("Tahoma", 16F);
             this.lblActiveStaffStaffcode.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblActiveStaffStaffcode.Location = new System.Drawing.Point(47, 78);
+            this.lblActiveStaffStaffcode.Location = new System.Drawing.Point(38, 78);
             this.lblActiveStaffStaffcode.Name = "lblActiveStaffStaffcode";
             this.lblActiveStaffStaffcode.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblActiveStaffStaffcode.Size = new System.Drawing.Size(220, 50);
@@ -532,12 +535,13 @@
             // lblActiveStaffFullname
             // 
             this.lblActiveStaffFullname.BackColor = System.Drawing.Color.Transparent;
+            this.lblActiveStaffFullname.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblActiveStaffFullname.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
             this.lblActiveStaffFullname.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblActiveStaffFullname.Location = new System.Drawing.Point(96, 17);
+            this.lblActiveStaffFullname.Location = new System.Drawing.Point(38, 17);
             this.lblActiveStaffFullname.Name = "lblActiveStaffFullname";
             this.lblActiveStaffFullname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblActiveStaffFullname.Size = new System.Drawing.Size(220, 50);
+            this.lblActiveStaffFullname.Size = new System.Drawing.Size(269, 50);
             this.lblActiveStaffFullname.TabIndex = 2;
             this.lblActiveStaffFullname.Text = "ابوالفضل عباسیان";
             this.lblActiveStaffFullname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -546,7 +550,7 @@
             // 
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(256, 80);
+            this.label24.Location = new System.Drawing.Point(247, 80);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label24.Size = new System.Drawing.Size(130, 50);
@@ -558,7 +562,7 @@
             // 
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label25.Location = new System.Drawing.Point(256, 17);
+            this.label25.Location = new System.Drawing.Point(247, 17);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label25.Size = new System.Drawing.Size(130, 50);
@@ -570,7 +574,7 @@
             // 
             this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumerInfo.Location = new System.Drawing.Point(888, 183);
+            this.lblCostumerInfo.Location = new System.Drawing.Point(981, 183);
             this.lblCostumerInfo.Name = "lblCostumerInfo";
             this.lblCostumerInfo.Size = new System.Drawing.Size(140, 30);
             this.lblCostumerInfo.TabIndex = 1;
@@ -640,6 +644,7 @@
             // 
             this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDate.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupDate.Location = new System.Drawing.Point(744, 10);
             this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
@@ -662,6 +667,7 @@
             // 
             this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupTime.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupTime.Location = new System.Drawing.Point(382, 10);
             this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
@@ -684,6 +690,7 @@
             // 
             this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDay.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
             this.lblCostumerSignupDay.Location = new System.Drawing.Point(20, 10);
@@ -726,7 +733,7 @@
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(950, 104);
+            this.label4.Location = new System.Drawing.Point(950, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 47);
             this.label4.TabIndex = 2;
@@ -736,7 +743,7 @@
             // txtCostumerFirstName
             // 
             this.txtCostumerFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerFirstName.Location = new System.Drawing.Point(744, 107);
+            this.txtCostumerFirstName.Location = new System.Drawing.Point(744, 110);
             this.txtCostumerFirstName.Name = "txtCostumerFirstName";
             this.txtCostumerFirstName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerFirstName.TabIndex = 3;
@@ -744,7 +751,7 @@
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Location = new System.Drawing.Point(588, 104);
+            this.label5.Location = new System.Drawing.Point(588, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 47);
             this.label5.TabIndex = 4;
@@ -754,7 +761,7 @@
             // txtCostumerLastName
             // 
             this.txtCostumerLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerLastName.Location = new System.Drawing.Point(382, 107);
+            this.txtCostumerLastName.Location = new System.Drawing.Point(382, 110);
             this.txtCostumerLastName.Name = "txtCostumerLastName";
             this.txtCostumerLastName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerLastName.TabIndex = 5;
@@ -762,7 +769,7 @@
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Location = new System.Drawing.Point(226, 104);
+            this.label6.Location = new System.Drawing.Point(226, 107);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 47);
             this.label6.TabIndex = 6;
@@ -772,7 +779,7 @@
             // txtCostumerUsername
             // 
             this.txtCostumerUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerUsername.Location = new System.Drawing.Point(20, 107);
+            this.txtCostumerUsername.Location = new System.Drawing.Point(20, 110);
             this.txtCostumerUsername.Name = "txtCostumerUsername";
             this.txtCostumerUsername.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerUsername.TabIndex = 7;
@@ -780,7 +787,7 @@
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(950, 154);
+            this.label7.Location = new System.Drawing.Point(950, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 47);
             this.label7.TabIndex = 8;
@@ -790,7 +797,7 @@
             // txtCostumerId
             // 
             this.txtCostumerId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerId.Location = new System.Drawing.Point(744, 157);
+            this.txtCostumerId.Location = new System.Drawing.Point(744, 160);
             this.txtCostumerId.Name = "txtCostumerId";
             this.txtCostumerId.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerId.TabIndex = 9;
@@ -798,7 +805,7 @@
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Location = new System.Drawing.Point(588, 154);
+            this.label11.Location = new System.Drawing.Point(588, 157);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 47);
             this.label11.TabIndex = 16;
@@ -808,7 +815,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompanyName.Location = new System.Drawing.Point(382, 157);
+            this.txtCompanyName.Location = new System.Drawing.Point(382, 160);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(200, 44);
             this.txtCompanyName.TabIndex = 17;
@@ -816,7 +823,7 @@
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.Location = new System.Drawing.Point(226, 154);
+            this.label8.Location = new System.Drawing.Point(226, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 47);
             this.label8.TabIndex = 10;
@@ -826,7 +833,7 @@
             // txtCostumerHomePhone
             // 
             this.txtCostumerHomePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerHomePhone.Location = new System.Drawing.Point(20, 157);
+            this.txtCostumerHomePhone.Location = new System.Drawing.Point(20, 160);
             this.txtCostumerHomePhone.Name = "txtCostumerHomePhone";
             this.txtCostumerHomePhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerHomePhone.TabIndex = 11;
@@ -834,7 +841,7 @@
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Location = new System.Drawing.Point(950, 204);
+            this.label12.Location = new System.Drawing.Point(950, 207);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 47);
             this.label12.TabIndex = 18;
@@ -844,7 +851,7 @@
             // txtCostumerCellPhone
             // 
             this.txtCostumerCellPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCellPhone.Location = new System.Drawing.Point(744, 207);
+            this.txtCostumerCellPhone.Location = new System.Drawing.Point(744, 210);
             this.txtCostumerCellPhone.Name = "txtCostumerCellPhone";
             this.txtCostumerCellPhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCellPhone.TabIndex = 19;
@@ -852,7 +859,7 @@
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(588, 204);
+            this.label9.Location = new System.Drawing.Point(588, 207);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(150, 47);
             this.label9.TabIndex = 12;
@@ -862,7 +869,7 @@
             // txtCostumerEmail
             // 
             this.txtCostumerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerEmail.Location = new System.Drawing.Point(382, 207);
+            this.txtCostumerEmail.Location = new System.Drawing.Point(382, 210);
             this.txtCostumerEmail.Name = "txtCostumerEmail";
             this.txtCostumerEmail.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerEmail.TabIndex = 13;
@@ -870,7 +877,7 @@
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.Location = new System.Drawing.Point(226, 204);
+            this.label13.Location = new System.Drawing.Point(226, 207);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(150, 47);
             this.label13.TabIndex = 21;
@@ -880,7 +887,7 @@
             // txtCostumerProvince
             // 
             this.txtCostumerProvince.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerProvince.Location = new System.Drawing.Point(20, 207);
+            this.txtCostumerProvince.Location = new System.Drawing.Point(20, 210);
             this.txtCostumerProvince.Name = "txtCostumerProvince";
             this.txtCostumerProvince.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerProvince.TabIndex = 22;
@@ -888,7 +895,7 @@
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.Location = new System.Drawing.Point(950, 254);
+            this.label14.Location = new System.Drawing.Point(950, 257);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(150, 47);
             this.label14.TabIndex = 23;
@@ -898,7 +905,7 @@
             // txtCostumerCity
             // 
             this.txtCostumerCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCity.Location = new System.Drawing.Point(744, 257);
+            this.txtCostumerCity.Location = new System.Drawing.Point(744, 260);
             this.txtCostumerCity.Name = "txtCostumerCity";
             this.txtCostumerCity.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCity.TabIndex = 24;
@@ -906,7 +913,7 @@
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.Location = new System.Drawing.Point(588, 254);
+            this.label15.Location = new System.Drawing.Point(588, 257);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 47);
             this.label15.TabIndex = 25;
@@ -917,7 +924,7 @@
             // 
             this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
-            this.txtCostumerPostCode.Location = new System.Drawing.Point(382, 257);
+            this.txtCostumerPostCode.Location = new System.Drawing.Point(382, 260);
             this.txtCostumerPostCode.Name = "txtCostumerPostCode";
             this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerPostCode.TabIndex = 26;
@@ -925,7 +932,7 @@
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.Location = new System.Drawing.Point(950, 304);
+            this.label16.Location = new System.Drawing.Point(950, 307);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 47);
             this.label16.TabIndex = 27;
@@ -937,7 +944,7 @@
             this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerAddress, true);
             this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtCostumerAddress.Location = new System.Drawing.Point(20, 307);
+            this.txtCostumerAddress.Location = new System.Drawing.Point(20, 310);
             this.txtCostumerAddress.Name = "txtCostumerAddress";
             this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
             this.txtCostumerAddress.TabIndex = 29;
@@ -947,7 +954,7 @@
             // 
             this.btnCostumerInfoSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCostumerInfoSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoSave.Location = new System.Drawing.Point(925, 401);
+            this.btnCostumerInfoSave.Location = new System.Drawing.Point(925, 404);
             this.btnCostumerInfoSave.Name = "btnCostumerInfoSave";
             this.btnCostumerInfoSave.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoSave.TabIndex = 31;
@@ -957,7 +964,7 @@
             // btnCostumerInfoUpdate
             // 
             this.btnCostumerInfoUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(744, 401);
+            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(744, 404);
             this.btnCostumerInfoUpdate.Name = "btnCostumerInfoUpdate";
             this.btnCostumerInfoUpdate.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoUpdate.TabIndex = 33;
@@ -968,7 +975,7 @@
             // 
             this.btnCostumerInfoDelete.BackColor = System.Drawing.Color.Red;
             this.btnCostumerInfoDelete.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(563, 401);
+            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(563, 404);
             this.btnCostumerInfoDelete.Name = "btnCostumerInfoDelete";
             this.btnCostumerInfoDelete.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoDelete.TabIndex = 34;
@@ -979,7 +986,7 @@
             // 
             this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoErase, true);
             this.btnCostumerInfoErase.ForeColor = System.Drawing.Color.Red;
-            this.btnCostumerInfoErase.Location = new System.Drawing.Point(382, 401);
+            this.btnCostumerInfoErase.Location = new System.Drawing.Point(382, 404);
             this.btnCostumerInfoErase.Name = "btnCostumerInfoErase";
             this.btnCostumerInfoErase.Size = new System.Drawing.Size(175, 47);
             this.btnCostumerInfoErase.TabIndex = 32;
@@ -989,7 +996,7 @@
             // btnCostumerInfoChooseAsBuyer
             // 
             this.btnCostumerInfoChooseAsBuyer.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(382, 454);
+            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(382, 457);
             this.btnCostumerInfoChooseAsBuyer.Name = "btnCostumerInfoChooseAsBuyer";
             this.btnCostumerInfoChooseAsBuyer.Size = new System.Drawing.Size(718, 47);
             this.btnCostumerInfoChooseAsBuyer.TabIndex = 35;
@@ -1527,6 +1534,22 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.cmbCostumersDatabaseSearchStandardGroup);
+            this.flowLayoutPanel1.Controls.Add(this.cmbCostumersDatabaseSearchStandardPersonalInfo);
+            this.flowLayoutPanel1.Controls.Add(this.cmbCostumersDatabaseSearchStandardPlaceInfo);
+            this.flowLayoutPanel1.Controls.Add(this.cmbCostumersDatabaseSearchStandardDate);
+            this.flowLayoutPanel1.Controls.Add(this.txtCostumersDatabaseSearchNormal);
+            this.flowLayoutPanel1.Controls.Add(this.lblCostumersDatabaseSearchStandardDate);
+            this.flowLayoutPanel1.Controls.Add(this.lblCostumersDatabaseSearchStandardHour);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 40);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1077, 107);
+            this.flowLayoutPanel1.TabIndex = 104;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
@@ -1549,7 +1572,6 @@
             this.tabCostumers.ResumeLayout(false);
             this.pnlCostumersDatabase.ResumeLayout(false);
             this.pnlCostumersDatabaseSearch.ResumeLayout(false);
-            this.pnlCostumersDatabaseSearch.PerformLayout();
             this.pnlCostumersTabDateAndTime.ResumeLayout(false);
             this.pnlCostumersTabActiveStaffInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1560,6 +1582,8 @@
             this.pnlMenuUp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
             this.pnlMenuDown.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1663,6 +1687,7 @@
         private System.Windows.Forms.ComboBox cmbCostumersDatabaseSearchStandardDate;
         private System.Windows.Forms.ComboBox cmbCostumersDatabaseSearchStandardPlaceInfo;
         private System.Windows.Forms.ComboBox cmbCostumersDatabaseSearchStandardPersonalInfo;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
