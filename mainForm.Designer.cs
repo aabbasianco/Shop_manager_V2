@@ -314,6 +314,8 @@
             // lblCostumerSignupDate
             // 
             this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupDate.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupDate.Location = new System.Drawing.Point(744, 10);
             this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
@@ -335,6 +337,8 @@
             // lblCostumerSignupTime
             // 
             this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupTime.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupTime.Location = new System.Drawing.Point(382, 10);
             this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
@@ -356,6 +360,8 @@
             // lblCostumerSignupDay
             // 
             this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupDay.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
             this.lblCostumerSignupDay.Location = new System.Drawing.Point(20, 10);
@@ -1493,6 +1499,8 @@
             // labelCostumersTabTodayDate
             // 
             this.labelCostumersTabTodayDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCostumersTabTodayDate.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayDate.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(292, 20);
@@ -1517,6 +1525,8 @@
             // labelCostumersTabTodayHour
             // 
             this.labelCostumersTabTodayHour.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCostumersTabTodayHour.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayHour.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayHour.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(50, 20);
@@ -1541,6 +1551,8 @@
             // labelCostumersTabTodayWeekday
             // 
             this.labelCostumersTabTodayWeekday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCostumersTabTodayWeekday.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCostumersTabTodayWeekday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayWeekday.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayWeekday.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(292, 65);
