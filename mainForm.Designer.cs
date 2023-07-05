@@ -148,7 +148,7 @@
             // 
             this.tabSetting.Location = new System.Drawing.Point(4, 45);
             this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(1176, 919);
+            this.tabSetting.Size = new System.Drawing.Size(1177, 919);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "تنظیمات";
             this.tabSetting.UseVisualStyleBackColor = true;
@@ -157,7 +157,7 @@
             // 
             this.about.Location = new System.Drawing.Point(4, 45);
             this.about.Name = "about";
-            this.about.Size = new System.Drawing.Size(1176, 919);
+            this.about.Size = new System.Drawing.Size(1177, 919);
             this.about.TabIndex = 7;
             this.about.Text = "درباره";
             this.about.UseVisualStyleBackColor = true;
@@ -166,7 +166,7 @@
             // 
             this.tabStaff.Location = new System.Drawing.Point(4, 45);
             this.tabStaff.Name = "tabStaff";
-            this.tabStaff.Size = new System.Drawing.Size(1176, 919);
+            this.tabStaff.Size = new System.Drawing.Size(1177, 919);
             this.tabStaff.TabIndex = 5;
             this.tabStaff.Text = "کارکنان";
             this.tabStaff.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             // 
             this.tabCart.Location = new System.Drawing.Point(4, 45);
             this.tabCart.Name = "tabCart";
-            this.tabCart.Size = new System.Drawing.Size(1176, 919);
+            this.tabCart.Size = new System.Drawing.Size(1177, 919);
             this.tabCart.TabIndex = 4;
             this.tabCart.Text = "سبد خرید";
             this.tabCart.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@
             // 
             this.tabRecivedProducts.Location = new System.Drawing.Point(4, 45);
             this.tabRecivedProducts.Name = "tabRecivedProducts";
-            this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 919);
+            this.tabRecivedProducts.Size = new System.Drawing.Size(1177, 919);
             this.tabRecivedProducts.TabIndex = 3;
             this.tabRecivedProducts.Text = "حواله ورود محصول";
             this.tabRecivedProducts.UseVisualStyleBackColor = true;
@@ -193,7 +193,7 @@
             // 
             this.tabSellReport.Location = new System.Drawing.Point(4, 45);
             this.tabSellReport.Name = "tabSellReport";
-            this.tabSellReport.Size = new System.Drawing.Size(1176, 919);
+            this.tabSellReport.Size = new System.Drawing.Size(1177, 919);
             this.tabSellReport.TabIndex = 2;
             this.tabSellReport.Text = "گزارش فروش";
             this.tabSellReport.UseVisualStyleBackColor = true;
@@ -232,7 +232,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(448, 20);
+            this.label1.Location = new System.Drawing.Point(448, 24);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(80, 45);
@@ -315,7 +315,6 @@
             // 
             this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDate.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupDate.Location = new System.Drawing.Point(744, 10);
             this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
@@ -338,7 +337,6 @@
             // 
             this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupTime.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCostumerSignupTime.Location = new System.Drawing.Point(382, 10);
             this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
@@ -361,7 +359,6 @@
             // 
             this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerSignupDay.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
             this.lblCostumerSignupDay.Location = new System.Drawing.Point(20, 10);
@@ -691,6 +688,7 @@
             this.pnlCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlCostumersDatabase.AutoScroll = true;
             this.pnlCostumersDatabase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlCostumersDatabase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCostumersDatabase.Controls.Add(this.label18);
@@ -893,7 +891,7 @@
             this.tabProducts.Location = new System.Drawing.Point(4, 45);
             this.tabProducts.Name = "tabProducts";
             this.tabProducts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProducts.Size = new System.Drawing.Size(1176, 919);
+            this.tabProducts.Size = new System.Drawing.Size(1177, 919);
             this.tabProducts.TabIndex = 1;
             this.tabProducts.Text = "محصولات";
             this.tabProducts.UseVisualStyleBackColor = true;
@@ -903,13 +901,14 @@
             this.tabMainPage.Location = new System.Drawing.Point(4, 45);
             this.tabMainPage.Name = "tabMainPage";
             this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainPage.Size = new System.Drawing.Size(1176, 919);
+            this.tabMainPage.Size = new System.Drawing.Size(1177, 919);
             this.tabMainPage.TabIndex = 0;
             this.tabMainPage.Text = "صفحه اصلی";
             this.tabMainPage.UseVisualStyleBackColor = true;
             // 
             // tabCtrlMain
             // 
+            this.tabCtrlMain.AllowDrop = true;
             this.tabCtrlMain.Controls.Add(this.tabMainPage);
             this.tabCtrlMain.Controls.Add(this.tabProducts);
             this.tabCtrlMain.Controls.Add(this.tabCostumers);
@@ -1500,10 +1499,9 @@
             // 
             this.labelCostumersTabTodayDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayDate.BackColor = System.Drawing.SystemColors.Window;
-            this.labelCostumersTabTodayDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayDate.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(292, 20);
+            this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(292, 24);
             this.labelCostumersTabTodayDate.Name = "labelCostumersTabTodayDate";
             this.labelCostumersTabTodayDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayDate.Size = new System.Drawing.Size(150, 45);
@@ -1514,7 +1512,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(206, 20);
+            this.label2.Location = new System.Drawing.Point(206, 24);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(80, 45);
@@ -1526,10 +1524,9 @@
             // 
             this.labelCostumersTabTodayHour.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayHour.BackColor = System.Drawing.SystemColors.Window;
-            this.labelCostumersTabTodayHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayHour.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayHour.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(50, 20);
+            this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(50, 24);
             this.labelCostumersTabTodayHour.Name = "labelCostumersTabTodayHour";
             this.labelCostumersTabTodayHour.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayHour.Size = new System.Drawing.Size(150, 45);
@@ -1540,7 +1537,7 @@
             // 
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label23.Location = new System.Drawing.Point(448, 65);
+            this.label23.Location = new System.Drawing.Point(448, 69);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label23.Size = new System.Drawing.Size(80, 45);
@@ -1552,10 +1549,9 @@
             // 
             this.labelCostumersTabTodayWeekday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCostumersTabTodayWeekday.BackColor = System.Drawing.SystemColors.Window;
-            this.labelCostumersTabTodayWeekday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelCostumersTabTodayWeekday.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayWeekday.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(292, 65);
+            this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(292, 69);
             this.labelCostumersTabTodayWeekday.Name = "labelCostumersTabTodayWeekday";
             this.labelCostumersTabTodayWeekday.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayWeekday.Size = new System.Drawing.Size(150, 45);
@@ -1575,7 +1571,7 @@
             this.pnlCostumersTabDateAndTime.Controls.Add(this.labelCostumersTabTodayWeekday);
             this.pnlCostumersTabDateAndTime.Location = new System.Drawing.Point(32, 30);
             this.pnlCostumersTabDateAndTime.Name = "pnlCostumersTabDateAndTime";
-            this.pnlCostumersTabDateAndTime.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.pnlCostumersTabDateAndTime.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
             this.pnlCostumersTabDateAndTime.Size = new System.Drawing.Size(533, 140);
             this.pnlCostumersTabDateAndTime.TabIndex = 37;
             // 
