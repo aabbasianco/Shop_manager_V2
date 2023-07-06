@@ -93,6 +93,16 @@ namespace Shop_manager_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackgroundMorning2 {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundMorning2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cart {
             get {
                 object obj = ResourceManager.GetObject("Cart", resourceCulture);

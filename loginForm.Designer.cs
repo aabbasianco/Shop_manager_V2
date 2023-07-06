@@ -39,21 +39,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
+            this.picSmallLogo = new System.Windows.Forms.PictureBox();
             this.picCloseLock = new System.Windows.Forms.PictureBox();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.picPasswordTextbox = new System.Windows.Forms.PictureBox();
             this.picUsernameTextbox = new System.Windows.Forms.PictureBox();
-            this.tmrWelcomeLabel = new System.Windows.Forms.Timer(this.components);
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.picSmallLogo = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSmallLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPasswordTextbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUsernameTextbox)).BeginInit();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSmallLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin
@@ -172,6 +172,24 @@
             this.label2.TabIndex = 1;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tmrWelcomeLabel
+            // 
+            this.tmrWelcomeLabel.Interval = 70;
+            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
+            // 
+            // picSmallLogo
+            // 
+            this.picSmallLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picSmallLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.MainLogoBig;
+            this.picSmallLogo.Location = new System.Drawing.Point(357, 8);
+            this.picSmallLogo.Margin = new System.Windows.Forms.Padding(8);
+            this.picSmallLogo.Name = "picSmallLogo";
+            this.picSmallLogo.Size = new System.Drawing.Size(85, 75);
+            this.picSmallLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSmallLogo.TabIndex = 0;
+            this.picSmallLogo.TabStop = false;
+            // 
             // picCloseLock
             // 
             this.picCloseLock.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -220,15 +238,10 @@
             this.picUsernameTextbox.TabIndex = 0;
             this.picUsernameTextbox.TabStop = false;
             // 
-            // tmrWelcomeLabel
-            // 
-            this.tmrWelcomeLabel.Interval = 70;
-            this.tmrWelcomeLabel.Tick += new System.EventHandler(this.tmrWelcomeLabel_Tick);
-            // 
             // pnlLogo
             // 
             this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.pnlLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogo.BackgroundImage")));
+            this.pnlLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.BackgroundMorning2;
             this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlLogo.Controls.Add(this.lblWelcome);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -252,19 +265,6 @@
             this.lblWelcome.Text = "خوش آمدید";
             this.lblWelcome.Visible = false;
             // 
-            // picSmallLogo
-            // 
-            this.picSmallLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picSmallLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.MainLogoBig;
-            this.picSmallLogo.Location = new System.Drawing.Point(357, 8);
-            this.picSmallLogo.Margin = new System.Windows.Forms.Padding(8);
-            this.picSmallLogo.Name = "picSmallLogo";
-            this.picSmallLogo.Size = new System.Drawing.Size(85, 75);
-            this.picSmallLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSmallLogo.TabIndex = 0;
-            this.picSmallLogo.TabStop = false;
-            // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 36F);
@@ -284,13 +284,13 @@
             this.TopMost = true;
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSmallLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPasswordTextbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUsernameTextbox)).EndInit();
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSmallLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
