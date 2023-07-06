@@ -37,16 +37,16 @@ namespace Shop_manager_V2
             costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
             cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
             lblCostumersDatabaseSearchStandardHour};
-            mainDatabasePanelsArr = new Control[3] { pnlMainDatabase1, pnlMainDatabase2, pnlMainDatabase3 };
-            infoPanelsArr = new Control[3] { pnlInfo1, pnlInfo2, pnlInfo3 };
+            mainDatabasePanelsArr = new Control[4] { pnlMainDatabase1, pnlMainDatabase2, pnlMainDatabase3, pnlMainDatabase6 };
+            infoPanelsArr = new Control[4] { pnlInfo1, pnlInfo2, pnlInfo3, pnlInfo6 };
             dateAndTimePanelsArr = new Control[7] { pnlTabDateAndTime0, pnlTabDateAndTime1, pnlTabDateAndTime2
             , pnlTabDateAndTime3, pnlTabDateAndTime4, pnlTabDateAndTime5, pnlTabDateAndTime6};
             ActiveStaffInfoPanelsArr = new Control[7] { pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
             , pnlActiveStaffInfo3, pnlActiveStaffInfo4, pnlActiveStaffInfo5, pnlActiveStaffInfo6};
-            databaseSearchPanelsArr = new Control[3] { pnlDatabaseSearch1, pnlDatabaseSearch2, pnlDatabaseSearch3 };
-            mainDatabaseDgvArr = new Control[3] { dgvMain1, dgvMain2, dgvMain3 };
-            mainDatabaseLabelArr = new Control[3] { lblMainDatabase1, lblMainDatabase2, lblMainDatabase3 };
-            infoPanelLabelArr = new Control[3] { lblInfoPanel1, lblInfoPanel2, lblInfoPanel3 };
+            databaseSearchPanelsArr = new Control[4] { pnlDatabaseSearch1, pnlDatabaseSearch2, pnlDatabaseSearch3, pnlDatabaseSearch6 };
+            mainDatabaseDgvArr = new Control[4] { dgvMain1, dgvMain2, dgvMain3, dgvMain6 };
+            mainDatabaseLabelArr = new Control[4] { lblMainDatabase1, lblMainDatabase2, lblMainDatabase3, lblMainDatabase6 };
+            infoPanelLabelArr = new Control[4] { lblInfoPanel1, lblInfoPanel2, lblInfoPanel3, lblInfoPanel6 };
             for (int i = 0; i < mainDatabasePanelsArr.Length; i++)
             {
                 mainDatabasePanelsArr[i].Width = 1120;
