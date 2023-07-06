@@ -108,8 +108,6 @@
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -977,7 +975,7 @@
             this.lblInfoPanel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblInfoPanel3.Size = new System.Drawing.Size(140, 30);
             this.lblInfoPanel3.TabIndex = 113;
-            this.lblInfoPanel3.Text = "اطلاعات مشتری";
+            this.lblInfoPanel3.Text = "اطلاعات گزارش";
             this.lblInfoPanel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlInfo3
@@ -1018,8 +1016,6 @@
             this.pnlInfo3.Controls.Add(this.textBox23);
             this.pnlInfo3.Controls.Add(this.label112);
             this.pnlInfo3.Controls.Add(this.richTextBox2);
-            this.pnlInfo3.Controls.Add(this.button6);
-            this.pnlInfo3.Controls.Add(this.button7);
             this.pnlInfo3.Controls.Add(this.button8);
             this.pnlInfo3.Controls.Add(this.button9);
             this.pnlInfo3.Controls.Add(this.button10);
@@ -1348,32 +1344,11 @@
             this.richTextBox2.TabIndex = 29;
             this.richTextBox2.Text = "";
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Location = new System.Drawing.Point(818, 401);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(265, 47);
-            this.button6.TabIndex = 31;
-            this.button6.Text = "ذخیره";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button7.Location = new System.Drawing.Point(547, 401);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(265, 47);
-            this.button7.TabIndex = 33;
-            this.button7.Text = "ویرایش";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Red;
             this.button8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button8.Location = new System.Drawing.Point(276, 401);
+            this.button8.Location = new System.Drawing.Point(818, 401);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(265, 47);
             this.button8.TabIndex = 34;
@@ -1384,7 +1359,7 @@
             // 
             this.pnlInfo3.SetFlowBreak(this.button9, true);
             this.button9.ForeColor = System.Drawing.Color.Red;
-            this.button9.Location = new System.Drawing.Point(5, 401);
+            this.button9.Location = new System.Drawing.Point(547, 401);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(265, 47);
             this.button9.TabIndex = 32;
@@ -1401,7 +1376,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(1080, 47);
             this.button10.TabIndex = 35;
-            this.button10.Text = "انتخاب به عنوان خریدار";
+            this.button10.Text = "صدور فاکتور";
             this.button10.UseVisualStyleBackColor = false;
             // 
             // lblMainDatabase3
@@ -1491,6 +1466,8 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(200, 44);
             this.comboBox7.TabIndex = 20;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox7.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox8
             // 
@@ -1514,6 +1491,8 @@
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(200, 44);
             this.comboBox8.TabIndex = 32;
+            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox8.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox9
             // 
@@ -1539,6 +1518,8 @@
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(200, 44);
             this.comboBox9.TabIndex = 35;
+            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox9.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox10
             // 
@@ -1564,13 +1545,15 @@
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(200, 44);
             this.comboBox10.TabIndex = 36;
+            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox10.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // textBox24
             // 
             this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox24.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textBox24.Location = new System.Drawing.Point(825, 30);
+            this.textBox24.Location = new System.Drawing.Point(825, 53);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
             this.textBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1583,7 +1566,7 @@
             this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox3.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox3.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(619, 30);
+            this.maskedTextBox3.Location = new System.Drawing.Point(619, 53);
             this.maskedTextBox3.Mask = "0000/00/00";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1599,7 +1582,7 @@
             this.maskedTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox4.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox4.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox4.Location = new System.Drawing.Point(413, 30);
+            this.maskedTextBox4.Location = new System.Drawing.Point(413, 53);
             this.maskedTextBox4.Mask = "00:00";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1950,7 +1933,8 @@
             // 
             this.cmbCostumerType.AutoCompleteCustomSource.AddRange(new string[] {
             "عادی",
-            "شرکت"});
+            "شرکت",
+            "همکار"});
             this.cmbCostumerType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbCostumerType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.pnlInfo2.SetFlowBreak(this.cmbCostumerType, true);
@@ -3172,6 +3156,8 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(200, 44);
             this.comboBox2.TabIndex = 20;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox2.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox3
             // 
@@ -3195,6 +3181,8 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(200, 44);
             this.comboBox3.TabIndex = 32;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox3.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox4
             // 
@@ -3220,6 +3208,8 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(200, 44);
             this.comboBox4.TabIndex = 35;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox4.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // comboBox5
             // 
@@ -3245,6 +3235,8 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(200, 44);
             this.comboBox5.TabIndex = 36;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.cmbCostumerType_Leave);
+            this.comboBox5.Leave += new System.EventHandler(this.cmbCostumerType_Leave);
             // 
             // textBox12
             // 
@@ -4495,8 +4487,6 @@
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
