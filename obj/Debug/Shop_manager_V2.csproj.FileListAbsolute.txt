@@ -34,3 +34,4 @@ D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.exe
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.pdb
 D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.MessageForm.resources
+D:\Subjects\11th\DataBase\Shop_manager_V2\Shop_manager_V2\obj\Debug\Shop_manager_V2.messageMakerForm.resources

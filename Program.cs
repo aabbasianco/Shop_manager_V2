@@ -18,7 +18,8 @@ namespace Shop_manager_V2
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new mainForm());
             //Application.Run(new loginForm());
-            Application.Run(new messageForm());
+            //Application.Run(new messageForm());
+            Application.Run(new messageMakerForm());
         }
     }
 }

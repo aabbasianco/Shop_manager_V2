@@ -58,15 +58,17 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(597, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(101, 73);
             this.label1.TabIndex = 4;
-            this.label1.Text = "فرستنده :";
+            this.label1.Text = "فرستنده";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlMessageSenderInfo
@@ -83,10 +85,11 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -98,6 +101,7 @@
             // lblMessageSenderFullname
             // 
             this.lblMessageSenderFullname.BackColor = System.Drawing.Color.Transparent;
+            this.lblMessageSenderFullname.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMessageSenderFullname.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMessageSenderFullname.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
             this.lblMessageSenderFullname.Location = new System.Drawing.Point(0, 0);
@@ -112,7 +116,7 @@
             // 
             this.pnlMessageText.AutoScroll = true;
             this.pnlMessageText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlMessageText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMessageText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlMessageText.Controls.Add(this.txtMessageText);
             this.pnlMessageText.Location = new System.Drawing.Point(34, 187);
             this.pnlMessageText.Name = "pnlMessageText";
@@ -130,7 +134,7 @@
             this.txtMessageText.Name = "txtMessageText";
             this.txtMessageText.ReadOnly = true;
             this.txtMessageText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtMessageText.Size = new System.Drawing.Size(698, 166);
+            this.txtMessageText.Size = new System.Drawing.Size(696, 164);
             this.txtMessageText.TabIndex = 0;
             this.txtMessageText.Text = resources.GetString("txtMessageText.Text");
             // 
