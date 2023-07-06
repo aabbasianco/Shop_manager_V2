@@ -20,6 +20,8 @@ namespace Shop_manager_V2
         int[] menuLogoPicProp;
         int[] userPicProp;
         Control[] costumersDatabaseSearchControlsArr;
+        Control[] panelsWidthArr;
+        Control[] miniPanelsWidthArr;
 
         // MAIN FORM ON LOAD --------------------------------------------------------------
         public mainForm()
@@ -29,6 +31,13 @@ namespace Shop_manager_V2
             costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
             cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
             lblCostumersDatabaseSearchStandardHour};
+            panelsWidthArr=new Control[4] {pnlCostumerInfo,pnlCostumersDatabase, pnlProductInfo,pnlProductsDatabase};
+            miniPanelsWidthArr = new Control[7] { pnlTabDateAndTime0, pnlTabDateAndTime1, pnlTabDateAndTime2
+            , pnlTabDateAndTime3, pnlTabDateAndTime4, pnlTabDateAndTime5, pnlTabDateAndTime6};
+            foreach (var item in panelsWidthArr)
+            {
+                item.Width = 1120;
+            }
         }
 
         // MAIN FORM SIZE CHANGE -------------------------------------------------------------

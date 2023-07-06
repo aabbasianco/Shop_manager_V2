@@ -32,76 +32,59 @@
             this.tabSetting = new System.Windows.Forms.TabPage();
             this.about = new System.Windows.Forms.TabPage();
             this.tabStaff = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlTabDateAndTime6 = new System.Windows.Forms.FlowLayoutPanel();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlActiveStaffInfo6 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.tabCart = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlTabDateAndTime5 = new System.Windows.Forms.FlowLayoutPanel();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlActiveStaffInfo5 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.tabRecivedProducts = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlTabDateAndTime4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlActiveStaffInfo4 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.tabSellReport = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
             this.tabCostumers = new System.Windows.Forms.TabPage();
             this.lblCostumerInfo = new System.Windows.Forms.Label();
             this.pnlCostumerInfo = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnCostumerInfoChooseAsBuyer = new System.Windows.Forms.Button();
-            this.btnCostumerInfoErase = new System.Windows.Forms.Button();
-            this.txtCostumerAddress = new System.Windows.Forms.RichTextBox();
-            this.txtCostumerPostCode = new System.Windows.Forms.TextBox();
-            this.cmbCostumerType = new System.Windows.Forms.ComboBox();
-            this.lblCostumerSignupDay = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.lblCostumerSignupDate = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lblCostumerSignupTime = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.lblCostumerSignupDay = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.cmbCostumerType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCostumerFirstName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -123,10 +106,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtCostumerCity = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.txtCostumerPostCode = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.txtCostumerAddress = new System.Windows.Forms.RichTextBox();
             this.btnCostumerInfoSave = new System.Windows.Forms.Button();
             this.btnCostumerInfoUpdate = new System.Windows.Forms.Button();
             this.btnCostumerInfoDelete = new System.Windows.Forms.Button();
+            this.btnCostumerInfoErase = new System.Windows.Forms.Button();
+            this.btnCostumerInfoChooseAsBuyer = new System.Windows.Forms.Button();
             this.lblCostumersDatabase = new System.Windows.Forms.Label();
             this.pnlCostumersDatabase = new System.Windows.Forms.Panel();
             this.dgvAllCostumers = new System.Windows.Forms.DataGridView();
@@ -139,50 +126,22 @@
             this.txtCostumersDatabaseSearchNormal = new System.Windows.Forms.TextBox();
             this.lblCostumersDatabaseSearchStandardDate = new System.Windows.Forms.MaskedTextBox();
             this.lblCostumersDatabaseSearchStandardHour = new System.Windows.Forms.MaskedTextBox();
-            this.pnlCostumersTabDateAndTime = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlTabDateAndTime2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelCostumersTabTodayDate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCostumersTabTodayHour = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.labelCostumersTabTodayWeekday = new System.Windows.Forms.Label();
-            this.pnlCostumersTabActiveStaffInfo = new System.Windows.Forms.Panel();
+            this.pnlActiveStaffInfo2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblActiveStaffStaffcode = new System.Windows.Forms.Label();
             this.lblActiveStaffFullname = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.tabProducts = new System.Windows.Forms.TabPage();
-            this.tabMainPage = new System.Windows.Forms.TabPage();
-            this.tabCtrlMain = new System.Windows.Forms.TabControl();
-            this.pnlMenubar = new System.Windows.Forms.Panel();
-            this.pnlMenuUp = new System.Windows.Forms.Panel();
-            this.btnMenuTheme = new System.Windows.Forms.Button();
-            this.picMenuLogo = new System.Windows.Forms.PictureBox();
-            this.pnlMenuDown = new System.Windows.Forms.Panel();
-            this.btnMenuMainPageLogo = new System.Windows.Forms.Button();
-            this.btnMenuAboutLogo = new System.Windows.Forms.Button();
-            this.btnMenuLogoutLogo = new System.Windows.Forms.Button();
-            this.btnMenuSettingLogo = new System.Windows.Forms.Button();
-            this.btnMenuStaffLogo = new System.Windows.Forms.Button();
-            this.btnMenuCartLogo = new System.Windows.Forms.Button();
-            this.btnMenuRecivedProductsLogo = new System.Windows.Forms.Button();
-            this.btnMenuCostumersLogo = new System.Windows.Forms.Button();
-            this.btnMenuProductsLogo = new System.Windows.Forms.Button();
-            this.btnMenuSellReportLogo = new System.Windows.Forms.Button();
-            this.btnMenuMainPage = new System.Windows.Forms.Button();
-            this.btnMenuSellReport = new System.Windows.Forms.Button();
-            this.btnMenuProducts = new System.Windows.Forms.Button();
-            this.btnMenuCostumers = new System.Windows.Forms.Button();
-            this.btnMenuStaff = new System.Windows.Forms.Button();
-            this.btnMenuRecivedProducts = new System.Windows.Forms.Button();
-            this.btnMenuCart = new System.Windows.Forms.Button();
-            this.btnMenuLogout = new System.Windows.Forms.Button();
-            this.btnMenuSetting = new System.Windows.Forms.Button();
-            this.btnMenuAbout = new System.Windows.Forms.Button();
-            this.btnMenubarDisplay = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlProductInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -221,7 +180,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label92 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlProductsDatabase = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
@@ -232,75 +191,172 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlTabDateAndTime1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnlActiveStaffInfo1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.tabMainPage = new System.Windows.Forms.TabPage();
+            this.pnlTabDateAndTime0 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pnlActiveStaffInfo0 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.tabCtrlMain = new System.Windows.Forms.TabControl();
+            this.pnlMenubar = new System.Windows.Forms.Panel();
+            this.pnlMenuUp = new System.Windows.Forms.Panel();
+            this.btnMenuTheme = new System.Windows.Forms.Button();
+            this.picMenuLogo = new System.Windows.Forms.PictureBox();
+            this.pnlMenuDown = new System.Windows.Forms.Panel();
+            this.btnMenuMainPageLogo = new System.Windows.Forms.Button();
+            this.btnMenuAboutLogo = new System.Windows.Forms.Button();
+            this.btnMenuLogoutLogo = new System.Windows.Forms.Button();
+            this.btnMenuSettingLogo = new System.Windows.Forms.Button();
+            this.btnMenuStaffLogo = new System.Windows.Forms.Button();
+            this.btnMenuCartLogo = new System.Windows.Forms.Button();
+            this.btnMenuRecivedProductsLogo = new System.Windows.Forms.Button();
+            this.btnMenuCostumersLogo = new System.Windows.Forms.Button();
+            this.btnMenuProductsLogo = new System.Windows.Forms.Button();
+            this.btnMenuSellReportLogo = new System.Windows.Forms.Button();
+            this.btnMenuMainPage = new System.Windows.Forms.Button();
+            this.btnMenuSellReport = new System.Windows.Forms.Button();
+            this.btnMenuProducts = new System.Windows.Forms.Button();
+            this.btnMenuCostumers = new System.Windows.Forms.Button();
+            this.btnMenuStaff = new System.Windows.Forms.Button();
+            this.btnMenuRecivedProducts = new System.Windows.Forms.Button();
+            this.btnMenuCart = new System.Windows.Forms.Button();
+            this.btnMenuLogout = new System.Windows.Forms.Button();
+            this.btnMenuSetting = new System.Windows.Forms.Button();
+            this.btnMenuAbout = new System.Windows.Forms.Button();
+            this.btnMenubarDisplay = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label105 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label106 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label113 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.pnlTabDateAndTime3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label119 = new System.Windows.Forms.Label();
+            this.pnlActiveStaffInfo3 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
             this.tabStaff.SuspendLayout();
-            this.flowLayoutPanel7.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.pnlTabDateAndTime6.SuspendLayout();
+            this.pnlActiveStaffInfo6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.tabCart.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pnlTabDateAndTime5.SuspendLayout();
+            this.pnlActiveStaffInfo5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabRecivedProducts.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlTabDateAndTime4.SuspendLayout();
+            this.pnlActiveStaffInfo4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabSellReport.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabCostumers.SuspendLayout();
             this.pnlCostumerInfo.SuspendLayout();
             this.pnlCostumersDatabase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllCostumers)).BeginInit();
             this.pnlCostumersDatabaseSearch.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.pnlCostumersTabDateAndTime.SuspendLayout();
-            this.pnlCostumersTabActiveStaffInfo.SuspendLayout();
+            this.pnlTabDateAndTime2.SuspendLayout();
+            this.pnlActiveStaffInfo2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabProducts.SuspendLayout();
+            this.pnlProductInfo.SuspendLayout();
+            this.pnlProductsDatabase.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
+            this.pnlTabDateAndTime1.SuspendLayout();
+            this.pnlActiveStaffInfo1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabMainPage.SuspendLayout();
+            this.pnlTabDateAndTime0.SuspendLayout();
+            this.pnlActiveStaffInfo0.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabCtrlMain.SuspendLayout();
             this.pnlMenubar.SuspendLayout();
             this.pnlMenuUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).BeginInit();
             this.pnlMenuDown.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
-            this.flowLayoutPanel9.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.pnlTabDateAndTime3.SuspendLayout();
+            this.pnlActiveStaffInfo3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabSetting
@@ -308,6 +364,7 @@
             this.tabSetting.AutoScroll = true;
             this.tabSetting.Location = new System.Drawing.Point(4, 45);
             this.tabSetting.Name = "tabSetting";
+            this.tabSetting.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabSetting.Size = new System.Drawing.Size(1176, 918);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "تنظیمات";
@@ -318,6 +375,7 @@
             this.about.AutoScroll = true;
             this.about.Location = new System.Drawing.Point(4, 45);
             this.about.Name = "about";
+            this.about.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.about.Size = new System.Drawing.Size(1176, 918);
             this.about.TabIndex = 7;
             this.about.Text = "درباره";
@@ -326,31 +384,33 @@
             // tabStaff
             // 
             this.tabStaff.AutoScroll = true;
-            this.tabStaff.Controls.Add(this.flowLayoutPanel7);
-            this.tabStaff.Controls.Add(this.panel6);
+            this.tabStaff.Controls.Add(this.pnlTabDateAndTime6);
+            this.tabStaff.Controls.Add(this.pnlActiveStaffInfo6);
             this.tabStaff.Location = new System.Drawing.Point(4, 45);
             this.tabStaff.Name = "tabStaff";
+            this.tabStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabStaff.Size = new System.Drawing.Size(1176, 918);
             this.tabStaff.TabIndex = 5;
             this.tabStaff.Text = "کارکنان";
             this.tabStaff.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel7
+            // pnlTabDateAndTime6
             // 
-            this.flowLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTabDateAndTime6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel7.Controls.Add(this.label72);
-            this.flowLayoutPanel7.Controls.Add(this.label73);
-            this.flowLayoutPanel7.Controls.Add(this.label74);
-            this.flowLayoutPanel7.Controls.Add(this.label75);
-            this.flowLayoutPanel7.Controls.Add(this.label76);
-            this.flowLayoutPanel7.Controls.Add(this.label77);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(493, 140);
-            this.flowLayoutPanel7.TabIndex = 38;
+            this.pnlTabDateAndTime6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime6.Controls.Add(this.label72);
+            this.pnlTabDateAndTime6.Controls.Add(this.label73);
+            this.pnlTabDateAndTime6.Controls.Add(this.label74);
+            this.pnlTabDateAndTime6.Controls.Add(this.label75);
+            this.pnlTabDateAndTime6.Controls.Add(this.label76);
+            this.pnlTabDateAndTime6.Controls.Add(this.label77);
+            this.pnlTabDateAndTime6.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime6.Name = "pnlTabDateAndTime6";
+            this.pnlTabDateAndTime6.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime6.Size = new System.Drawing.Size(493, 140);
+            this.pnlTabDateAndTime6.TabIndex = 38;
             // 
             // label72
             // 
@@ -430,20 +490,21 @@
             this.label77.TabIndex = 36;
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // pnlActiveStaffInfo6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.pictureBox7);
-            this.panel6.Controls.Add(this.label78);
-            this.panel6.Controls.Add(this.label79);
-            this.panel6.Controls.Add(this.label80);
-            this.panel6.Controls.Add(this.label81);
-            this.panel6.Location = new System.Drawing.Point(613, 19);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(510, 140);
-            this.panel6.TabIndex = 39;
+            this.pnlActiveStaffInfo6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo6.Controls.Add(this.pictureBox7);
+            this.pnlActiveStaffInfo6.Controls.Add(this.label78);
+            this.pnlActiveStaffInfo6.Controls.Add(this.label79);
+            this.pnlActiveStaffInfo6.Controls.Add(this.label80);
+            this.pnlActiveStaffInfo6.Controls.Add(this.label81);
+            this.pnlActiveStaffInfo6.Location = new System.Drawing.Point(613, 19);
+            this.pnlActiveStaffInfo6.Name = "pnlActiveStaffInfo6";
+            this.pnlActiveStaffInfo6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo6.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo6.TabIndex = 39;
             // 
             // pictureBox7
             // 
@@ -513,31 +574,33 @@
             // tabCart
             // 
             this.tabCart.AutoScroll = true;
-            this.tabCart.Controls.Add(this.flowLayoutPanel6);
-            this.tabCart.Controls.Add(this.panel5);
+            this.tabCart.Controls.Add(this.pnlTabDateAndTime5);
+            this.tabCart.Controls.Add(this.pnlActiveStaffInfo5);
             this.tabCart.Location = new System.Drawing.Point(4, 45);
             this.tabCart.Name = "tabCart";
+            this.tabCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabCart.Size = new System.Drawing.Size(1176, 918);
             this.tabCart.TabIndex = 4;
             this.tabCart.Text = "سبد خرید";
             this.tabCart.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel6
+            // pnlTabDateAndTime5
             // 
-            this.flowLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTabDateAndTime5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel6.Controls.Add(this.label62);
-            this.flowLayoutPanel6.Controls.Add(this.label63);
-            this.flowLayoutPanel6.Controls.Add(this.label64);
-            this.flowLayoutPanel6.Controls.Add(this.label65);
-            this.flowLayoutPanel6.Controls.Add(this.label66);
-            this.flowLayoutPanel6.Controls.Add(this.label67);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(493, 140);
-            this.flowLayoutPanel6.TabIndex = 38;
+            this.pnlTabDateAndTime5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime5.Controls.Add(this.label62);
+            this.pnlTabDateAndTime5.Controls.Add(this.label63);
+            this.pnlTabDateAndTime5.Controls.Add(this.label64);
+            this.pnlTabDateAndTime5.Controls.Add(this.label65);
+            this.pnlTabDateAndTime5.Controls.Add(this.label66);
+            this.pnlTabDateAndTime5.Controls.Add(this.label67);
+            this.pnlTabDateAndTime5.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime5.Name = "pnlTabDateAndTime5";
+            this.pnlTabDateAndTime5.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime5.Size = new System.Drawing.Size(493, 140);
+            this.pnlTabDateAndTime5.TabIndex = 38;
             // 
             // label62
             // 
@@ -617,20 +680,21 @@
             this.label67.TabIndex = 36;
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel5
+            // pnlActiveStaffInfo5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.pictureBox6);
-            this.panel5.Controls.Add(this.label68);
-            this.panel5.Controls.Add(this.label69);
-            this.panel5.Controls.Add(this.label70);
-            this.panel5.Controls.Add(this.label71);
-            this.panel5.Location = new System.Drawing.Point(613, 19);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(510, 140);
-            this.panel5.TabIndex = 39;
+            this.pnlActiveStaffInfo5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo5.Controls.Add(this.pictureBox6);
+            this.pnlActiveStaffInfo5.Controls.Add(this.label68);
+            this.pnlActiveStaffInfo5.Controls.Add(this.label69);
+            this.pnlActiveStaffInfo5.Controls.Add(this.label70);
+            this.pnlActiveStaffInfo5.Controls.Add(this.label71);
+            this.pnlActiveStaffInfo5.Location = new System.Drawing.Point(613, 19);
+            this.pnlActiveStaffInfo5.Name = "pnlActiveStaffInfo5";
+            this.pnlActiveStaffInfo5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo5.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo5.TabIndex = 39;
             // 
             // pictureBox6
             // 
@@ -700,31 +764,33 @@
             // tabRecivedProducts
             // 
             this.tabRecivedProducts.AutoScroll = true;
-            this.tabRecivedProducts.Controls.Add(this.flowLayoutPanel5);
-            this.tabRecivedProducts.Controls.Add(this.panel4);
+            this.tabRecivedProducts.Controls.Add(this.pnlTabDateAndTime4);
+            this.tabRecivedProducts.Controls.Add(this.pnlActiveStaffInfo4);
             this.tabRecivedProducts.Location = new System.Drawing.Point(4, 45);
             this.tabRecivedProducts.Name = "tabRecivedProducts";
+            this.tabRecivedProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabRecivedProducts.Size = new System.Drawing.Size(1176, 918);
             this.tabRecivedProducts.TabIndex = 3;
             this.tabRecivedProducts.Text = "حواله ورود محصول";
             this.tabRecivedProducts.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel5
+            // pnlTabDateAndTime4
             // 
-            this.flowLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTabDateAndTime4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel5.Controls.Add(this.label52);
-            this.flowLayoutPanel5.Controls.Add(this.label53);
-            this.flowLayoutPanel5.Controls.Add(this.label54);
-            this.flowLayoutPanel5.Controls.Add(this.label55);
-            this.flowLayoutPanel5.Controls.Add(this.label56);
-            this.flowLayoutPanel5.Controls.Add(this.label57);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(493, 140);
-            this.flowLayoutPanel5.TabIndex = 38;
+            this.pnlTabDateAndTime4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime4.Controls.Add(this.label52);
+            this.pnlTabDateAndTime4.Controls.Add(this.label53);
+            this.pnlTabDateAndTime4.Controls.Add(this.label54);
+            this.pnlTabDateAndTime4.Controls.Add(this.label55);
+            this.pnlTabDateAndTime4.Controls.Add(this.label56);
+            this.pnlTabDateAndTime4.Controls.Add(this.label57);
+            this.pnlTabDateAndTime4.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime4.Name = "pnlTabDateAndTime4";
+            this.pnlTabDateAndTime4.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime4.Size = new System.Drawing.Size(493, 140);
+            this.pnlTabDateAndTime4.TabIndex = 38;
             // 
             // label52
             // 
@@ -804,20 +870,21 @@
             this.label57.TabIndex = 36;
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
+            // pnlActiveStaffInfo4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Controls.Add(this.label58);
-            this.panel4.Controls.Add(this.label59);
-            this.panel4.Controls.Add(this.label60);
-            this.panel4.Controls.Add(this.label61);
-            this.panel4.Location = new System.Drawing.Point(613, 19);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(510, 140);
-            this.panel4.TabIndex = 39;
+            this.pnlActiveStaffInfo4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo4.Controls.Add(this.pictureBox5);
+            this.pnlActiveStaffInfo4.Controls.Add(this.label58);
+            this.pnlActiveStaffInfo4.Controls.Add(this.label59);
+            this.pnlActiveStaffInfo4.Controls.Add(this.label60);
+            this.pnlActiveStaffInfo4.Controls.Add(this.label61);
+            this.pnlActiveStaffInfo4.Location = new System.Drawing.Point(613, 19);
+            this.pnlActiveStaffInfo4.Name = "pnlActiveStaffInfo4";
+            this.pnlActiveStaffInfo4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo4.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo4.TabIndex = 39;
             // 
             // pictureBox5
             // 
@@ -887,189 +954,19 @@
             // tabSellReport
             // 
             this.tabSellReport.AutoScroll = true;
-            this.tabSellReport.Controls.Add(this.flowLayoutPanel4);
-            this.tabSellReport.Controls.Add(this.panel3);
+            this.tabSellReport.Controls.Add(this.label42);
+            this.tabSellReport.Controls.Add(this.flowLayoutPanel2);
+            this.tabSellReport.Controls.Add(this.label113);
+            this.tabSellReport.Controls.Add(this.panel2);
+            this.tabSellReport.Controls.Add(this.pnlTabDateAndTime3);
+            this.tabSellReport.Controls.Add(this.pnlActiveStaffInfo3);
             this.tabSellReport.Location = new System.Drawing.Point(4, 45);
             this.tabSellReport.Name = "tabSellReport";
+            this.tabSellReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabSellReport.Size = new System.Drawing.Size(1176, 918);
             this.tabSellReport.TabIndex = 2;
             this.tabSellReport.Text = "گزارش فروش";
             this.tabSellReport.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel4.Controls.Add(this.label42);
-            this.flowLayoutPanel4.Controls.Add(this.label43);
-            this.flowLayoutPanel4.Controls.Add(this.label44);
-            this.flowLayoutPanel4.Controls.Add(this.label45);
-            this.flowLayoutPanel4.Controls.Add(this.label46);
-            this.flowLayoutPanel4.Controls.Add(this.label47);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(493, 140);
-            this.flowLayoutPanel4.TabIndex = 38;
-            // 
-            // label42
-            // 
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label42.Location = new System.Drawing.Point(408, 24);
-            this.label42.Name = "label42";
-            this.label42.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label42.Size = new System.Drawing.Size(80, 45);
-            this.label42.TabIndex = 2;
-            this.label42.Text = "تاریخ :";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.BackColor = System.Drawing.SystemColors.Window;
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label43.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label43.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label43.Location = new System.Drawing.Point(252, 24);
-            this.label43.Name = "label43";
-            this.label43.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label43.Size = new System.Drawing.Size(150, 45);
-            this.label43.TabIndex = 36;
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label44.Location = new System.Drawing.Point(166, 24);
-            this.label44.Name = "label44";
-            this.label44.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label44.Size = new System.Drawing.Size(80, 45);
-            this.label44.TabIndex = 2;
-            this.label44.Text = "ساعت :";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.BackColor = System.Drawing.SystemColors.Window;
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label45.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label45.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label45.Location = new System.Drawing.Point(10, 24);
-            this.label45.Name = "label45";
-            this.label45.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label45.Size = new System.Drawing.Size(150, 45);
-            this.label45.TabIndex = 36;
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label46.Location = new System.Drawing.Point(408, 69);
-            this.label46.Name = "label46";
-            this.label46.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label46.Size = new System.Drawing.Size(80, 45);
-            this.label46.TabIndex = 2;
-            this.label46.Text = "روز :";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label47
-            // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label47.BackColor = System.Drawing.SystemColors.Window;
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label47.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label47.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label47.Location = new System.Drawing.Point(252, 69);
-            this.label47.Name = "label47";
-            this.label47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label47.Size = new System.Drawing.Size(150, 45);
-            this.label47.TabIndex = 36;
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.label48);
-            this.panel3.Controls.Add(this.label49);
-            this.panel3.Controls.Add(this.label50);
-            this.panel3.Controls.Add(this.label51);
-            this.panel3.Location = new System.Drawing.Point(613, 19);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(510, 140);
-            this.panel3.TabIndex = 39;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(392, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 120);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label48
-            // 
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label48.Font = new System.Drawing.Font("Tahoma", 16F);
-            this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label48.Location = new System.Drawing.Point(38, 78);
-            this.label48.Name = "label48";
-            this.label48.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label48.Size = new System.Drawing.Size(220, 50);
-            this.label48.TabIndex = 2;
-            this.label48.Text = "aabbasian008";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label49
-            // 
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label49.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label49.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label49.Location = new System.Drawing.Point(38, 17);
-            this.label49.Name = "label49";
-            this.label49.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label49.Size = new System.Drawing.Size(269, 50);
-            this.label49.TabIndex = 2;
-            this.label49.Text = "ابوالفضل عباسیان";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label50.Location = new System.Drawing.Point(247, 80);
-            this.label50.Name = "label50";
-            this.label50.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label50.Size = new System.Drawing.Size(130, 50);
-            this.label50.TabIndex = 2;
-            this.label50.Text = "کد کاربری :";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label51.Location = new System.Drawing.Point(247, 17);
-            this.label51.Name = "label51";
-            this.label51.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label51.Size = new System.Drawing.Size(130, 50);
-            this.label51.TabIndex = 2;
-            this.label51.Text = "کاربر :";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabCostumers
             // 
@@ -1079,10 +976,11 @@
             this.tabCostumers.Controls.Add(this.pnlCostumerInfo);
             this.tabCostumers.Controls.Add(this.lblCostumersDatabase);
             this.tabCostumers.Controls.Add(this.pnlCostumersDatabase);
-            this.tabCostumers.Controls.Add(this.pnlCostumersTabDateAndTime);
-            this.tabCostumers.Controls.Add(this.pnlCostumersTabActiveStaffInfo);
+            this.tabCostumers.Controls.Add(this.pnlTabDateAndTime2);
+            this.tabCostumers.Controls.Add(this.pnlActiveStaffInfo2);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
             this.tabCostumers.Name = "tabCostumers";
+            this.tabCostumers.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabCostumers.Size = new System.Drawing.Size(1176, 918);
             this.tabCostumers.TabIndex = 8;
             this.tabCostumers.Text = "مشتریان";
@@ -1093,8 +991,9 @@
             // 
             this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumerInfo.Location = new System.Drawing.Point(979, 774);
+            this.lblCostumerInfo.Location = new System.Drawing.Point(982, 774);
             this.lblCostumerInfo.Name = "lblCostumerInfo";
+            this.lblCostumerInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblCostumerInfo.Size = new System.Drawing.Size(140, 30);
             this.lblCostumerInfo.TabIndex = 107;
             this.lblCostumerInfo.Text = "اطلاعات مشتری";
@@ -1146,52 +1045,89 @@
             this.pnlCostumerInfo.Location = new System.Drawing.Point(20, 792);
             this.pnlCostumerInfo.Name = "pnlCostumerInfo";
             this.pnlCostumerInfo.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.pnlCostumerInfo.Size = new System.Drawing.Size(1120, 519);
+            this.pnlCostumerInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlCostumerInfo.Size = new System.Drawing.Size(1137, 519);
             this.pnlCostumerInfo.TabIndex = 106;
             // 
-            // btnCostumerInfoChooseAsBuyer
+            // label20
             // 
-            this.btnCostumerInfoChooseAsBuyer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoChooseAsBuyer, true);
-            this.btnCostumerInfoChooseAsBuyer.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(20, 457);
-            this.btnCostumerInfoChooseAsBuyer.Name = "btnCostumerInfoChooseAsBuyer";
-            this.btnCostumerInfoChooseAsBuyer.Size = new System.Drawing.Size(1080, 47);
-            this.btnCostumerInfoChooseAsBuyer.TabIndex = 35;
-            this.btnCostumerInfoChooseAsBuyer.Text = "انتخاب به عنوان خریدار";
-            this.btnCostumerInfoChooseAsBuyer.UseVisualStyleBackColor = false;
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.Location = new System.Drawing.Point(967, 10);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(150, 47);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "تاریخ :";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnCostumerInfoErase
+            // lblCostumerSignupDate
             // 
-            this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoErase, true);
-            this.btnCostumerInfoErase.ForeColor = System.Drawing.Color.Red;
-            this.btnCostumerInfoErase.Location = new System.Drawing.Point(22, 404);
-            this.btnCostumerInfoErase.Name = "btnCostumerInfoErase";
-            this.btnCostumerInfoErase.Size = new System.Drawing.Size(265, 47);
-            this.btnCostumerInfoErase.TabIndex = 32;
-            this.btnCostumerInfoErase.Text = "پاک کردن";
-            this.btnCostumerInfoErase.UseVisualStyleBackColor = true;
+            this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupDate.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblCostumerSignupDate.Location = new System.Drawing.Point(761, 10);
+            this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
+            this.lblCostumerSignupDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCostumerSignupDate.Size = new System.Drawing.Size(200, 47);
+            this.lblCostumerSignupDate.TabIndex = 36;
+            this.lblCostumerSignupDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtCostumerAddress
+            // label19
             // 
-            this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerAddress, true);
-            this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtCostumerAddress.Location = new System.Drawing.Point(20, 310);
-            this.txtCostumerAddress.Name = "txtCostumerAddress";
-            this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
-            this.txtCostumerAddress.TabIndex = 29;
-            this.txtCostumerAddress.Text = "";
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label19.Location = new System.Drawing.Point(605, 10);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(150, 47);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "ساعت :";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtCostumerPostCode
+            // lblCostumerSignupTime
             // 
-            this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
-            this.txtCostumerPostCode.Location = new System.Drawing.Point(382, 260);
-            this.txtCostumerPostCode.Name = "txtCostumerPostCode";
-            this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
-            this.txtCostumerPostCode.TabIndex = 26;
+            this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupTime.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblCostumerSignupTime.Location = new System.Drawing.Point(399, 10);
+            this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
+            this.lblCostumerSignupTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCostumerSignupTime.Size = new System.Drawing.Size(200, 47);
+            this.lblCostumerSignupTime.TabIndex = 36;
+            this.lblCostumerSignupTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.Location = new System.Drawing.Point(243, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(150, 47);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "روز :";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCostumerSignupDay
+            // 
+            this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCostumerSignupDay.BackColor = System.Drawing.SystemColors.Window;
+            this.lblCostumerSignupDay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
+            this.lblCostumerSignupDay.Location = new System.Drawing.Point(37, 10);
+            this.lblCostumerSignupDay.Name = "lblCostumerSignupDay";
+            this.lblCostumerSignupDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCostumerSignupDay.Size = new System.Drawing.Size(200, 47);
+            this.lblCostumerSignupDay.TabIndex = 36;
+            this.lblCostumerSignupDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Location = new System.Drawing.Point(967, 57);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(150, 47);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "نوع مشتری :";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cmbCostumerType
             // 
@@ -1206,95 +1142,15 @@
             "عادی",
             "شرکت",
             "همکار"});
-            this.cmbCostumerType.Location = new System.Drawing.Point(744, 60);
+            this.cmbCostumerType.Location = new System.Drawing.Point(761, 60);
             this.cmbCostumerType.Name = "cmbCostumerType";
             this.cmbCostumerType.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumerType.TabIndex = 20;
             // 
-            // lblCostumerSignupDay
-            // 
-            this.lblCostumerSignupDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCostumerSignupDay.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupDay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCostumerSignupDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.pnlCostumerInfo.SetFlowBreak(this.lblCostumerSignupDay, true);
-            this.lblCostumerSignupDay.Location = new System.Drawing.Point(20, 10);
-            this.lblCostumerSignupDay.Name = "lblCostumerSignupDay";
-            this.lblCostumerSignupDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCostumerSignupDay.Size = new System.Drawing.Size(200, 47);
-            this.lblCostumerSignupDay.TabIndex = 36;
-            this.lblCostumerSignupDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.Location = new System.Drawing.Point(950, 10);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(150, 47);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "تاریخ :";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCostumerSignupDate
-            // 
-            this.lblCostumerSignupDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCostumerSignupDate.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCostumerSignupDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupDate.Location = new System.Drawing.Point(744, 10);
-            this.lblCostumerSignupDate.Name = "lblCostumerSignupDate";
-            this.lblCostumerSignupDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCostumerSignupDate.Size = new System.Drawing.Size(200, 47);
-            this.lblCostumerSignupDate.TabIndex = 36;
-            this.lblCostumerSignupDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.Location = new System.Drawing.Point(588, 10);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(150, 47);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "ساعت :";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCostumerSignupTime
-            // 
-            this.lblCostumerSignupTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCostumerSignupTime.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCostumerSignupTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCostumerSignupTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblCostumerSignupTime.Location = new System.Drawing.Point(382, 10);
-            this.lblCostumerSignupTime.Name = "lblCostumerSignupTime";
-            this.lblCostumerSignupTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCostumerSignupTime.Size = new System.Drawing.Size(200, 47);
-            this.lblCostumerSignupTime.TabIndex = 36;
-            this.lblCostumerSignupTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.Location = new System.Drawing.Point(226, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(150, 47);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "روز :";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.Location = new System.Drawing.Point(950, 57);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 47);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "نوع مشتری :";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(950, 107);
+            this.label4.Location = new System.Drawing.Point(967, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 47);
             this.label4.TabIndex = 2;
@@ -1304,7 +1160,7 @@
             // txtCostumerFirstName
             // 
             this.txtCostumerFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerFirstName.Location = new System.Drawing.Point(744, 110);
+            this.txtCostumerFirstName.Location = new System.Drawing.Point(761, 107);
             this.txtCostumerFirstName.Name = "txtCostumerFirstName";
             this.txtCostumerFirstName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerFirstName.TabIndex = 3;
@@ -1312,7 +1168,7 @@
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Location = new System.Drawing.Point(588, 107);
+            this.label5.Location = new System.Drawing.Point(605, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 47);
             this.label5.TabIndex = 4;
@@ -1322,7 +1178,7 @@
             // txtCostumerLastName
             // 
             this.txtCostumerLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerLastName.Location = new System.Drawing.Point(382, 110);
+            this.txtCostumerLastName.Location = new System.Drawing.Point(399, 107);
             this.txtCostumerLastName.Name = "txtCostumerLastName";
             this.txtCostumerLastName.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerLastName.TabIndex = 5;
@@ -1330,7 +1186,7 @@
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Location = new System.Drawing.Point(226, 107);
+            this.label6.Location = new System.Drawing.Point(243, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 47);
             this.label6.TabIndex = 6;
@@ -1340,7 +1196,7 @@
             // txtCostumerUsername
             // 
             this.txtCostumerUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerUsername.Location = new System.Drawing.Point(20, 110);
+            this.txtCostumerUsername.Location = new System.Drawing.Point(37, 107);
             this.txtCostumerUsername.Name = "txtCostumerUsername";
             this.txtCostumerUsername.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerUsername.TabIndex = 7;
@@ -1348,7 +1204,7 @@
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(950, 157);
+            this.label7.Location = new System.Drawing.Point(967, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 47);
             this.label7.TabIndex = 8;
@@ -1358,7 +1214,7 @@
             // txtCostumerId
             // 
             this.txtCostumerId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerId.Location = new System.Drawing.Point(744, 160);
+            this.txtCostumerId.Location = new System.Drawing.Point(761, 157);
             this.txtCostumerId.Name = "txtCostumerId";
             this.txtCostumerId.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerId.TabIndex = 9;
@@ -1366,7 +1222,7 @@
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Location = new System.Drawing.Point(588, 157);
+            this.label11.Location = new System.Drawing.Point(605, 154);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 47);
             this.label11.TabIndex = 16;
@@ -1376,7 +1232,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompanyName.Location = new System.Drawing.Point(382, 160);
+            this.txtCompanyName.Location = new System.Drawing.Point(399, 157);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(200, 44);
             this.txtCompanyName.TabIndex = 17;
@@ -1384,7 +1240,7 @@
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.Location = new System.Drawing.Point(226, 157);
+            this.label8.Location = new System.Drawing.Point(243, 154);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 47);
             this.label8.TabIndex = 10;
@@ -1394,7 +1250,7 @@
             // txtCostumerHomePhone
             // 
             this.txtCostumerHomePhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerHomePhone.Location = new System.Drawing.Point(20, 160);
+            this.txtCostumerHomePhone.Location = new System.Drawing.Point(37, 157);
             this.txtCostumerHomePhone.Name = "txtCostumerHomePhone";
             this.txtCostumerHomePhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerHomePhone.TabIndex = 11;
@@ -1402,7 +1258,7 @@
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Location = new System.Drawing.Point(950, 207);
+            this.label12.Location = new System.Drawing.Point(967, 204);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 47);
             this.label12.TabIndex = 18;
@@ -1412,7 +1268,7 @@
             // txtCostumerCellPhone
             // 
             this.txtCostumerCellPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCellPhone.Location = new System.Drawing.Point(744, 210);
+            this.txtCostumerCellPhone.Location = new System.Drawing.Point(761, 207);
             this.txtCostumerCellPhone.Name = "txtCostumerCellPhone";
             this.txtCostumerCellPhone.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCellPhone.TabIndex = 19;
@@ -1420,7 +1276,7 @@
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(588, 207);
+            this.label9.Location = new System.Drawing.Point(605, 204);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(150, 47);
             this.label9.TabIndex = 12;
@@ -1430,7 +1286,7 @@
             // txtCostumerEmail
             // 
             this.txtCostumerEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerEmail.Location = new System.Drawing.Point(382, 210);
+            this.txtCostumerEmail.Location = new System.Drawing.Point(399, 207);
             this.txtCostumerEmail.Name = "txtCostumerEmail";
             this.txtCostumerEmail.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerEmail.TabIndex = 13;
@@ -1438,7 +1294,7 @@
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.Location = new System.Drawing.Point(226, 207);
+            this.label13.Location = new System.Drawing.Point(243, 204);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(150, 47);
             this.label13.TabIndex = 21;
@@ -1448,7 +1304,7 @@
             // txtCostumerProvince
             // 
             this.txtCostumerProvince.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerProvince.Location = new System.Drawing.Point(20, 210);
+            this.txtCostumerProvince.Location = new System.Drawing.Point(37, 207);
             this.txtCostumerProvince.Name = "txtCostumerProvince";
             this.txtCostumerProvince.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerProvince.TabIndex = 22;
@@ -1456,7 +1312,7 @@
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.Location = new System.Drawing.Point(950, 257);
+            this.label14.Location = new System.Drawing.Point(967, 254);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(150, 47);
             this.label14.TabIndex = 23;
@@ -1466,7 +1322,7 @@
             // txtCostumerCity
             // 
             this.txtCostumerCity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostumerCity.Location = new System.Drawing.Point(744, 260);
+            this.txtCostumerCity.Location = new System.Drawing.Point(761, 257);
             this.txtCostumerCity.Name = "txtCostumerCity";
             this.txtCostumerCity.Size = new System.Drawing.Size(200, 44);
             this.txtCostumerCity.TabIndex = 24;
@@ -1474,28 +1330,48 @@
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.Location = new System.Drawing.Point(588, 257);
+            this.label15.Location = new System.Drawing.Point(605, 254);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 47);
             this.label15.TabIndex = 25;
             this.label15.Text = "کد پستی :";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // txtCostumerPostCode
+            // 
+            this.txtCostumerPostCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerPostCode, true);
+            this.txtCostumerPostCode.Location = new System.Drawing.Point(399, 257);
+            this.txtCostumerPostCode.Name = "txtCostumerPostCode";
+            this.txtCostumerPostCode.Size = new System.Drawing.Size(200, 44);
+            this.txtCostumerPostCode.TabIndex = 26;
+            // 
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.Location = new System.Drawing.Point(950, 307);
+            this.label16.Location = new System.Drawing.Point(967, 304);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 47);
             this.label16.TabIndex = 27;
             this.label16.Text = "آدرس :";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // txtCostumerAddress
+            // 
+            this.txtCostumerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCostumerInfo.SetFlowBreak(this.txtCostumerAddress, true);
+            this.txtCostumerAddress.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCostumerAddress.Location = new System.Drawing.Point(37, 307);
+            this.txtCostumerAddress.Name = "txtCostumerAddress";
+            this.txtCostumerAddress.Size = new System.Drawing.Size(924, 88);
+            this.txtCostumerAddress.TabIndex = 29;
+            this.txtCostumerAddress.Text = "";
+            // 
             // btnCostumerInfoSave
             // 
             this.btnCostumerInfoSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCostumerInfoSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoSave.Location = new System.Drawing.Point(835, 404);
+            this.btnCostumerInfoSave.Location = new System.Drawing.Point(852, 401);
             this.btnCostumerInfoSave.Name = "btnCostumerInfoSave";
             this.btnCostumerInfoSave.Size = new System.Drawing.Size(265, 47);
             this.btnCostumerInfoSave.TabIndex = 31;
@@ -1505,7 +1381,7 @@
             // btnCostumerInfoUpdate
             // 
             this.btnCostumerInfoUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(564, 404);
+            this.btnCostumerInfoUpdate.Location = new System.Drawing.Point(581, 401);
             this.btnCostumerInfoUpdate.Name = "btnCostumerInfoUpdate";
             this.btnCostumerInfoUpdate.Size = new System.Drawing.Size(265, 47);
             this.btnCostumerInfoUpdate.TabIndex = 33;
@@ -1516,19 +1392,44 @@
             // 
             this.btnCostumerInfoDelete.BackColor = System.Drawing.Color.Red;
             this.btnCostumerInfoDelete.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(293, 404);
+            this.btnCostumerInfoDelete.Location = new System.Drawing.Point(310, 401);
             this.btnCostumerInfoDelete.Name = "btnCostumerInfoDelete";
             this.btnCostumerInfoDelete.Size = new System.Drawing.Size(265, 47);
             this.btnCostumerInfoDelete.TabIndex = 34;
             this.btnCostumerInfoDelete.Text = "حذف";
             this.btnCostumerInfoDelete.UseVisualStyleBackColor = false;
             // 
+            // btnCostumerInfoErase
+            // 
+            this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoErase, true);
+            this.btnCostumerInfoErase.ForeColor = System.Drawing.Color.Red;
+            this.btnCostumerInfoErase.Location = new System.Drawing.Point(39, 401);
+            this.btnCostumerInfoErase.Name = "btnCostumerInfoErase";
+            this.btnCostumerInfoErase.Size = new System.Drawing.Size(265, 47);
+            this.btnCostumerInfoErase.TabIndex = 32;
+            this.btnCostumerInfoErase.Text = "پاک کردن";
+            this.btnCostumerInfoErase.UseVisualStyleBackColor = true;
+            // 
+            // btnCostumerInfoChooseAsBuyer
+            // 
+            this.btnCostumerInfoChooseAsBuyer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlCostumerInfo.SetFlowBreak(this.btnCostumerInfoChooseAsBuyer, true);
+            this.btnCostumerInfoChooseAsBuyer.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCostumerInfoChooseAsBuyer.Location = new System.Drawing.Point(37, 454);
+            this.btnCostumerInfoChooseAsBuyer.Name = "btnCostumerInfoChooseAsBuyer";
+            this.btnCostumerInfoChooseAsBuyer.Size = new System.Drawing.Size(1080, 47);
+            this.btnCostumerInfoChooseAsBuyer.TabIndex = 35;
+            this.btnCostumerInfoChooseAsBuyer.Text = "انتخاب به عنوان خریدار";
+            this.btnCostumerInfoChooseAsBuyer.UseVisualStyleBackColor = false;
+            // 
             // lblCostumersDatabase
             // 
             this.lblCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCostumersDatabase.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumersDatabase.Location = new System.Drawing.Point(982, 169);
+            this.lblCostumersDatabase.Location = new System.Drawing.Point(988, 169);
             this.lblCostumersDatabase.Name = "lblCostumersDatabase";
+            this.lblCostumersDatabase.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblCostumersDatabase.Size = new System.Drawing.Size(139, 30);
             this.lblCostumersDatabase.TabIndex = 2;
             this.lblCostumersDatabase.Text = "لیست مشتریان";
@@ -1543,7 +1444,7 @@
             this.pnlCostumersDatabase.Controls.Add(this.pnlCostumersDatabaseSearch);
             this.pnlCostumersDatabase.Location = new System.Drawing.Point(20, 187);
             this.pnlCostumersDatabase.Name = "pnlCostumersDatabase";
-            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1120, 575);
+            this.pnlCostumersDatabase.Size = new System.Drawing.Size(1137, 575);
             this.pnlCostumersDatabase.TabIndex = 105;
             // 
             // dgvAllCostumers
@@ -1556,7 +1457,7 @@
             this.dgvAllCostumers.GridColor = System.Drawing.SystemColors.Highlight;
             this.dgvAllCostumers.Location = new System.Drawing.Point(0, 129);
             this.dgvAllCostumers.Name = "dgvAllCostumers";
-            this.dgvAllCostumers.Size = new System.Drawing.Size(1118, 444);
+            this.dgvAllCostumers.Size = new System.Drawing.Size(1135, 444);
             this.dgvAllCostumers.TabIndex = 105;
             // 
             // pnlCostumersDatabaseSearch
@@ -1566,7 +1467,8 @@
             this.pnlCostumersDatabaseSearch.Controls.Add(this.flowLayoutPanel1);
             this.pnlCostumersDatabaseSearch.Location = new System.Drawing.Point(17, 23);
             this.pnlCostumersDatabaseSearch.Name = "pnlCostumersDatabaseSearch";
-            this.pnlCostumersDatabaseSearch.Size = new System.Drawing.Size(1083, 100);
+            this.pnlCostumersDatabaseSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlCostumersDatabaseSearch.Size = new System.Drawing.Size(1100, 100);
             this.pnlCostumersDatabaseSearch.TabIndex = 104;
             this.pnlCostumersDatabaseSearch.TabStop = false;
             this.pnlCostumersDatabaseSearch.Text = "جستجو بر اساس";
@@ -1585,7 +1487,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1077, 57);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1094, 57);
             this.flowLayoutPanel1.TabIndex = 104;
             // 
             // cmbCostumersDatabaseSearchStandardGroup
@@ -1604,7 +1506,7 @@
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(842, 3);
+            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(859, 3);
             this.cmbCostumersDatabaseSearchStandardGroup.Name = "cmbCostumersDatabaseSearchStandardGroup";
             this.cmbCostumersDatabaseSearchStandardGroup.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardGroup.TabIndex = 20;
@@ -1629,7 +1531,7 @@
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(636, 3);
+            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(653, 3);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Name = "cmbCostumersDatabaseSearchStandardPersonalInfo";
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.TabIndex = 32;
@@ -1656,7 +1558,7 @@
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(430, 3);
+            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(447, 3);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Name = "cmbCostumersDatabaseSearchStandardPlaceInfo";
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.TabIndex = 35;
@@ -1683,7 +1585,7 @@
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(224, 3);
+            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(241, 3);
             this.cmbCostumersDatabaseSearchStandardDate.Name = "cmbCostumersDatabaseSearchStandardDate";
             this.cmbCostumersDatabaseSearchStandardDate.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardDate.TabIndex = 36;
@@ -1695,7 +1597,7 @@
             this.txtCostumersDatabaseSearchNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostumersDatabaseSearchNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCostumersDatabaseSearchNormal.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(18, 3);
+            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(35, 3);
             this.txtCostumersDatabaseSearchNormal.Multiline = true;
             this.txtCostumersDatabaseSearchNormal.Name = "txtCostumersDatabaseSearchNormal";
             this.txtCostumersDatabaseSearchNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1708,7 +1610,7 @@
             this.lblCostumersDatabaseSearchStandardDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardDate.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardDate.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(842, 53);
+            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(859, 53);
             this.lblCostumersDatabaseSearchStandardDate.Mask = "0000/00/00";
             this.lblCostumersDatabaseSearchStandardDate.Name = "lblCostumersDatabaseSearchStandardDate";
             this.lblCostumersDatabaseSearchStandardDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1724,7 +1626,7 @@
             this.lblCostumersDatabaseSearchStandardHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardHour.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardHour.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(636, 53);
+            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(653, 53);
             this.lblCostumersDatabaseSearchStandardHour.Mask = "00:00";
             this.lblCostumersDatabaseSearchStandardHour.Name = "lblCostumersDatabaseSearchStandardHour";
             this.lblCostumersDatabaseSearchStandardHour.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1733,22 +1635,23 @@
             this.lblCostumersDatabaseSearchStandardHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lblCostumersDatabaseSearchStandardHour.ValidatingType = typeof(System.DateTime);
             // 
-            // pnlCostumersTabDateAndTime
+            // pnlTabDateAndTime2
             // 
-            this.pnlCostumersTabDateAndTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTabDateAndTime2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCostumersTabDateAndTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.label1);
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.labelCostumersTabTodayDate);
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.label2);
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.labelCostumersTabTodayHour);
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.label23);
-            this.pnlCostumersTabDateAndTime.Controls.Add(this.labelCostumersTabTodayWeekday);
-            this.pnlCostumersTabDateAndTime.Location = new System.Drawing.Point(20, 19);
-            this.pnlCostumersTabDateAndTime.Name = "pnlCostumersTabDateAndTime";
-            this.pnlCostumersTabDateAndTime.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.pnlCostumersTabDateAndTime.Size = new System.Drawing.Size(510, 140);
-            this.pnlCostumersTabDateAndTime.TabIndex = 37;
+            this.pnlTabDateAndTime2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime2.Controls.Add(this.label1);
+            this.pnlTabDateAndTime2.Controls.Add(this.labelCostumersTabTodayDate);
+            this.pnlTabDateAndTime2.Controls.Add(this.label2);
+            this.pnlTabDateAndTime2.Controls.Add(this.labelCostumersTabTodayHour);
+            this.pnlTabDateAndTime2.Controls.Add(this.label23);
+            this.pnlTabDateAndTime2.Controls.Add(this.labelCostumersTabTodayWeekday);
+            this.pnlTabDateAndTime2.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime2.Name = "pnlTabDateAndTime2";
+            this.pnlTabDateAndTime2.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime2.Size = new System.Drawing.Size(510, 140);
+            this.pnlTabDateAndTime2.TabIndex = 37;
             // 
             // label1
             // 
@@ -1828,20 +1731,21 @@
             this.labelCostumersTabTodayWeekday.TabIndex = 36;
             this.labelCostumersTabTodayWeekday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlCostumersTabActiveStaffInfo
+            // pnlActiveStaffInfo2
             // 
-            this.pnlCostumersTabActiveStaffInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCostumersTabActiveStaffInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlCostumersTabActiveStaffInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCostumersTabActiveStaffInfo.Controls.Add(this.pictureBox1);
-            this.pnlCostumersTabActiveStaffInfo.Controls.Add(this.lblActiveStaffStaffcode);
-            this.pnlCostumersTabActiveStaffInfo.Controls.Add(this.lblActiveStaffFullname);
-            this.pnlCostumersTabActiveStaffInfo.Controls.Add(this.label24);
-            this.pnlCostumersTabActiveStaffInfo.Controls.Add(this.label25);
-            this.pnlCostumersTabActiveStaffInfo.Location = new System.Drawing.Point(630, 19);
-            this.pnlCostumersTabActiveStaffInfo.Name = "pnlCostumersTabActiveStaffInfo";
-            this.pnlCostumersTabActiveStaffInfo.Size = new System.Drawing.Size(510, 140);
-            this.pnlCostumersTabActiveStaffInfo.TabIndex = 37;
+            this.pnlActiveStaffInfo2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo2.Controls.Add(this.pictureBox1);
+            this.pnlActiveStaffInfo2.Controls.Add(this.lblActiveStaffStaffcode);
+            this.pnlActiveStaffInfo2.Controls.Add(this.lblActiveStaffFullname);
+            this.pnlActiveStaffInfo2.Controls.Add(this.label24);
+            this.pnlActiveStaffInfo2.Controls.Add(this.label25);
+            this.pnlActiveStaffInfo2.Location = new System.Drawing.Point(646, 19);
+            this.pnlActiveStaffInfo2.Name = "pnlActiveStaffInfo2";
+            this.pnlActiveStaffInfo2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo2.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo2.TabIndex = 37;
             // 
             // pictureBox1
             // 
@@ -1912,31 +1816,1029 @@
             // 
             this.tabProducts.AutoScroll = true;
             this.tabProducts.Controls.Add(this.label32);
-            this.tabProducts.Controls.Add(this.flowLayoutPanel3);
+            this.tabProducts.Controls.Add(this.pnlProductInfo);
             this.tabProducts.Controls.Add(this.label92);
-            this.tabProducts.Controls.Add(this.panel2);
-            this.tabProducts.Controls.Add(this.flowLayoutPanel9);
-            this.tabProducts.Controls.Add(this.panel7);
+            this.tabProducts.Controls.Add(this.pnlProductsDatabase);
+            this.tabProducts.Controls.Add(this.pnlTabDateAndTime1);
+            this.tabProducts.Controls.Add(this.pnlActiveStaffInfo1);
             this.tabProducts.Location = new System.Drawing.Point(4, 45);
             this.tabProducts.Name = "tabProducts";
             this.tabProducts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabProducts.Size = new System.Drawing.Size(1176, 918);
             this.tabProducts.TabIndex = 1;
             this.tabProducts.Text = "محصولات";
             this.tabProducts.UseVisualStyleBackColor = true;
             // 
+            // label32
+            // 
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(996, 770);
+            this.label32.Name = "label32";
+            this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label32.Size = new System.Drawing.Size(140, 30);
+            this.label32.TabIndex = 113;
+            this.label32.Text = "اطلاعات محصول";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlProductInfo
+            // 
+            this.pnlProductInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlProductInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlProductInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlProductInfo.Controls.Add(this.label33);
+            this.pnlProductInfo.Controls.Add(this.label34);
+            this.pnlProductInfo.Controls.Add(this.label35);
+            this.pnlProductInfo.Controls.Add(this.label36);
+            this.pnlProductInfo.Controls.Add(this.label37);
+            this.pnlProductInfo.Controls.Add(this.label38);
+            this.pnlProductInfo.Controls.Add(this.label39);
+            this.pnlProductInfo.Controls.Add(this.comboBox1);
+            this.pnlProductInfo.Controls.Add(this.label40);
+            this.pnlProductInfo.Controls.Add(this.textBox1);
+            this.pnlProductInfo.Controls.Add(this.label41);
+            this.pnlProductInfo.Controls.Add(this.textBox2);
+            this.pnlProductInfo.Controls.Add(this.label82);
+            this.pnlProductInfo.Controls.Add(this.textBox3);
+            this.pnlProductInfo.Controls.Add(this.label83);
+            this.pnlProductInfo.Controls.Add(this.textBox4);
+            this.pnlProductInfo.Controls.Add(this.label84);
+            this.pnlProductInfo.Controls.Add(this.textBox5);
+            this.pnlProductInfo.Controls.Add(this.label85);
+            this.pnlProductInfo.Controls.Add(this.textBox6);
+            this.pnlProductInfo.Controls.Add(this.label86);
+            this.pnlProductInfo.Controls.Add(this.textBox7);
+            this.pnlProductInfo.Controls.Add(this.label87);
+            this.pnlProductInfo.Controls.Add(this.textBox8);
+            this.pnlProductInfo.Controls.Add(this.label88);
+            this.pnlProductInfo.Controls.Add(this.textBox9);
+            this.pnlProductInfo.Controls.Add(this.label89);
+            this.pnlProductInfo.Controls.Add(this.textBox10);
+            this.pnlProductInfo.Controls.Add(this.label90);
+            this.pnlProductInfo.Controls.Add(this.textBox11);
+            this.pnlProductInfo.Controls.Add(this.label91);
+            this.pnlProductInfo.Controls.Add(this.richTextBox1);
+            this.pnlProductInfo.Controls.Add(this.button1);
+            this.pnlProductInfo.Controls.Add(this.button2);
+            this.pnlProductInfo.Controls.Add(this.button3);
+            this.pnlProductInfo.Controls.Add(this.button4);
+            this.pnlProductInfo.Controls.Add(this.button5);
+            this.pnlProductInfo.Location = new System.Drawing.Point(20, 792);
+            this.pnlProductInfo.Name = "pnlProductInfo";
+            this.pnlProductInfo.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
+            this.pnlProductInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlProductInfo.Size = new System.Drawing.Size(1137, 519);
+            this.pnlProductInfo.TabIndex = 112;
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.Location = new System.Drawing.Point(967, 10);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(150, 47);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "تاریخ :";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label34.BackColor = System.Drawing.SystemColors.Window;
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label34.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label34.Location = new System.Drawing.Point(761, 10);
+            this.label34.Name = "label34";
+            this.label34.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label34.Size = new System.Drawing.Size(200, 47);
+            this.label34.TabIndex = 36;
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.Location = new System.Drawing.Point(605, 10);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(150, 47);
+            this.label35.TabIndex = 36;
+            this.label35.Text = "ساعت :";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label36.BackColor = System.Drawing.SystemColors.Window;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label36.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label36.Location = new System.Drawing.Point(399, 10);
+            this.label36.Name = "label36";
+            this.label36.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label36.Size = new System.Drawing.Size(200, 47);
+            this.label36.TabIndex = 36;
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label37.Location = new System.Drawing.Point(243, 10);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(150, 47);
+            this.label37.TabIndex = 2;
+            this.label37.Text = "روز :";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label38.BackColor = System.Drawing.SystemColors.Window;
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label38.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.pnlProductInfo.SetFlowBreak(this.label38, true);
+            this.label38.Location = new System.Drawing.Point(37, 10);
+            this.label38.Name = "label38";
+            this.label38.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label38.Size = new System.Drawing.Size(200, 47);
+            this.label38.TabIndex = 36;
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label39.Location = new System.Drawing.Point(967, 57);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(150, 47);
+            this.label39.TabIndex = 14;
+            this.label39.Text = "نوع مشتری :";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "عادی",
+            "شرکت"});
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.pnlProductInfo.SetFlowBreak(this.comboBox1, true);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "عادی",
+            "شرکت",
+            "همکار"});
+            this.comboBox1.Location = new System.Drawing.Point(761, 60);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 44);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label40.Location = new System.Drawing.Point(967, 104);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(150, 47);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "نام :";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(761, 107);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 44);
+            this.textBox1.TabIndex = 3;
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label41.Location = new System.Drawing.Point(605, 104);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(150, 47);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "نام خانوادگی :";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(399, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 44);
+            this.textBox2.TabIndex = 5;
+            // 
+            // label82
+            // 
+            this.label82.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label82.Location = new System.Drawing.Point(243, 104);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(150, 47);
+            this.label82.TabIndex = 6;
+            this.label82.Text = "نام کاربری :";
+            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(37, 107);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 44);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label83
+            // 
+            this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label83.Location = new System.Drawing.Point(967, 154);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(150, 47);
+            this.label83.TabIndex = 8;
+            this.label83.Text = "کد ملی :";
+            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(761, 157);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 44);
+            this.textBox4.TabIndex = 9;
+            // 
+            // label84
+            // 
+            this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label84.Location = new System.Drawing.Point(605, 154);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(150, 47);
+            this.label84.TabIndex = 16;
+            this.label84.Text = "نام شرکت :";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(399, 157);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(200, 44);
+            this.textBox5.TabIndex = 17;
+            // 
+            // label85
+            // 
+            this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label85.Location = new System.Drawing.Point(243, 154);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(150, 47);
+            this.label85.TabIndex = 10;
+            this.label85.Text = "تلفن ثابت :";
+            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Location = new System.Drawing.Point(37, 157);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(200, 44);
+            this.textBox6.TabIndex = 11;
+            // 
+            // label86
+            // 
+            this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label86.Location = new System.Drawing.Point(967, 204);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(150, 47);
+            this.label86.TabIndex = 18;
+            this.label86.Text = "تلفن همراه :";
+            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.Location = new System.Drawing.Point(761, 207);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(200, 44);
+            this.textBox7.TabIndex = 19;
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.Location = new System.Drawing.Point(605, 204);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(150, 47);
+            this.label87.TabIndex = 12;
+            this.label87.Text = "ایمیل :";
+            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox8.Location = new System.Drawing.Point(399, 207);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(200, 44);
+            this.textBox8.TabIndex = 13;
+            // 
+            // label88
+            // 
+            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label88.Location = new System.Drawing.Point(243, 204);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(150, 47);
+            this.label88.TabIndex = 21;
+            this.label88.Text = "استان :";
+            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Location = new System.Drawing.Point(37, 207);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(200, 44);
+            this.textBox9.TabIndex = 22;
+            // 
+            // label89
+            // 
+            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label89.Location = new System.Drawing.Point(967, 254);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(150, 47);
+            this.label89.TabIndex = 23;
+            this.label89.Text = "شهر :";
+            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(761, 257);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(200, 44);
+            this.textBox10.TabIndex = 24;
+            // 
+            // label90
+            // 
+            this.label90.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label90.Location = new System.Drawing.Point(605, 254);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(150, 47);
+            this.label90.TabIndex = 25;
+            this.label90.Text = "کد پستی :";
+            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlProductInfo.SetFlowBreak(this.textBox11, true);
+            this.textBox11.Location = new System.Drawing.Point(399, 257);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(200, 44);
+            this.textBox11.TabIndex = 26;
+            // 
+            // label91
+            // 
+            this.label91.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label91.Location = new System.Drawing.Point(967, 304);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(150, 47);
+            this.label91.TabIndex = 27;
+            this.label91.Text = "آدرس :";
+            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlProductInfo.SetFlowBreak(this.richTextBox1, true);
+            this.richTextBox1.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.richTextBox1.Location = new System.Drawing.Point(37, 307);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(924, 88);
+            this.richTextBox1.TabIndex = 29;
+            this.richTextBox1.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(852, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(265, 47);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "ذخیره";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button2.Location = new System.Drawing.Point(581, 401);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(265, 47);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "ویرایش";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.Location = new System.Drawing.Point(310, 401);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(265, 47);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "حذف";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.pnlProductInfo.SetFlowBreak(this.button4, true);
+            this.button4.ForeColor = System.Drawing.Color.Red;
+            this.button4.Location = new System.Drawing.Point(39, 401);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(265, 47);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "پاک کردن";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlProductInfo.SetFlowBreak(this.button5, true);
+            this.button5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button5.Location = new System.Drawing.Point(37, 454);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(1080, 47);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "افزودن به سبد خرید";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label92
+            // 
+            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label92.ForeColor = System.Drawing.Color.Black;
+            this.label92.Location = new System.Drawing.Point(897, 169);
+            this.label92.Name = "label92";
+            this.label92.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label92.Size = new System.Drawing.Size(139, 30);
+            this.label92.TabIndex = 108;
+            this.label92.Text = "لیست محصولات";
+            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlProductsDatabase
+            // 
+            this.pnlProductsDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlProductsDatabase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlProductsDatabase.Controls.Add(this.dataGridView1);
+            this.pnlProductsDatabase.Controls.Add(this.groupBox1);
+            this.pnlProductsDatabase.Location = new System.Drawing.Point(20, 187);
+            this.pnlProductsDatabase.Name = "pnlProductsDatabase";
+            this.pnlProductsDatabase.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlProductsDatabase.Size = new System.Drawing.Size(1137, 575);
+            this.pnlProductsDatabase.TabIndex = 111;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 129);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.Size = new System.Drawing.Size(1135, 444);
+            this.dataGridView1.TabIndex = 105;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.flowLayoutPanel8);
+            this.groupBox1.Location = new System.Drawing.Point(17, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox1.Size = new System.Drawing.Size(1100, 100);
+            this.groupBox1.TabIndex = 104;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "جستجو بر اساس";
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.AutoScroll = true;
+            this.flowLayoutPanel8.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel8.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel8.Controls.Add(this.comboBox4);
+            this.flowLayoutPanel8.Controls.Add(this.comboBox5);
+            this.flowLayoutPanel8.Controls.Add(this.textBox12);
+            this.flowLayoutPanel8.Controls.Add(this.maskedTextBox1);
+            this.flowLayoutPanel8.Controls.Add(this.maskedTextBox2);
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 40);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1094, 57);
+            this.flowLayoutPanel8.TabIndex = 104;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            "نام کاربری",
+            "مشخصات فرد",
+            "مشخصات محل",
+            "تاریخ"});
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "نام کاربری",
+            "مشخصات فرد",
+            "مشخصات محل",
+            "تاریخ"});
+            this.comboBox2.Location = new System.Drawing.Point(859, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(200, 44);
+            this.comboBox2.TabIndex = 20;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            "نام",
+            "نام خانوادگی",
+            "کد ملی",
+            "تلفن همراه",
+            "ایمیل"});
+            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "نام",
+            "نام خانوادگی",
+            "کد ملی",
+            "تلفن همراه",
+            "ایمیل"});
+            this.comboBox3.Location = new System.Drawing.Point(653, 3);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(200, 44);
+            this.comboBox3.TabIndex = 32;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            "نام شرکت",
+            "تلفن ثابت",
+            "استان",
+            "شهر",
+            "کد پستی",
+            "آدرس"});
+            this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "نام شرکت",
+            "تلفن ثابت",
+            "استان",
+            "شهر",
+            "کد پستی",
+            "آدرس"});
+            this.comboBox4.Location = new System.Drawing.Point(447, 3);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(200, 44);
+            this.comboBox4.TabIndex = 35;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox5.AutoCompleteCustomSource.AddRange(new string[] {
+            "امروز",
+            "دیروز",
+            "هفته گذشته",
+            "ماه گذشته",
+            "سال گذشته",
+            "بازه زمانی"});
+            this.comboBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "امروز",
+            "دیروز",
+            "هفته گذشته",
+            "ماه گذشته",
+            "سال گذشته",
+            "بازه زمانی"});
+            this.comboBox5.Location = new System.Drawing.Point(241, 3);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(200, 44);
+            this.comboBox5.TabIndex = 36;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox12.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.textBox12.Location = new System.Drawing.Point(35, 3);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox12.Size = new System.Drawing.Size(200, 44);
+            this.textBox12.TabIndex = 22;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("fa-IR");
+            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(859, 53);
+            this.maskedTextBox1.Mask = "0000/00/00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBox1.Size = new System.Drawing.Size(200, 32);
+            this.maskedTextBox1.TabIndex = 102;
+            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextBox2.BeepOnError = true;
+            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox2.Culture = new System.Globalization.CultureInfo("fa-IR");
+            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.maskedTextBox2.Location = new System.Drawing.Point(653, 53);
+            this.maskedTextBox2.Mask = "00:00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBox2.Size = new System.Drawing.Size(200, 32);
+            this.maskedTextBox2.TabIndex = 103;
+            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // pnlTabDateAndTime1
+            // 
+            this.pnlTabDateAndTime1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlTabDateAndTime1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime1.Controls.Add(this.label93);
+            this.pnlTabDateAndTime1.Controls.Add(this.label94);
+            this.pnlTabDateAndTime1.Controls.Add(this.label95);
+            this.pnlTabDateAndTime1.Controls.Add(this.label96);
+            this.pnlTabDateAndTime1.Controls.Add(this.label97);
+            this.pnlTabDateAndTime1.Controls.Add(this.label98);
+            this.pnlTabDateAndTime1.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime1.Name = "pnlTabDateAndTime1";
+            this.pnlTabDateAndTime1.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime1.Size = new System.Drawing.Size(510, 140);
+            this.pnlTabDateAndTime1.TabIndex = 109;
+            // 
+            // label93
+            // 
+            this.label93.BackColor = System.Drawing.Color.Transparent;
+            this.label93.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label93.Location = new System.Drawing.Point(425, 24);
+            this.label93.Name = "label93";
+            this.label93.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label93.Size = new System.Drawing.Size(80, 45);
+            this.label93.TabIndex = 2;
+            this.label93.Text = "تاریخ :";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label94
+            // 
+            this.label94.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label94.BackColor = System.Drawing.SystemColors.Window;
+            this.label94.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label94.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label94.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label94.Location = new System.Drawing.Point(269, 24);
+            this.label94.Name = "label94";
+            this.label94.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label94.Size = new System.Drawing.Size(150, 45);
+            this.label94.TabIndex = 36;
+            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label95
+            // 
+            this.label95.BackColor = System.Drawing.Color.Transparent;
+            this.label95.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label95.Location = new System.Drawing.Point(183, 24);
+            this.label95.Name = "label95";
+            this.label95.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label95.Size = new System.Drawing.Size(80, 45);
+            this.label95.TabIndex = 2;
+            this.label95.Text = "ساعت :";
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label96
+            // 
+            this.label96.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label96.BackColor = System.Drawing.SystemColors.Window;
+            this.label96.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label96.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label96.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label96.Location = new System.Drawing.Point(27, 24);
+            this.label96.Name = "label96";
+            this.label96.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label96.Size = new System.Drawing.Size(150, 45);
+            this.label96.TabIndex = 36;
+            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label97
+            // 
+            this.label97.BackColor = System.Drawing.Color.Transparent;
+            this.label97.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label97.Location = new System.Drawing.Point(425, 69);
+            this.label97.Name = "label97";
+            this.label97.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label97.Size = new System.Drawing.Size(80, 45);
+            this.label97.TabIndex = 2;
+            this.label97.Text = "روز :";
+            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label98
+            // 
+            this.label98.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label98.BackColor = System.Drawing.SystemColors.Window;
+            this.label98.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label98.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label98.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label98.Location = new System.Drawing.Point(269, 69);
+            this.label98.Name = "label98";
+            this.label98.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label98.Size = new System.Drawing.Size(150, 45);
+            this.label98.TabIndex = 36;
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlActiveStaffInfo1
+            // 
+            this.pnlActiveStaffInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo1.Controls.Add(this.pictureBox3);
+            this.pnlActiveStaffInfo1.Controls.Add(this.label99);
+            this.pnlActiveStaffInfo1.Controls.Add(this.label100);
+            this.pnlActiveStaffInfo1.Controls.Add(this.label101);
+            this.pnlActiveStaffInfo1.Controls.Add(this.label102);
+            this.pnlActiveStaffInfo1.Location = new System.Drawing.Point(647, 19);
+            this.pnlActiveStaffInfo1.Name = "pnlActiveStaffInfo1";
+            this.pnlActiveStaffInfo1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo1.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo1.TabIndex = 110;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(392, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 120);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label99
+            // 
+            this.label99.BackColor = System.Drawing.Color.Transparent;
+            this.label99.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label99.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label99.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label99.Location = new System.Drawing.Point(38, 78);
+            this.label99.Name = "label99";
+            this.label99.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label99.Size = new System.Drawing.Size(220, 50);
+            this.label99.TabIndex = 2;
+            this.label99.Text = "aabbasian008";
+            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label100
+            // 
+            this.label100.BackColor = System.Drawing.Color.Transparent;
+            this.label100.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label100.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label100.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label100.Location = new System.Drawing.Point(38, 17);
+            this.label100.Name = "label100";
+            this.label100.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label100.Size = new System.Drawing.Size(269, 50);
+            this.label100.TabIndex = 2;
+            this.label100.Text = "ابوالفضل عباسیان";
+            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label101
+            // 
+            this.label101.BackColor = System.Drawing.Color.Transparent;
+            this.label101.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label101.Location = new System.Drawing.Point(247, 80);
+            this.label101.Name = "label101";
+            this.label101.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label101.Size = new System.Drawing.Size(130, 50);
+            this.label101.TabIndex = 2;
+            this.label101.Text = "کد کاربری :";
+            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label102
+            // 
+            this.label102.BackColor = System.Drawing.Color.Transparent;
+            this.label102.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label102.Location = new System.Drawing.Point(247, 17);
+            this.label102.Name = "label102";
+            this.label102.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label102.Size = new System.Drawing.Size(130, 50);
+            this.label102.TabIndex = 2;
+            this.label102.Text = "کاربر :";
+            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // tabMainPage
             // 
             this.tabMainPage.AutoScroll = true;
-            this.tabMainPage.Controls.Add(this.flowLayoutPanel2);
-            this.tabMainPage.Controls.Add(this.panel1);
+            this.tabMainPage.Controls.Add(this.pnlTabDateAndTime0);
+            this.tabMainPage.Controls.Add(this.pnlActiveStaffInfo0);
             this.tabMainPage.Location = new System.Drawing.Point(4, 45);
             this.tabMainPage.Name = "tabMainPage";
             this.tabMainPage.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMainPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabMainPage.Size = new System.Drawing.Size(1176, 918);
             this.tabMainPage.TabIndex = 0;
             this.tabMainPage.Text = "صفحه اصلی";
             this.tabMainPage.UseVisualStyleBackColor = true;
+            // 
+            // pnlTabDateAndTime0
+            // 
+            this.pnlTabDateAndTime0.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlTabDateAndTime0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime0.Controls.Add(this.label3);
+            this.pnlTabDateAndTime0.Controls.Add(this.label18);
+            this.pnlTabDateAndTime0.Controls.Add(this.label21);
+            this.pnlTabDateAndTime0.Controls.Add(this.label22);
+            this.pnlTabDateAndTime0.Controls.Add(this.label26);
+            this.pnlTabDateAndTime0.Controls.Add(this.label27);
+            this.pnlTabDateAndTime0.Location = new System.Drawing.Point(20, 19);
+            this.pnlTabDateAndTime0.Name = "pnlTabDateAndTime0";
+            this.pnlTabDateAndTime0.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime0.Size = new System.Drawing.Size(493, 140);
+            this.pnlTabDateAndTime0.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(408, 24);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(80, 45);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "تاریخ :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.BackColor = System.Drawing.SystemColors.Window;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label18.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label18.Location = new System.Drawing.Point(252, 24);
+            this.label18.Name = "label18";
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label18.Size = new System.Drawing.Size(150, 45);
+            this.label18.TabIndex = 36;
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label21.Location = new System.Drawing.Point(166, 24);
+            this.label21.Name = "label21";
+            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label21.Size = new System.Drawing.Size(80, 45);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "ساعت :";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.BackColor = System.Drawing.SystemColors.Window;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label22.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label22.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label22.Location = new System.Drawing.Point(10, 24);
+            this.label22.Name = "label22";
+            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label22.Size = new System.Drawing.Size(150, 45);
+            this.label22.TabIndex = 36;
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label26.Location = new System.Drawing.Point(408, 69);
+            this.label26.Name = "label26";
+            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label26.Size = new System.Drawing.Size(80, 45);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "روز :";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label27
+            // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label27.BackColor = System.Drawing.SystemColors.Window;
+            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label27.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label27.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label27.Location = new System.Drawing.Point(252, 69);
+            this.label27.Name = "label27";
+            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label27.Size = new System.Drawing.Size(150, 45);
+            this.label27.TabIndex = 36;
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlActiveStaffInfo0
+            // 
+            this.pnlActiveStaffInfo0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo0.Controls.Add(this.pictureBox2);
+            this.pnlActiveStaffInfo0.Controls.Add(this.label28);
+            this.pnlActiveStaffInfo0.Controls.Add(this.label29);
+            this.pnlActiveStaffInfo0.Controls.Add(this.label30);
+            this.pnlActiveStaffInfo0.Controls.Add(this.label31);
+            this.pnlActiveStaffInfo0.Location = new System.Drawing.Point(630, 19);
+            this.pnlActiveStaffInfo0.Name = "pnlActiveStaffInfo0";
+            this.pnlActiveStaffInfo0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo0.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo0.TabIndex = 39;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(392, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 120);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label28.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label28.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label28.Location = new System.Drawing.Point(38, 78);
+            this.label28.Name = "label28";
+            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label28.Size = new System.Drawing.Size(220, 50);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "aabbasian008";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label29.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label29.Location = new System.Drawing.Point(38, 17);
+            this.label29.Name = "label29";
+            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label29.Size = new System.Drawing.Size(269, 50);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "ابوالفضل عباسیان";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label30.Location = new System.Drawing.Point(247, 80);
+            this.label30.Name = "label30";
+            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label30.Size = new System.Drawing.Size(130, 50);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "کد کاربری :";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label31.Location = new System.Drawing.Point(247, 17);
+            this.label31.Name = "label31";
+            this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label31.Size = new System.Drawing.Size(130, 50);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "کاربر :";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabCtrlMain
             // 
@@ -2449,991 +3351,822 @@
             this.btnMenubarDisplay.UseVisualStyleBackColor = false;
             this.btnMenubarDisplay.Click += new System.EventHandler(this.btnMenubarDisplay_Click);
             // 
-            // label32
+            // label42
             // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(979, 774);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(140, 30);
-            this.label32.TabIndex = 113;
-            this.label32.Text = "اطلاعات محصول";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.ForeColor = System.Drawing.Color.Black;
+            this.label42.Location = new System.Drawing.Point(953, 789);
+            this.label42.Name = "label42";
+            this.label42.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label42.Size = new System.Drawing.Size(140, 30);
+            this.label42.TabIndex = 113;
+            this.label42.Text = "اطلاعات مشتری";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel3
+            // flowLayoutPanel2
             // 
-            this.flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel3.Controls.Add(this.label33);
-            this.flowLayoutPanel3.Controls.Add(this.label34);
-            this.flowLayoutPanel3.Controls.Add(this.label35);
-            this.flowLayoutPanel3.Controls.Add(this.label36);
-            this.flowLayoutPanel3.Controls.Add(this.label37);
-            this.flowLayoutPanel3.Controls.Add(this.label38);
-            this.flowLayoutPanel3.Controls.Add(this.label39);
-            this.flowLayoutPanel3.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel3.Controls.Add(this.label40);
-            this.flowLayoutPanel3.Controls.Add(this.textBox1);
-            this.flowLayoutPanel3.Controls.Add(this.label41);
-            this.flowLayoutPanel3.Controls.Add(this.textBox2);
-            this.flowLayoutPanel3.Controls.Add(this.label82);
-            this.flowLayoutPanel3.Controls.Add(this.textBox3);
-            this.flowLayoutPanel3.Controls.Add(this.label83);
-            this.flowLayoutPanel3.Controls.Add(this.textBox4);
-            this.flowLayoutPanel3.Controls.Add(this.label84);
-            this.flowLayoutPanel3.Controls.Add(this.textBox5);
-            this.flowLayoutPanel3.Controls.Add(this.label85);
-            this.flowLayoutPanel3.Controls.Add(this.textBox6);
-            this.flowLayoutPanel3.Controls.Add(this.label86);
-            this.flowLayoutPanel3.Controls.Add(this.textBox7);
-            this.flowLayoutPanel3.Controls.Add(this.label87);
-            this.flowLayoutPanel3.Controls.Add(this.textBox8);
-            this.flowLayoutPanel3.Controls.Add(this.label88);
-            this.flowLayoutPanel3.Controls.Add(this.textBox9);
-            this.flowLayoutPanel3.Controls.Add(this.label89);
-            this.flowLayoutPanel3.Controls.Add(this.textBox10);
-            this.flowLayoutPanel3.Controls.Add(this.label90);
-            this.flowLayoutPanel3.Controls.Add(this.textBox11);
-            this.flowLayoutPanel3.Controls.Add(this.label91);
-            this.flowLayoutPanel3.Controls.Add(this.richTextBox1);
-            this.flowLayoutPanel3.Controls.Add(this.button1);
-            this.flowLayoutPanel3.Controls.Add(this.button2);
-            this.flowLayoutPanel3.Controls.Add(this.button3);
-            this.flowLayoutPanel3.Controls.Add(this.button4);
-            this.flowLayoutPanel3.Controls.Add(this.button5);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(20, 792);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1120, 519);
-            this.flowLayoutPanel3.TabIndex = 112;
+            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel2.Controls.Add(this.label43);
+            this.flowLayoutPanel2.Controls.Add(this.label44);
+            this.flowLayoutPanel2.Controls.Add(this.label45);
+            this.flowLayoutPanel2.Controls.Add(this.label46);
+            this.flowLayoutPanel2.Controls.Add(this.label47);
+            this.flowLayoutPanel2.Controls.Add(this.label48);
+            this.flowLayoutPanel2.Controls.Add(this.label49);
+            this.flowLayoutPanel2.Controls.Add(this.comboBox6);
+            this.flowLayoutPanel2.Controls.Add(this.label50);
+            this.flowLayoutPanel2.Controls.Add(this.textBox13);
+            this.flowLayoutPanel2.Controls.Add(this.label51);
+            this.flowLayoutPanel2.Controls.Add(this.textBox14);
+            this.flowLayoutPanel2.Controls.Add(this.label103);
+            this.flowLayoutPanel2.Controls.Add(this.textBox15);
+            this.flowLayoutPanel2.Controls.Add(this.label104);
+            this.flowLayoutPanel2.Controls.Add(this.textBox16);
+            this.flowLayoutPanel2.Controls.Add(this.label105);
+            this.flowLayoutPanel2.Controls.Add(this.textBox17);
+            this.flowLayoutPanel2.Controls.Add(this.label106);
+            this.flowLayoutPanel2.Controls.Add(this.textBox18);
+            this.flowLayoutPanel2.Controls.Add(this.label107);
+            this.flowLayoutPanel2.Controls.Add(this.textBox19);
+            this.flowLayoutPanel2.Controls.Add(this.label108);
+            this.flowLayoutPanel2.Controls.Add(this.textBox20);
+            this.flowLayoutPanel2.Controls.Add(this.label109);
+            this.flowLayoutPanel2.Controls.Add(this.textBox21);
+            this.flowLayoutPanel2.Controls.Add(this.label110);
+            this.flowLayoutPanel2.Controls.Add(this.textBox22);
+            this.flowLayoutPanel2.Controls.Add(this.label111);
+            this.flowLayoutPanel2.Controls.Add(this.textBox23);
+            this.flowLayoutPanel2.Controls.Add(this.label112);
+            this.flowLayoutPanel2.Controls.Add(this.richTextBox2);
+            this.flowLayoutPanel2.Controls.Add(this.button6);
+            this.flowLayoutPanel2.Controls.Add(this.button7);
+            this.flowLayoutPanel2.Controls.Add(this.button8);
+            this.flowLayoutPanel2.Controls.Add(this.button9);
+            this.flowLayoutPanel2.Controls.Add(this.button10);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(8, 807);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 10, 15, 0);
+            this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1120, 519);
+            this.flowLayoutPanel2.TabIndex = 112;
             // 
-            // label33
+            // label43
             // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label33.Location = new System.Drawing.Point(950, 10);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(150, 47);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "تاریخ :";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.Location = new System.Drawing.Point(950, 10);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(150, 47);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "تاریخ :";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label34
+            // label44
             // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label34.BackColor = System.Drawing.SystemColors.Window;
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label34.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label34.Location = new System.Drawing.Point(744, 10);
-            this.label34.Name = "label34";
-            this.label34.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label34.Size = new System.Drawing.Size(200, 47);
-            this.label34.TabIndex = 36;
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.BackColor = System.Drawing.SystemColors.Window;
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label44.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label44.Location = new System.Drawing.Point(744, 10);
+            this.label44.Name = "label44";
+            this.label44.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label44.Size = new System.Drawing.Size(200, 47);
+            this.label44.TabIndex = 36;
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label35
+            // label45
             // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label35.Location = new System.Drawing.Point(588, 10);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(150, 47);
-            this.label35.TabIndex = 36;
-            this.label35.Text = "ساعت :";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.Location = new System.Drawing.Point(588, 10);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(150, 47);
+            this.label45.TabIndex = 36;
+            this.label45.Text = "ساعت :";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label36
+            // label46
             // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.BackColor = System.Drawing.SystemColors.Window;
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label36.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label36.Location = new System.Drawing.Point(382, 10);
-            this.label36.Name = "label36";
-            this.label36.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label36.Size = new System.Drawing.Size(200, 47);
-            this.label36.TabIndex = 36;
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.BackColor = System.Drawing.SystemColors.Window;
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label46.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label46.Location = new System.Drawing.Point(382, 10);
+            this.label46.Name = "label46";
+            this.label46.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label46.Size = new System.Drawing.Size(200, 47);
+            this.label46.TabIndex = 36;
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label37
+            // label47
             // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label37.Location = new System.Drawing.Point(226, 10);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(150, 47);
-            this.label37.TabIndex = 2;
-            this.label37.Text = "روز :";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label47.Location = new System.Drawing.Point(226, 10);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(150, 47);
+            this.label47.TabIndex = 2;
+            this.label47.Text = "روز :";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label38
+            // label48
             // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label38.BackColor = System.Drawing.SystemColors.Window;
-            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label38.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.flowLayoutPanel3.SetFlowBreak(this.label38, true);
-            this.label38.Location = new System.Drawing.Point(20, 10);
-            this.label38.Name = "label38";
-            this.label38.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label38.Size = new System.Drawing.Size(200, 47);
-            this.label38.TabIndex = 36;
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label48.BackColor = System.Drawing.SystemColors.Window;
+            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label48.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.flowLayoutPanel2.SetFlowBreak(this.label48, true);
+            this.label48.Location = new System.Drawing.Point(20, 10);
+            this.label48.Name = "label48";
+            this.label48.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label48.Size = new System.Drawing.Size(200, 47);
+            this.label48.TabIndex = 36;
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label39
+            // label49
             // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label39.Location = new System.Drawing.Point(950, 57);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(150, 47);
-            this.label39.TabIndex = 14;
-            this.label39.Text = "نوع مشتری :";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label49.Location = new System.Drawing.Point(950, 57);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(150, 47);
+            this.label49.TabIndex = 14;
+            this.label49.Text = "نوع مشتری :";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox1
+            // comboBox6
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox6.AutoCompleteCustomSource.AddRange(new string[] {
             "عادی",
             "شرکت"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.flowLayoutPanel3.SetFlowBreak(this.comboBox1, true);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.flowLayoutPanel2.SetFlowBreak(this.comboBox6, true);
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
             "عادی",
             "شرکت",
             "همکار"});
-            this.comboBox1.Location = new System.Drawing.Point(744, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 44);
-            this.comboBox1.TabIndex = 20;
+            this.comboBox6.Location = new System.Drawing.Point(744, 60);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(200, 44);
+            this.comboBox6.TabIndex = 20;
             // 
-            // label40
+            // label50
             // 
-            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label40.Location = new System.Drawing.Point(950, 107);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(150, 47);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "نام :";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label50.Location = new System.Drawing.Point(950, 107);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(150, 47);
+            this.label50.TabIndex = 2;
+            this.label50.Text = "نام :";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // textBox13
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(744, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 44);
-            this.textBox1.TabIndex = 3;
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox13.Location = new System.Drawing.Point(744, 110);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(200, 44);
+            this.textBox13.TabIndex = 3;
             // 
-            // label41
+            // label51
             // 
-            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label41.Location = new System.Drawing.Point(588, 107);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(150, 47);
-            this.label41.TabIndex = 4;
-            this.label41.Text = "نام خانوادگی :";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label51.Location = new System.Drawing.Point(588, 107);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(150, 47);
+            this.label51.TabIndex = 4;
+            this.label51.Text = "نام خانوادگی :";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // textBox14
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(382, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 44);
-            this.textBox2.TabIndex = 5;
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox14.Location = new System.Drawing.Point(382, 110);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(200, 44);
+            this.textBox14.TabIndex = 5;
             // 
-            // label82
+            // label103
             // 
-            this.label82.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label82.Location = new System.Drawing.Point(226, 107);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(150, 47);
-            this.label82.TabIndex = 6;
-            this.label82.Text = "نام کاربری :";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label103.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label103.Location = new System.Drawing.Point(226, 107);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(150, 47);
+            this.label103.TabIndex = 6;
+            this.label103.Text = "نام کاربری :";
+            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3
+            // textBox15
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(20, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 44);
-            this.textBox3.TabIndex = 7;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox15.Location = new System.Drawing.Point(20, 110);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(200, 44);
+            this.textBox15.TabIndex = 7;
             // 
-            // label83
+            // label104
             // 
-            this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label83.Location = new System.Drawing.Point(950, 157);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(150, 47);
-            this.label83.TabIndex = 8;
-            this.label83.Text = "کد ملی :";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label104.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label104.Location = new System.Drawing.Point(950, 157);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(150, 47);
+            this.label104.TabIndex = 8;
+            this.label104.Text = "کد ملی :";
+            this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox4
+            // textBox16
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(744, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 44);
-            this.textBox4.TabIndex = 9;
+            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox16.Location = new System.Drawing.Point(744, 160);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(200, 44);
+            this.textBox16.TabIndex = 9;
             // 
-            // label84
+            // label105
             // 
-            this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label84.Location = new System.Drawing.Point(588, 157);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(150, 47);
-            this.label84.TabIndex = 16;
-            this.label84.Text = "نام شرکت :";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label105.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label105.Location = new System.Drawing.Point(588, 157);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(150, 47);
+            this.label105.TabIndex = 16;
+            this.label105.Text = "نام شرکت :";
+            this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox5
+            // textBox17
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(382, 160);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 44);
-            this.textBox5.TabIndex = 17;
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox17.Location = new System.Drawing.Point(382, 160);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(200, 44);
+            this.textBox17.TabIndex = 17;
             // 
-            // label85
+            // label106
             // 
-            this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label85.Location = new System.Drawing.Point(226, 157);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(150, 47);
-            this.label85.TabIndex = 10;
-            this.label85.Text = "تلفن ثابت :";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label106.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label106.Location = new System.Drawing.Point(226, 157);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(150, 47);
+            this.label106.TabIndex = 10;
+            this.label106.Text = "تلفن ثابت :";
+            this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox6
+            // textBox18
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(20, 160);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 44);
-            this.textBox6.TabIndex = 11;
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox18.Location = new System.Drawing.Point(20, 160);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(200, 44);
+            this.textBox18.TabIndex = 11;
             // 
-            // label86
+            // label107
             // 
-            this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label86.Location = new System.Drawing.Point(950, 207);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(150, 47);
-            this.label86.TabIndex = 18;
-            this.label86.Text = "تلفن همراه :";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label107.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label107.Location = new System.Drawing.Point(950, 207);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(150, 47);
+            this.label107.TabIndex = 18;
+            this.label107.Text = "تلفن همراه :";
+            this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox7
+            // textBox19
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(744, 210);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 44);
-            this.textBox7.TabIndex = 19;
+            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox19.Location = new System.Drawing.Point(744, 210);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(200, 44);
+            this.textBox19.TabIndex = 19;
             // 
-            // label87
+            // label108
             // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.Location = new System.Drawing.Point(588, 207);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(150, 47);
-            this.label87.TabIndex = 12;
-            this.label87.Text = "ایمیل :";
-            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label108.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label108.Location = new System.Drawing.Point(588, 207);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(150, 47);
+            this.label108.TabIndex = 12;
+            this.label108.Text = "ایمیل :";
+            this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox8
+            // textBox20
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(382, 210);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 44);
-            this.textBox8.TabIndex = 13;
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox20.Location = new System.Drawing.Point(382, 210);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(200, 44);
+            this.textBox20.TabIndex = 13;
             // 
-            // label88
+            // label109
             // 
-            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label88.Location = new System.Drawing.Point(226, 207);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(150, 47);
-            this.label88.TabIndex = 21;
-            this.label88.Text = "استان :";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label109.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label109.Location = new System.Drawing.Point(226, 207);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(150, 47);
+            this.label109.TabIndex = 21;
+            this.label109.Text = "استان :";
+            this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox9
+            // textBox21
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(20, 210);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(200, 44);
-            this.textBox9.TabIndex = 22;
+            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox21.Location = new System.Drawing.Point(20, 210);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(200, 44);
+            this.textBox21.TabIndex = 22;
             // 
-            // label89
+            // label110
             // 
-            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label89.Location = new System.Drawing.Point(950, 257);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(150, 47);
-            this.label89.TabIndex = 23;
-            this.label89.Text = "شهر :";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label110.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label110.Location = new System.Drawing.Point(950, 257);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(150, 47);
+            this.label110.TabIndex = 23;
+            this.label110.Text = "شهر :";
+            this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox10
+            // textBox22
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(744, 260);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 44);
-            this.textBox10.TabIndex = 24;
+            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox22.Location = new System.Drawing.Point(744, 260);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(200, 44);
+            this.textBox22.TabIndex = 24;
             // 
-            // label90
+            // label111
             // 
-            this.label90.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label90.Location = new System.Drawing.Point(588, 257);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(150, 47);
-            this.label90.TabIndex = 25;
-            this.label90.Text = "کد پستی :";
-            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label111.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label111.Location = new System.Drawing.Point(588, 257);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(150, 47);
+            this.label111.TabIndex = 25;
+            this.label111.Text = "کد پستی :";
+            this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox11
+            // textBox23
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel3.SetFlowBreak(this.textBox11, true);
-            this.textBox11.Location = new System.Drawing.Point(382, 260);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 44);
-            this.textBox11.TabIndex = 26;
+            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel2.SetFlowBreak(this.textBox23, true);
+            this.textBox23.Location = new System.Drawing.Point(382, 260);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(200, 44);
+            this.textBox23.TabIndex = 26;
             // 
-            // label91
+            // label112
             // 
-            this.label91.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label91.Location = new System.Drawing.Point(950, 307);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(150, 47);
-            this.label91.TabIndex = 27;
-            this.label91.Text = "آدرس :";
-            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label112.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label112.Location = new System.Drawing.Point(950, 307);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(150, 47);
+            this.label112.TabIndex = 27;
+            this.label112.Text = "آدرس :";
+            this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // richTextBox1
+            // richTextBox2
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel3.SetFlowBreak(this.richTextBox1, true);
-            this.richTextBox1.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.richTextBox1.Location = new System.Drawing.Point(20, 310);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(924, 88);
-            this.richTextBox1.TabIndex = 29;
-            this.richTextBox1.Text = "";
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel2.SetFlowBreak(this.richTextBox2, true);
+            this.richTextBox2.Font = new System.Drawing.Font("Koodak", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.richTextBox2.Location = new System.Drawing.Point(20, 310);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(924, 88);
+            this.richTextBox2.TabIndex = 29;
+            this.richTextBox2.Text = "";
             // 
-            // button1
+            // button6
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(835, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 47);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "ذخیره";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.Location = new System.Drawing.Point(835, 404);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(265, 47);
+            this.button6.TabIndex = 31;
+            this.button6.Text = "ذخیره";
+            this.button6.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button7
             // 
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(564, 404);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(265, 47);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "ویرایش";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button7.Location = new System.Drawing.Point(564, 404);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(265, 47);
+            this.button7.TabIndex = 33;
+            this.button7.Text = "ویرایش";
+            this.button7.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button8
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(293, 404);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(265, 47);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "حذف";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button8.BackColor = System.Drawing.Color.Red;
+            this.button8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button8.Location = new System.Drawing.Point(293, 404);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(265, 47);
+            this.button8.TabIndex = 34;
+            this.button8.Text = "حذف";
+            this.button8.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // button9
             // 
-            this.flowLayoutPanel3.SetFlowBreak(this.button4, true);
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(22, 404);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(265, 47);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "پاک کردن";
-            this.button4.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel2.SetFlowBreak(this.button9, true);
+            this.button9.ForeColor = System.Drawing.Color.Red;
+            this.button9.Location = new System.Drawing.Point(22, 404);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(265, 47);
+            this.button9.TabIndex = 32;
+            this.button9.Text = "پاک کردن";
+            this.button9.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button10
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel3.SetFlowBreak(this.button5, true);
-            this.button5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button5.Location = new System.Drawing.Point(20, 457);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(1080, 47);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "افزودن به سبد خرید";
-            this.button5.UseVisualStyleBackColor = false;
+            this.flowLayoutPanel2.SetFlowBreak(this.button10, true);
+            this.button10.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button10.Location = new System.Drawing.Point(20, 457);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(1080, 47);
+            this.button10.TabIndex = 35;
+            this.button10.Text = "انتخاب به عنوان خریدار";
+            this.button10.UseVisualStyleBackColor = false;
             // 
-            // label92
+            // label113
             // 
-            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label92.ForeColor = System.Drawing.Color.Black;
-            this.label92.Location = new System.Drawing.Point(982, 169);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(139, 30);
-            this.label92.TabIndex = 108;
-            this.label92.Text = "لیست محصولات";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label113.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label113.ForeColor = System.Drawing.Color.Black;
+            this.label113.Location = new System.Drawing.Point(976, 184);
+            this.label113.Name = "label113";
+            this.label113.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label113.Size = new System.Drawing.Size(139, 30);
+            this.label113.TabIndex = 108;
+            this.label113.Text = "لیست مشتریان";
+            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(20, 187);
+            this.panel2.Controls.Add(this.dataGridView2);
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Location = new System.Drawing.Point(8, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 575);
+            this.panel2.Size = new System.Drawing.Size(1137, 575);
             this.panel2.TabIndex = 111;
             // 
-            // dataGridView1
+            // dataGridView2
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1118, 444);
-            this.dataGridView1.TabIndex = 105;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView2.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 129);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1135, 444);
+            this.dataGridView2.TabIndex = 105;
             // 
-            // groupBox1
+            // groupBox2
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.flowLayoutPanel8);
-            this.groupBox1.Location = new System.Drawing.Point(17, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1083, 100);
-            this.groupBox1.TabIndex = 104;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "جستجو بر اساس";
+            this.groupBox2.Controls.Add(this.flowLayoutPanel3);
+            this.groupBox2.Location = new System.Drawing.Point(17, 23);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox2.Size = new System.Drawing.Size(1100, 100);
+            this.groupBox2.TabIndex = 104;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "جستجو بر اساس";
             // 
-            // flowLayoutPanel8
+            // flowLayoutPanel3
             // 
-            this.flowLayoutPanel8.AutoScroll = true;
-            this.flowLayoutPanel8.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel8.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel8.Controls.Add(this.comboBox4);
-            this.flowLayoutPanel8.Controls.Add(this.comboBox5);
-            this.flowLayoutPanel8.Controls.Add(this.textBox12);
-            this.flowLayoutPanel8.Controls.Add(this.maskedTextBox1);
-            this.flowLayoutPanel8.Controls.Add(this.maskedTextBox2);
-            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 40);
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(1077, 57);
-            this.flowLayoutPanel8.TabIndex = 104;
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.Controls.Add(this.comboBox7);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox8);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox9);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox10);
+            this.flowLayoutPanel3.Controls.Add(this.textBox24);
+            this.flowLayoutPanel3.Controls.Add(this.maskedTextBox3);
+            this.flowLayoutPanel3.Controls.Add(this.maskedTextBox4);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 40);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1094, 57);
+            this.flowLayoutPanel3.TabIndex = 104;
             // 
-            // comboBox2
+            // comboBox7
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox7.AutoCompleteCustomSource.AddRange(new string[] {
             "نام کاربری",
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
             "نام کاربری",
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.comboBox2.Location = new System.Drawing.Point(842, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 44);
-            this.comboBox2.TabIndex = 20;
+            this.comboBox7.Location = new System.Drawing.Point(859, 3);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(200, 44);
+            this.comboBox7.TabIndex = 20;
             // 
-            // comboBox3
+            // comboBox8
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox8.AutoCompleteCustomSource.AddRange(new string[] {
             "نام",
             "نام خانوادگی",
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBox8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
             "نام",
             "نام خانوادگی",
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.comboBox3.Location = new System.Drawing.Point(636, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 44);
-            this.comboBox3.TabIndex = 32;
+            this.comboBox8.Location = new System.Drawing.Point(653, 3);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(200, 44);
+            this.comboBox8.TabIndex = 32;
             // 
-            // comboBox4
+            // comboBox9
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox9.AutoCompleteCustomSource.AddRange(new string[] {
             "نام شرکت",
             "تلفن ثابت",
             "استان",
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.comboBox9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
             "نام شرکت",
             "تلفن ثابت",
             "استان",
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.comboBox4.Location = new System.Drawing.Point(430, 3);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 44);
-            this.comboBox4.TabIndex = 35;
+            this.comboBox9.Location = new System.Drawing.Point(447, 3);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(200, 44);
+            this.comboBox9.TabIndex = 35;
             // 
-            // comboBox5
+            // comboBox10
             // 
-            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox5.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox10.AutoCompleteCustomSource.AddRange(new string[] {
             "امروز",
             "دیروز",
             "هفته گذشته",
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.comboBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.comboBox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
             "امروز",
             "دیروز",
             "هفته گذشته",
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.comboBox5.Location = new System.Drawing.Point(224, 3);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 44);
-            this.comboBox5.TabIndex = 36;
+            this.comboBox10.Location = new System.Drawing.Point(241, 3);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(200, 44);
+            this.comboBox10.TabIndex = 36;
             // 
-            // textBox12
+            // textBox24
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textBox12.Location = new System.Drawing.Point(18, 3);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox12.Size = new System.Drawing.Size(200, 44);
-            this.textBox12.TabIndex = 22;
+            this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox24.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.textBox24.Location = new System.Drawing.Point(35, 3);
+            this.textBox24.Multiline = true;
+            this.textBox24.Name = "textBox24";
+            this.textBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox24.Size = new System.Drawing.Size(200, 44);
+            this.textBox24.TabIndex = 22;
             // 
-            // maskedTextBox1
+            // maskedTextBox3
             // 
-            this.maskedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("fa-IR");
-            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(842, 53);
-            this.maskedTextBox1.Mask = "0000/00/00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox1.Size = new System.Drawing.Size(200, 32);
-            this.maskedTextBox1.TabIndex = 102;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox3.Culture = new System.Globalization.CultureInfo("fa-IR");
+            this.maskedTextBox3.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.maskedTextBox3.Location = new System.Drawing.Point(859, 53);
+            this.maskedTextBox3.Mask = "0000/00/00";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBox3.Size = new System.Drawing.Size(200, 32);
+            this.maskedTextBox3.TabIndex = 102;
+            this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // maskedTextBox4
             // 
-            this.maskedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox2.BeepOnError = true;
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox2.Culture = new System.Globalization.CultureInfo("fa-IR");
-            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(636, 53);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox2.Size = new System.Drawing.Size(200, 32);
-            this.maskedTextBox2.TabIndex = 103;
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextBox4.BeepOnError = true;
+            this.maskedTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox4.Culture = new System.Globalization.CultureInfo("fa-IR");
+            this.maskedTextBox4.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.maskedTextBox4.Location = new System.Drawing.Point(653, 53);
+            this.maskedTextBox4.Mask = "00:00";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBox4.Size = new System.Drawing.Size(200, 32);
+            this.maskedTextBox4.TabIndex = 103;
+            this.maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox4.ValidatingType = typeof(System.DateTime);
             // 
-            // flowLayoutPanel9
+            // pnlTabDateAndTime3
             // 
-            this.flowLayoutPanel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTabDateAndTime3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel9.Controls.Add(this.label93);
-            this.flowLayoutPanel9.Controls.Add(this.label94);
-            this.flowLayoutPanel9.Controls.Add(this.label95);
-            this.flowLayoutPanel9.Controls.Add(this.label96);
-            this.flowLayoutPanel9.Controls.Add(this.label97);
-            this.flowLayoutPanel9.Controls.Add(this.label98);
-            this.flowLayoutPanel9.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
-            this.flowLayoutPanel9.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel9.Size = new System.Drawing.Size(510, 140);
-            this.flowLayoutPanel9.TabIndex = 109;
+            this.pnlTabDateAndTime3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabDateAndTime3.Controls.Add(this.label114);
+            this.pnlTabDateAndTime3.Controls.Add(this.label115);
+            this.pnlTabDateAndTime3.Controls.Add(this.label116);
+            this.pnlTabDateAndTime3.Controls.Add(this.label117);
+            this.pnlTabDateAndTime3.Controls.Add(this.label118);
+            this.pnlTabDateAndTime3.Controls.Add(this.label119);
+            this.pnlTabDateAndTime3.Location = new System.Drawing.Point(8, 34);
+            this.pnlTabDateAndTime3.Name = "pnlTabDateAndTime3";
+            this.pnlTabDateAndTime3.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
+            this.pnlTabDateAndTime3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlTabDateAndTime3.Size = new System.Drawing.Size(510, 140);
+            this.pnlTabDateAndTime3.TabIndex = 109;
             // 
-            // label93
+            // label114
             // 
-            this.label93.BackColor = System.Drawing.Color.Transparent;
-            this.label93.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label93.Location = new System.Drawing.Point(425, 24);
-            this.label93.Name = "label93";
-            this.label93.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label93.Size = new System.Drawing.Size(80, 45);
-            this.label93.TabIndex = 2;
-            this.label93.Text = "تاریخ :";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label114.BackColor = System.Drawing.Color.Transparent;
+            this.label114.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label114.Location = new System.Drawing.Point(425, 24);
+            this.label114.Name = "label114";
+            this.label114.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label114.Size = new System.Drawing.Size(80, 45);
+            this.label114.TabIndex = 2;
+            this.label114.Text = "تاریخ :";
+            this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label94
+            // label115
             // 
-            this.label94.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label94.BackColor = System.Drawing.SystemColors.Window;
-            this.label94.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label94.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label94.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label94.Location = new System.Drawing.Point(269, 24);
-            this.label94.Name = "label94";
-            this.label94.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label94.Size = new System.Drawing.Size(150, 45);
-            this.label94.TabIndex = 36;
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label115.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label115.BackColor = System.Drawing.SystemColors.Window;
+            this.label115.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label115.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label115.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label115.Location = new System.Drawing.Point(269, 24);
+            this.label115.Name = "label115";
+            this.label115.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label115.Size = new System.Drawing.Size(150, 45);
+            this.label115.TabIndex = 36;
+            this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label95
+            // label116
             // 
-            this.label95.BackColor = System.Drawing.Color.Transparent;
-            this.label95.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label95.Location = new System.Drawing.Point(183, 24);
-            this.label95.Name = "label95";
-            this.label95.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label95.Size = new System.Drawing.Size(80, 45);
-            this.label95.TabIndex = 2;
-            this.label95.Text = "ساعت :";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label116.BackColor = System.Drawing.Color.Transparent;
+            this.label116.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label116.Location = new System.Drawing.Point(183, 24);
+            this.label116.Name = "label116";
+            this.label116.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label116.Size = new System.Drawing.Size(80, 45);
+            this.label116.TabIndex = 2;
+            this.label116.Text = "ساعت :";
+            this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label96
+            // label117
             // 
-            this.label96.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label96.BackColor = System.Drawing.SystemColors.Window;
-            this.label96.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label96.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label96.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label96.Location = new System.Drawing.Point(27, 24);
-            this.label96.Name = "label96";
-            this.label96.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label96.Size = new System.Drawing.Size(150, 45);
-            this.label96.TabIndex = 36;
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label117.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label117.BackColor = System.Drawing.SystemColors.Window;
+            this.label117.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label117.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label117.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label117.Location = new System.Drawing.Point(27, 24);
+            this.label117.Name = "label117";
+            this.label117.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label117.Size = new System.Drawing.Size(150, 45);
+            this.label117.TabIndex = 36;
+            this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label97
+            // label118
             // 
-            this.label97.BackColor = System.Drawing.Color.Transparent;
-            this.label97.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label97.Location = new System.Drawing.Point(425, 69);
-            this.label97.Name = "label97";
-            this.label97.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label97.Size = new System.Drawing.Size(80, 45);
-            this.label97.TabIndex = 2;
-            this.label97.Text = "روز :";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label118.BackColor = System.Drawing.Color.Transparent;
+            this.label118.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label118.Location = new System.Drawing.Point(425, 69);
+            this.label118.Name = "label118";
+            this.label118.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label118.Size = new System.Drawing.Size(80, 45);
+            this.label118.TabIndex = 2;
+            this.label118.Text = "روز :";
+            this.label118.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label98
+            // label119
             // 
-            this.label98.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label98.BackColor = System.Drawing.SystemColors.Window;
-            this.label98.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label98.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label98.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label98.Location = new System.Drawing.Point(269, 69);
-            this.label98.Name = "label98";
-            this.label98.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label98.Size = new System.Drawing.Size(150, 45);
-            this.label98.TabIndex = 36;
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label119.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label119.BackColor = System.Drawing.SystemColors.Window;
+            this.label119.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label119.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label119.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label119.Location = new System.Drawing.Point(269, 69);
+            this.label119.Name = "label119";
+            this.label119.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label119.Size = new System.Drawing.Size(150, 45);
+            this.label119.TabIndex = 36;
+            this.label119.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel7
+            // pnlActiveStaffInfo3
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Controls.Add(this.label99);
-            this.panel7.Controls.Add(this.label100);
-            this.panel7.Controls.Add(this.label101);
-            this.panel7.Controls.Add(this.label102);
-            this.panel7.Location = new System.Drawing.Point(630, 19);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(510, 140);
-            this.panel7.TabIndex = 110;
+            this.pnlActiveStaffInfo3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlActiveStaffInfo3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlActiveStaffInfo3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActiveStaffInfo3.Controls.Add(this.pictureBox4);
+            this.pnlActiveStaffInfo3.Controls.Add(this.label120);
+            this.pnlActiveStaffInfo3.Controls.Add(this.label121);
+            this.pnlActiveStaffInfo3.Controls.Add(this.label122);
+            this.pnlActiveStaffInfo3.Controls.Add(this.label123);
+            this.pnlActiveStaffInfo3.Location = new System.Drawing.Point(634, 34);
+            this.pnlActiveStaffInfo3.Name = "pnlActiveStaffInfo3";
+            this.pnlActiveStaffInfo3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlActiveStaffInfo3.Size = new System.Drawing.Size(510, 140);
+            this.pnlActiveStaffInfo3.TabIndex = 110;
             // 
-            // pictureBox3
+            // pictureBox4
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(392, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 120);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(392, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 120);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
-            // label99
+            // label120
             // 
-            this.label99.BackColor = System.Drawing.Color.Transparent;
-            this.label99.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label99.Font = new System.Drawing.Font("Tahoma", 16F);
-            this.label99.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label99.Location = new System.Drawing.Point(38, 78);
-            this.label99.Name = "label99";
-            this.label99.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label99.Size = new System.Drawing.Size(220, 50);
-            this.label99.TabIndex = 2;
-            this.label99.Text = "aabbasian008";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label120.BackColor = System.Drawing.Color.Transparent;
+            this.label120.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label120.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label120.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label120.Location = new System.Drawing.Point(38, 78);
+            this.label120.Name = "label120";
+            this.label120.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label120.Size = new System.Drawing.Size(220, 50);
+            this.label120.TabIndex = 2;
+            this.label120.Text = "aabbasian008";
+            this.label120.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label100
+            // label121
             // 
-            this.label100.BackColor = System.Drawing.Color.Transparent;
-            this.label100.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label100.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label100.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label100.Location = new System.Drawing.Point(38, 17);
-            this.label100.Name = "label100";
-            this.label100.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label100.Size = new System.Drawing.Size(269, 50);
-            this.label100.TabIndex = 2;
-            this.label100.Text = "ابوالفضل عباسیان";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label121.BackColor = System.Drawing.Color.Transparent;
+            this.label121.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label121.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label121.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label121.Location = new System.Drawing.Point(38, 17);
+            this.label121.Name = "label121";
+            this.label121.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label121.Size = new System.Drawing.Size(269, 50);
+            this.label121.TabIndex = 2;
+            this.label121.Text = "ابوالفضل عباسیان";
+            this.label121.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label101
+            // label122
             // 
-            this.label101.BackColor = System.Drawing.Color.Transparent;
-            this.label101.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label101.Location = new System.Drawing.Point(247, 80);
-            this.label101.Name = "label101";
-            this.label101.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label101.Size = new System.Drawing.Size(130, 50);
-            this.label101.TabIndex = 2;
-            this.label101.Text = "کد کاربری :";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label122.BackColor = System.Drawing.Color.Transparent;
+            this.label122.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label122.Location = new System.Drawing.Point(247, 80);
+            this.label122.Name = "label122";
+            this.label122.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label122.Size = new System.Drawing.Size(130, 50);
+            this.label122.TabIndex = 2;
+            this.label122.Text = "کد کاربری :";
+            this.label122.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label102
+            // label123
             // 
-            this.label102.BackColor = System.Drawing.Color.Transparent;
-            this.label102.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label102.Location = new System.Drawing.Point(247, 17);
-            this.label102.Name = "label102";
-            this.label102.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label102.Size = new System.Drawing.Size(130, 50);
-            this.label102.TabIndex = 2;
-            this.label102.Text = "کاربر :";
-            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label31.Location = new System.Drawing.Point(247, 17);
-            this.label31.Name = "label31";
-            this.label31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label31.Size = new System.Drawing.Size(130, 50);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "کاربر :";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label30.Location = new System.Drawing.Point(247, 80);
-            this.label30.Name = "label30";
-            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label30.Size = new System.Drawing.Size(130, 50);
-            this.label30.TabIndex = 2;
-            this.label30.Text = "کد کاربری :";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label29.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label29.Location = new System.Drawing.Point(38, 17);
-            this.label29.Name = "label29";
-            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label29.Size = new System.Drawing.Size(269, 50);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "ابوالفضل عباسیان";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label28.Font = new System.Drawing.Font("Tahoma", 16F);
-            this.label28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label28.Location = new System.Drawing.Point(38, 78);
-            this.label28.Name = "label28";
-            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label28.Size = new System.Drawing.Size(220, 50);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "aabbasian008";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(392, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 120);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Location = new System.Drawing.Point(630, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 140);
-            this.panel1.TabIndex = 39;
-            // 
-            // label27
-            // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.BackColor = System.Drawing.SystemColors.Window;
-            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label27.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label27.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label27.Location = new System.Drawing.Point(252, 69);
-            this.label27.Name = "label27";
-            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label27.Size = new System.Drawing.Size(150, 45);
-            this.label27.TabIndex = 36;
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label26.Location = new System.Drawing.Point(408, 69);
-            this.label26.Name = "label26";
-            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(80, 45);
-            this.label26.TabIndex = 2;
-            this.label26.Text = "روز :";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.BackColor = System.Drawing.SystemColors.Window;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label22.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label22.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label22.Location = new System.Drawing.Point(10, 24);
-            this.label22.Name = "label22";
-            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label22.Size = new System.Drawing.Size(150, 45);
-            this.label22.TabIndex = 36;
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label21.Location = new System.Drawing.Point(166, 24);
-            this.label21.Name = "label21";
-            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(80, 45);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "ساعت :";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.BackColor = System.Drawing.SystemColors.Window;
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label18.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label18.Location = new System.Drawing.Point(252, 24);
-            this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label18.Size = new System.Drawing.Size(150, 45);
-            this.label18.TabIndex = 36;
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(408, 24);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(80, 45);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "تاریخ :";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel2.Controls.Add(this.label3);
-            this.flowLayoutPanel2.Controls.Add(this.label18);
-            this.flowLayoutPanel2.Controls.Add(this.label21);
-            this.flowLayoutPanel2.Controls.Add(this.label22);
-            this.flowLayoutPanel2.Controls.Add(this.label26);
-            this.flowLayoutPanel2.Controls.Add(this.label27);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 19);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(493, 140);
-            this.flowLayoutPanel2.TabIndex = 38;
+            this.label123.BackColor = System.Drawing.Color.Transparent;
+            this.label123.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label123.Location = new System.Drawing.Point(247, 17);
+            this.label123.Name = "label123";
+            this.label123.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label123.Size = new System.Drawing.Size(130, 50);
+            this.label123.TabIndex = 2;
+            this.label123.Text = "کاربر :";
+            this.label123.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mainForm
             // 
@@ -3455,21 +4188,18 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.SizeChanged += new System.EventHandler(this.mainForm_SizeChanged);
             this.tabStaff.ResumeLayout(false);
-            this.flowLayoutPanel7.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
+            this.pnlTabDateAndTime6.ResumeLayout(false);
+            this.pnlActiveStaffInfo6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tabCart.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.pnlTabDateAndTime5.ResumeLayout(false);
+            this.pnlActiveStaffInfo5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tabRecivedProducts.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.pnlTabDateAndTime4.ResumeLayout(false);
+            this.pnlActiveStaffInfo4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabSellReport.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabCostumers.ResumeLayout(false);
             this.pnlCostumerInfo.ResumeLayout(false);
             this.pnlCostumerInfo.PerformLayout();
@@ -3478,29 +4208,39 @@
             this.pnlCostumersDatabaseSearch.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.pnlCostumersTabDateAndTime.ResumeLayout(false);
-            this.pnlCostumersTabActiveStaffInfo.ResumeLayout(false);
+            this.pnlTabDateAndTime2.ResumeLayout(false);
+            this.pnlActiveStaffInfo2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabProducts.ResumeLayout(false);
+            this.pnlProductInfo.ResumeLayout(false);
+            this.pnlProductInfo.PerformLayout();
+            this.pnlProductsDatabase.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel8.PerformLayout();
+            this.pnlTabDateAndTime1.ResumeLayout(false);
+            this.pnlActiveStaffInfo1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabMainPage.ResumeLayout(false);
+            this.pnlTabDateAndTime0.ResumeLayout(false);
+            this.pnlActiveStaffInfo0.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabCtrlMain.ResumeLayout(false);
             this.pnlMenubar.ResumeLayout(false);
             this.pnlMenuUp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMenuLogo)).EndInit();
             this.pnlMenuDown.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.flowLayoutPanel8.ResumeLayout(false);
-            this.flowLayoutPanel8.PerformLayout();
-            this.flowLayoutPanel9.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.pnlTabDateAndTime3.ResumeLayout(false);
+            this.pnlActiveStaffInfo3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3542,58 +4282,45 @@
         private System.Windows.Forms.Button btnMenuTheme;
         private System.Windows.Forms.Button btnMenuLogoutLogo;
         private System.Windows.Forms.Button btnMenuLogout;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime6;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime5;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime4;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label lblCostumerInfo;
         private System.Windows.Forms.FlowLayoutPanel pnlCostumerInfo;
         private System.Windows.Forms.Label label20;
@@ -3645,21 +4372,21 @@
         private System.Windows.Forms.TextBox txtCostumersDatabaseSearchNormal;
         private System.Windows.Forms.MaskedTextBox lblCostumersDatabaseSearchStandardDate;
         private System.Windows.Forms.MaskedTextBox lblCostumersDatabaseSearchStandardHour;
-        private System.Windows.Forms.FlowLayoutPanel pnlCostumersTabDateAndTime;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelCostumersTabTodayDate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelCostumersTabTodayHour;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label labelCostumersTabTodayWeekday;
-        private System.Windows.Forms.Panel pnlCostumersTabActiveStaffInfo;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblActiveStaffStaffcode;
         private System.Windows.Forms.Label lblActiveStaffFullname;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel pnlProductInfo;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
@@ -3698,7 +4425,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlProductsDatabase;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
@@ -3709,32 +4436,96 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime1;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime0;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo0;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.FlowLayoutPanel pnlTabDateAndTime3;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Panel pnlActiveStaffInfo3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.Label label123;
     }
 }
 
