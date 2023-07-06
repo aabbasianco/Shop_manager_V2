@@ -74,7 +74,7 @@
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.tabSellReport = new System.Windows.Forms.TabPage();
-            this.label42 = new System.Windows.Forms.Label();
+            this.lblInfoPanel3 = new System.Windows.Forms.Label();
             this.pnlInfo3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -113,9 +113,9 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.label113 = new System.Windows.Forms.Label();
-            this.pnlDatabase3 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.lblMainDatabase3 = new System.Windows.Forms.Label();
+            this.pnlMainDatabase3 = new System.Windows.Forms.Panel();
+            this.dgvMain3 = new System.Windows.Forms.DataGridView();
             this.pnlDatabaseSearch3 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
@@ -139,7 +139,7 @@
             this.label122 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
             this.tabCostumers = new System.Windows.Forms.TabPage();
-            this.lblCostumerInfo = new System.Windows.Forms.Label();
+            this.lblInfoPanel2 = new System.Windows.Forms.Label();
             this.pnlInfo2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label20 = new System.Windows.Forms.Label();
             this.lblCostumerSignupDate = new System.Windows.Forms.Label();
@@ -178,9 +178,9 @@
             this.btnCostumerInfoDelete = new System.Windows.Forms.Button();
             this.btnCostumerInfoErase = new System.Windows.Forms.Button();
             this.btnCostumerInfoChooseAsBuyer = new System.Windows.Forms.Button();
-            this.lblCostumersDatabase = new System.Windows.Forms.Label();
-            this.pnlDatabase2 = new System.Windows.Forms.Panel();
-            this.dgvAllCostumers = new System.Windows.Forms.DataGridView();
+            this.lblMainDatabase2 = new System.Windows.Forms.Label();
+            this.pnlMainDatabase2 = new System.Windows.Forms.Panel();
+            this.dgvMain2 = new System.Windows.Forms.DataGridView();
             this.pnlDatabaseSearch2 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.cmbCostumersDatabaseSearchStandardGroup = new System.Windows.Forms.ComboBox();
@@ -204,7 +204,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.tabProducts = new System.Windows.Forms.TabPage();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lblInfoPanel1 = new System.Windows.Forms.Label();
             this.pnlInfo1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -243,9 +243,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.label92 = new System.Windows.Forms.Label();
-            this.pnlDatabase1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblMainDatabase1 = new System.Windows.Forms.Label();
+            this.pnlMainDatabase1 = new System.Windows.Forms.Panel();
+            this.dgvMain1 = new System.Windows.Forms.DataGridView();
             this.pnlDatabaseSearch1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -323,8 +323,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabSellReport.SuspendLayout();
             this.pnlInfo3.SuspendLayout();
-            this.pnlDatabase3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.pnlMainDatabase3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain3)).BeginInit();
             this.pnlDatabaseSearch3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.pnlTabDateAndTime3.SuspendLayout();
@@ -332,8 +332,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabCostumers.SuspendLayout();
             this.pnlInfo2.SuspendLayout();
-            this.pnlDatabase2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllCostumers)).BeginInit();
+            this.pnlMainDatabase2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain2)).BeginInit();
             this.pnlDatabaseSearch2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnlTabDateAndTime2.SuspendLayout();
@@ -341,8 +341,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabProducts.SuspendLayout();
             this.pnlInfo1.SuspendLayout();
-            this.pnlDatabase1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnlMainDatabase1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain1)).BeginInit();
             this.pnlDatabaseSearch1.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.pnlTabDateAndTime1.SuspendLayout();
@@ -954,10 +954,10 @@
             // tabSellReport
             // 
             this.tabSellReport.AutoScroll = true;
-            this.tabSellReport.Controls.Add(this.label42);
+            this.tabSellReport.Controls.Add(this.lblInfoPanel3);
             this.tabSellReport.Controls.Add(this.pnlInfo3);
-            this.tabSellReport.Controls.Add(this.label113);
-            this.tabSellReport.Controls.Add(this.pnlDatabase3);
+            this.tabSellReport.Controls.Add(this.lblMainDatabase3);
+            this.tabSellReport.Controls.Add(this.pnlMainDatabase3);
             this.tabSellReport.Controls.Add(this.pnlTabDateAndTime3);
             this.tabSellReport.Controls.Add(this.pnlActiveStaffInfo3);
             this.tabSellReport.Location = new System.Drawing.Point(4, 45);
@@ -968,17 +968,17 @@
             this.tabSellReport.Text = "گزارش فروش";
             this.tabSellReport.UseVisualStyleBackColor = true;
             // 
-            // label42
+            // lblInfoPanel3
             // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(919, 789);
-            this.label42.Name = "label42";
-            this.label42.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label42.Size = new System.Drawing.Size(140, 30);
-            this.label42.TabIndex = 113;
-            this.label42.Text = "اطلاعات مشتری";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInfoPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInfoPanel3.ForeColor = System.Drawing.Color.Black;
+            this.lblInfoPanel3.Location = new System.Drawing.Point(851, 789);
+            this.lblInfoPanel3.Name = "lblInfoPanel3";
+            this.lblInfoPanel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblInfoPanel3.Size = new System.Drawing.Size(140, 30);
+            this.lblInfoPanel3.TabIndex = 113;
+            this.lblInfoPanel3.Text = "اطلاعات مشتری";
+            this.lblInfoPanel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlInfo3
             // 
@@ -1404,42 +1404,42 @@
             this.button10.Text = "انتخاب به عنوان خریدار";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // label113
+            // lblMainDatabase3
             // 
-            this.label113.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label113.ForeColor = System.Drawing.Color.Black;
-            this.label113.Location = new System.Drawing.Point(942, 184);
-            this.label113.Name = "label113";
-            this.label113.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label113.Size = new System.Drawing.Size(139, 30);
-            this.label113.TabIndex = 108;
-            this.label113.Text = "لیست مشتریان";
-            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMainDatabase3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMainDatabase3.ForeColor = System.Drawing.Color.Black;
+            this.lblMainDatabase3.Location = new System.Drawing.Point(874, 184);
+            this.lblMainDatabase3.Name = "lblMainDatabase3";
+            this.lblMainDatabase3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMainDatabase3.Size = new System.Drawing.Size(139, 30);
+            this.lblMainDatabase3.TabIndex = 108;
+            this.lblMainDatabase3.Text = "لیست گزارشات";
+            this.lblMainDatabase3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlDatabase3
+            // pnlMainDatabase3
             // 
-            this.pnlDatabase3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlMainDatabase3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDatabase3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDatabase3.Controls.Add(this.dataGridView2);
-            this.pnlDatabase3.Controls.Add(this.pnlDatabaseSearch3);
-            this.pnlDatabase3.Location = new System.Drawing.Point(8, 202);
-            this.pnlDatabase3.Name = "pnlDatabase3";
-            this.pnlDatabase3.Size = new System.Drawing.Size(1103, 575);
-            this.pnlDatabase3.TabIndex = 111;
+            this.pnlMainDatabase3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMainDatabase3.Controls.Add(this.dgvMain3);
+            this.pnlMainDatabase3.Controls.Add(this.pnlDatabaseSearch3);
+            this.pnlMainDatabase3.Location = new System.Drawing.Point(8, 202);
+            this.pnlMainDatabase3.Name = "pnlMainDatabase3";
+            this.pnlMainDatabase3.Size = new System.Drawing.Size(1103, 575);
+            this.pnlMainDatabase3.TabIndex = 111;
             // 
-            // dataGridView2
+            // dgvMain3
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 129);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1101, 444);
-            this.dataGridView2.TabIndex = 105;
+            this.dgvMain3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvMain3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvMain3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvMain3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvMain3.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dgvMain3.Location = new System.Drawing.Point(0, 129);
+            this.dgvMain3.Name = "dgvMain3";
+            this.dgvMain3.Size = new System.Drawing.Size(1101, 444);
+            this.dgvMain3.TabIndex = 105;
             // 
             // pnlDatabaseSearch3
             // 
@@ -1570,7 +1570,7 @@
             this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox24.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textBox24.Location = new System.Drawing.Point(825, 53);
+            this.textBox24.Location = new System.Drawing.Point(825, 30);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
             this.textBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1583,7 +1583,7 @@
             this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox3.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox3.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(619, 53);
+            this.maskedTextBox3.Location = new System.Drawing.Point(619, 30);
             this.maskedTextBox3.Mask = "0000/00/00";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1599,7 +1599,7 @@
             this.maskedTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox4.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.maskedTextBox4.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.maskedTextBox4.Location = new System.Drawing.Point(413, 53);
+            this.maskedTextBox4.Location = new System.Drawing.Point(413, 30);
             this.maskedTextBox4.Mask = "00:00";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1619,18 +1619,18 @@
             this.pnlTabDateAndTime3.Controls.Add(this.label117);
             this.pnlTabDateAndTime3.Controls.Add(this.label118);
             this.pnlTabDateAndTime3.Controls.Add(this.label119);
-            this.pnlTabDateAndTime3.Location = new System.Drawing.Point(8, 34);
+            this.pnlTabDateAndTime3.Location = new System.Drawing.Point(20, 19);
             this.pnlTabDateAndTime3.Name = "pnlTabDateAndTime3";
             this.pnlTabDateAndTime3.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
             this.pnlTabDateAndTime3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pnlTabDateAndTime3.Size = new System.Drawing.Size(476, 140);
+            this.pnlTabDateAndTime3.Size = new System.Drawing.Size(408, 140);
             this.pnlTabDateAndTime3.TabIndex = 109;
             // 
             // label114
             // 
             this.label114.BackColor = System.Drawing.Color.Transparent;
             this.label114.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label114.Location = new System.Drawing.Point(391, 24);
+            this.label114.Location = new System.Drawing.Point(323, 24);
             this.label114.Name = "label114";
             this.label114.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label114.Size = new System.Drawing.Size(80, 45);
@@ -1645,7 +1645,7 @@
             this.label115.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label115.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label115.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label115.Location = new System.Drawing.Point(235, 24);
+            this.label115.Location = new System.Drawing.Point(167, 24);
             this.label115.Name = "label115";
             this.label115.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label115.Size = new System.Drawing.Size(150, 45);
@@ -1656,7 +1656,7 @@
             // 
             this.label116.BackColor = System.Drawing.Color.Transparent;
             this.label116.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label116.Location = new System.Drawing.Point(149, 24);
+            this.label116.Location = new System.Drawing.Point(81, 24);
             this.label116.Name = "label116";
             this.label116.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label116.Size = new System.Drawing.Size(80, 45);
@@ -1671,7 +1671,7 @@
             this.label117.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label117.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label117.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label117.Location = new System.Drawing.Point(321, 69);
+            this.label117.Location = new System.Drawing.Point(253, 69);
             this.label117.Name = "label117";
             this.label117.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label117.Size = new System.Drawing.Size(150, 45);
@@ -1682,7 +1682,7 @@
             // 
             this.label118.BackColor = System.Drawing.Color.Transparent;
             this.label118.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label118.Location = new System.Drawing.Point(235, 69);
+            this.label118.Location = new System.Drawing.Point(167, 69);
             this.label118.Name = "label118";
             this.label118.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label118.Size = new System.Drawing.Size(80, 45);
@@ -1697,7 +1697,7 @@
             this.label119.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label119.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label119.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label119.Location = new System.Drawing.Point(79, 69);
+            this.label119.Location = new System.Drawing.Point(11, 69);
             this.label119.Name = "label119";
             this.label119.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label119.Size = new System.Drawing.Size(150, 45);
@@ -1714,7 +1714,7 @@
             this.pnlActiveStaffInfo3.Controls.Add(this.label121);
             this.pnlActiveStaffInfo3.Controls.Add(this.label122);
             this.pnlActiveStaffInfo3.Controls.Add(this.label123);
-            this.pnlActiveStaffInfo3.Location = new System.Drawing.Point(600, 34);
+            this.pnlActiveStaffInfo3.Location = new System.Drawing.Point(545, 19);
             this.pnlActiveStaffInfo3.Name = "pnlActiveStaffInfo3";
             this.pnlActiveStaffInfo3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pnlActiveStaffInfo3.Size = new System.Drawing.Size(510, 140);
@@ -1789,10 +1789,10 @@
             // 
             this.tabCostumers.AutoScroll = true;
             this.tabCostumers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabCostumers.Controls.Add(this.lblCostumerInfo);
+            this.tabCostumers.Controls.Add(this.lblInfoPanel2);
             this.tabCostumers.Controls.Add(this.pnlInfo2);
-            this.tabCostumers.Controls.Add(this.lblCostumersDatabase);
-            this.tabCostumers.Controls.Add(this.pnlDatabase2);
+            this.tabCostumers.Controls.Add(this.lblMainDatabase2);
+            this.tabCostumers.Controls.Add(this.pnlMainDatabase2);
             this.tabCostumers.Controls.Add(this.pnlTabDateAndTime2);
             this.tabCostumers.Controls.Add(this.pnlActiveStaffInfo2);
             this.tabCostumers.Location = new System.Drawing.Point(4, 45);
@@ -1804,17 +1804,17 @@
             this.tabCostumers.UseVisualStyleBackColor = true;
             this.tabCostumers.SizeChanged += new System.EventHandler(this.tabCostumers_SizeChanged);
             // 
-            // lblCostumerInfo
+            // lblInfoPanel2
             // 
-            this.lblCostumerInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCostumerInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumerInfo.Location = new System.Drawing.Point(948, 774);
-            this.lblCostumerInfo.Name = "lblCostumerInfo";
-            this.lblCostumerInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCostumerInfo.Size = new System.Drawing.Size(140, 30);
-            this.lblCostumerInfo.TabIndex = 107;
-            this.lblCostumerInfo.Text = "اطلاعات مشتری";
-            this.lblCostumerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInfoPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInfoPanel2.ForeColor = System.Drawing.Color.Black;
+            this.lblInfoPanel2.Location = new System.Drawing.Point(782, 765);
+            this.lblInfoPanel2.Name = "lblInfoPanel2";
+            this.lblInfoPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblInfoPanel2.Size = new System.Drawing.Size(140, 30);
+            this.lblInfoPanel2.TabIndex = 114;
+            this.lblInfoPanel2.Text = "اطلاعات مشتری";
+            this.lblInfoPanel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlInfo2
             // 
@@ -2240,42 +2240,42 @@
             this.btnCostumerInfoChooseAsBuyer.Text = "انتخاب به عنوان خریدار";
             this.btnCostumerInfoChooseAsBuyer.UseVisualStyleBackColor = false;
             // 
-            // lblCostumersDatabase
+            // lblMainDatabase2
             // 
-            this.lblCostumersDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCostumersDatabase.ForeColor = System.Drawing.Color.Black;
-            this.lblCostumersDatabase.Location = new System.Drawing.Point(954, 169);
-            this.lblCostumersDatabase.Name = "lblCostumersDatabase";
-            this.lblCostumersDatabase.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCostumersDatabase.Size = new System.Drawing.Size(139, 30);
-            this.lblCostumersDatabase.TabIndex = 2;
-            this.lblCostumersDatabase.Text = "لیست مشتریان";
-            this.lblCostumersDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMainDatabase2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMainDatabase2.ForeColor = System.Drawing.Color.Black;
+            this.lblMainDatabase2.Location = new System.Drawing.Point(886, 169);
+            this.lblMainDatabase2.Name = "lblMainDatabase2";
+            this.lblMainDatabase2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMainDatabase2.Size = new System.Drawing.Size(140, 30);
+            this.lblMainDatabase2.TabIndex = 2;
+            this.lblMainDatabase2.Text = "لیست مشتریان";
+            this.lblMainDatabase2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlDatabase2
+            // pnlMainDatabase2
             // 
-            this.pnlDatabase2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlMainDatabase2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDatabase2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDatabase2.Controls.Add(this.dgvAllCostumers);
-            this.pnlDatabase2.Controls.Add(this.pnlDatabaseSearch2);
-            this.pnlDatabase2.Location = new System.Drawing.Point(20, 187);
-            this.pnlDatabase2.Name = "pnlDatabase2";
-            this.pnlDatabase2.Size = new System.Drawing.Size(1103, 575);
-            this.pnlDatabase2.TabIndex = 105;
+            this.pnlMainDatabase2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMainDatabase2.Controls.Add(this.dgvMain2);
+            this.pnlMainDatabase2.Controls.Add(this.pnlDatabaseSearch2);
+            this.pnlMainDatabase2.Location = new System.Drawing.Point(20, 187);
+            this.pnlMainDatabase2.Name = "pnlMainDatabase2";
+            this.pnlMainDatabase2.Size = new System.Drawing.Size(1035, 575);
+            this.pnlMainDatabase2.TabIndex = 105;
             // 
-            // dgvAllCostumers
+            // dgvMain2
             // 
-            this.dgvAllCostumers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dgvAllCostumers.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvAllCostumers.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvAllCostumers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllCostumers.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvAllCostumers.GridColor = System.Drawing.SystemColors.Highlight;
-            this.dgvAllCostumers.Location = new System.Drawing.Point(0, 129);
-            this.dgvAllCostumers.Name = "dgvAllCostumers";
-            this.dgvAllCostumers.Size = new System.Drawing.Size(1101, 444);
-            this.dgvAllCostumers.TabIndex = 105;
+            this.dgvMain2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvMain2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvMain2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvMain2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvMain2.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dgvMain2.Location = new System.Drawing.Point(0, 129);
+            this.dgvMain2.Name = "dgvMain2";
+            this.dgvMain2.Size = new System.Drawing.Size(1033, 444);
+            this.dgvMain2.TabIndex = 105;
             // 
             // pnlDatabaseSearch2
             // 
@@ -2285,7 +2285,7 @@
             this.pnlDatabaseSearch2.Location = new System.Drawing.Point(17, 23);
             this.pnlDatabaseSearch2.Name = "pnlDatabaseSearch2";
             this.pnlDatabaseSearch2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pnlDatabaseSearch2.Size = new System.Drawing.Size(1066, 100);
+            this.pnlDatabaseSearch2.Size = new System.Drawing.Size(998, 100);
             this.pnlDatabaseSearch2.TabIndex = 104;
             this.pnlDatabaseSearch2.TabStop = false;
             this.pnlDatabaseSearch2.Text = "جستجو بر اساس";
@@ -2304,7 +2304,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1060, 57);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(992, 57);
             this.flowLayoutPanel1.TabIndex = 104;
             // 
             // cmbCostumersDatabaseSearchStandardGroup
@@ -2323,7 +2323,7 @@
             "مشخصات فرد",
             "مشخصات محل",
             "تاریخ"});
-            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(825, 3);
+            this.cmbCostumersDatabaseSearchStandardGroup.Location = new System.Drawing.Point(757, 3);
             this.cmbCostumersDatabaseSearchStandardGroup.Name = "cmbCostumersDatabaseSearchStandardGroup";
             this.cmbCostumersDatabaseSearchStandardGroup.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardGroup.TabIndex = 20;
@@ -2348,7 +2348,7 @@
             "کد ملی",
             "تلفن همراه",
             "ایمیل"});
-            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(619, 3);
+            this.cmbCostumersDatabaseSearchStandardPersonalInfo.Location = new System.Drawing.Point(551, 3);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Name = "cmbCostumersDatabaseSearchStandardPersonalInfo";
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPersonalInfo.TabIndex = 32;
@@ -2375,7 +2375,7 @@
             "شهر",
             "کد پستی",
             "آدرس"});
-            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(413, 3);
+            this.cmbCostumersDatabaseSearchStandardPlaceInfo.Location = new System.Drawing.Point(345, 3);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Name = "cmbCostumersDatabaseSearchStandardPlaceInfo";
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardPlaceInfo.TabIndex = 35;
@@ -2402,7 +2402,7 @@
             "ماه گذشته",
             "سال گذشته",
             "بازه زمانی"});
-            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(207, 3);
+            this.cmbCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(139, 3);
             this.cmbCostumersDatabaseSearchStandardDate.Name = "cmbCostumersDatabaseSearchStandardDate";
             this.cmbCostumersDatabaseSearchStandardDate.Size = new System.Drawing.Size(200, 44);
             this.cmbCostumersDatabaseSearchStandardDate.TabIndex = 36;
@@ -2414,7 +2414,7 @@
             this.txtCostumersDatabaseSearchNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostumersDatabaseSearchNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCostumersDatabaseSearchNormal.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(825, 53);
+            this.txtCostumersDatabaseSearchNormal.Location = new System.Drawing.Point(757, 53);
             this.txtCostumersDatabaseSearchNormal.Multiline = true;
             this.txtCostumersDatabaseSearchNormal.Name = "txtCostumersDatabaseSearchNormal";
             this.txtCostumersDatabaseSearchNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2427,7 +2427,7 @@
             this.lblCostumersDatabaseSearchStandardDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardDate.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardDate.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(619, 53);
+            this.lblCostumersDatabaseSearchStandardDate.Location = new System.Drawing.Point(551, 53);
             this.lblCostumersDatabaseSearchStandardDate.Mask = "0000/00/00";
             this.lblCostumersDatabaseSearchStandardDate.Name = "lblCostumersDatabaseSearchStandardDate";
             this.lblCostumersDatabaseSearchStandardDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2443,7 +2443,7 @@
             this.lblCostumersDatabaseSearchStandardHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCostumersDatabaseSearchStandardHour.Culture = new System.Globalization.CultureInfo("fa-IR");
             this.lblCostumersDatabaseSearchStandardHour.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(413, 53);
+            this.lblCostumersDatabaseSearchStandardHour.Location = new System.Drawing.Point(345, 53);
             this.lblCostumersDatabaseSearchStandardHour.Mask = "00:00";
             this.lblCostumersDatabaseSearchStandardHour.Name = "lblCostumersDatabaseSearchStandardHour";
             this.lblCostumersDatabaseSearchStandardHour.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2467,14 +2467,14 @@
             this.pnlTabDateAndTime2.Name = "pnlTabDateAndTime2";
             this.pnlTabDateAndTime2.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
             this.pnlTabDateAndTime2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pnlTabDateAndTime2.Size = new System.Drawing.Size(476, 140);
+            this.pnlTabDateAndTime2.Size = new System.Drawing.Size(408, 140);
             this.pnlTabDateAndTime2.TabIndex = 37;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(391, 24);
+            this.label1.Location = new System.Drawing.Point(323, 24);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(80, 45);
@@ -2489,7 +2489,7 @@
             this.labelCostumersTabTodayDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayDate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayDate.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(235, 24);
+            this.labelCostumersTabTodayDate.Location = new System.Drawing.Point(167, 24);
             this.labelCostumersTabTodayDate.Name = "labelCostumersTabTodayDate";
             this.labelCostumersTabTodayDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayDate.Size = new System.Drawing.Size(150, 45);
@@ -2500,7 +2500,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(149, 24);
+            this.label2.Location = new System.Drawing.Point(81, 24);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(80, 45);
@@ -2515,7 +2515,7 @@
             this.labelCostumersTabTodayHour.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayHour.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayHour.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(321, 69);
+            this.labelCostumersTabTodayHour.Location = new System.Drawing.Point(253, 69);
             this.labelCostumersTabTodayHour.Name = "labelCostumersTabTodayHour";
             this.labelCostumersTabTodayHour.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayHour.Size = new System.Drawing.Size(150, 45);
@@ -2526,7 +2526,7 @@
             // 
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label23.Location = new System.Drawing.Point(235, 69);
+            this.label23.Location = new System.Drawing.Point(167, 69);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label23.Size = new System.Drawing.Size(80, 45);
@@ -2541,7 +2541,7 @@
             this.labelCostumersTabTodayWeekday.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelCostumersTabTodayWeekday.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.labelCostumersTabTodayWeekday.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(79, 69);
+            this.labelCostumersTabTodayWeekday.Location = new System.Drawing.Point(11, 69);
             this.labelCostumersTabTodayWeekday.Name = "labelCostumersTabTodayWeekday";
             this.labelCostumersTabTodayWeekday.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelCostumersTabTodayWeekday.Size = new System.Drawing.Size(150, 45);
@@ -2558,7 +2558,7 @@
             this.pnlActiveStaffInfo2.Controls.Add(this.lblActiveStaffFullname);
             this.pnlActiveStaffInfo2.Controls.Add(this.label24);
             this.pnlActiveStaffInfo2.Controls.Add(this.label25);
-            this.pnlActiveStaffInfo2.Location = new System.Drawing.Point(612, 19);
+            this.pnlActiveStaffInfo2.Location = new System.Drawing.Point(545, 19);
             this.pnlActiveStaffInfo2.Name = "pnlActiveStaffInfo2";
             this.pnlActiveStaffInfo2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pnlActiveStaffInfo2.Size = new System.Drawing.Size(510, 140);
@@ -2632,10 +2632,10 @@
             // tabProducts
             // 
             this.tabProducts.AutoScroll = true;
-            this.tabProducts.Controls.Add(this.label32);
+            this.tabProducts.Controls.Add(this.lblInfoPanel1);
             this.tabProducts.Controls.Add(this.pnlInfo1);
-            this.tabProducts.Controls.Add(this.label92);
-            this.tabProducts.Controls.Add(this.pnlDatabase1);
+            this.tabProducts.Controls.Add(this.lblMainDatabase1);
+            this.tabProducts.Controls.Add(this.pnlMainDatabase1);
             this.tabProducts.Controls.Add(this.pnlTabDateAndTime1);
             this.tabProducts.Controls.Add(this.pnlActiveStaffInfo1);
             this.tabProducts.Location = new System.Drawing.Point(4, 45);
@@ -2647,17 +2647,17 @@
             this.tabProducts.Text = "محصولات";
             this.tabProducts.UseVisualStyleBackColor = true;
             // 
-            // label32
+            // lblInfoPanel1
             // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(962, 770);
-            this.label32.Name = "label32";
-            this.label32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label32.Size = new System.Drawing.Size(140, 30);
-            this.label32.TabIndex = 113;
-            this.label32.Text = "اطلاعات محصول";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInfoPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInfoPanel1.ForeColor = System.Drawing.Color.Black;
+            this.lblInfoPanel1.Location = new System.Drawing.Point(894, 771);
+            this.lblInfoPanel1.Name = "lblInfoPanel1";
+            this.lblInfoPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblInfoPanel1.Size = new System.Drawing.Size(140, 30);
+            this.lblInfoPanel1.TabIndex = 113;
+            this.lblInfoPanel1.Text = "اطلاعات محصول";
+            this.lblInfoPanel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlInfo1
             // 
@@ -3083,44 +3083,44 @@
             this.button5.Text = "افزودن به سبد خرید";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // label92
+            // lblMainDatabase1
             // 
-            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label92.ForeColor = System.Drawing.Color.Black;
-            this.label92.Location = new System.Drawing.Point(863, 169);
-            this.label92.Name = "label92";
-            this.label92.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label92.Size = new System.Drawing.Size(139, 30);
-            this.label92.TabIndex = 108;
-            this.label92.Text = "لیست محصولات";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMainDatabase1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMainDatabase1.ForeColor = System.Drawing.Color.Black;
+            this.lblMainDatabase1.Location = new System.Drawing.Point(971, 169);
+            this.lblMainDatabase1.Name = "lblMainDatabase1";
+            this.lblMainDatabase1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMainDatabase1.Size = new System.Drawing.Size(140, 30);
+            this.lblMainDatabase1.TabIndex = 108;
+            this.lblMainDatabase1.Text = "لیست محصولات";
+            this.lblMainDatabase1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlDatabase1
+            // pnlMainDatabase1
             // 
-            this.pnlDatabase1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlMainDatabase1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDatabase1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDatabase1.Controls.Add(this.dataGridView1);
-            this.pnlDatabase1.Controls.Add(this.pnlDatabaseSearch1);
-            this.pnlDatabase1.Location = new System.Drawing.Point(20, 187);
-            this.pnlDatabase1.Name = "pnlDatabase1";
-            this.pnlDatabase1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pnlDatabase1.Size = new System.Drawing.Size(1103, 575);
-            this.pnlDatabase1.TabIndex = 111;
+            this.pnlMainDatabase1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMainDatabase1.Controls.Add(this.dgvMain1);
+            this.pnlMainDatabase1.Controls.Add(this.pnlDatabaseSearch1);
+            this.pnlMainDatabase1.Location = new System.Drawing.Point(20, 187);
+            this.pnlMainDatabase1.Name = "pnlMainDatabase1";
+            this.pnlMainDatabase1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pnlMainDatabase1.Size = new System.Drawing.Size(1103, 575);
+            this.pnlMainDatabase1.TabIndex = 111;
             // 
-            // dataGridView1
+            // dgvMain1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.Size = new System.Drawing.Size(1101, 444);
-            this.dataGridView1.TabIndex = 105;
+            this.dgvMain1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvMain1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvMain1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvMain1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvMain1.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dgvMain1.Location = new System.Drawing.Point(0, 129);
+            this.dgvMain1.Name = "dgvMain1";
+            this.dgvMain1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvMain1.Size = new System.Drawing.Size(1101, 444);
+            this.dgvMain1.TabIndex = 105;
             // 
             // pnlDatabaseSearch1
             // 
@@ -3304,14 +3304,14 @@
             this.pnlTabDateAndTime1.Name = "pnlTabDateAndTime1";
             this.pnlTabDateAndTime1.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
             this.pnlTabDateAndTime1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pnlTabDateAndTime1.Size = new System.Drawing.Size(476, 140);
+            this.pnlTabDateAndTime1.Size = new System.Drawing.Size(408, 140);
             this.pnlTabDateAndTime1.TabIndex = 109;
             // 
             // label93
             // 
             this.label93.BackColor = System.Drawing.Color.Transparent;
             this.label93.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label93.Location = new System.Drawing.Point(391, 24);
+            this.label93.Location = new System.Drawing.Point(323, 24);
             this.label93.Name = "label93";
             this.label93.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label93.Size = new System.Drawing.Size(80, 45);
@@ -3326,7 +3326,7 @@
             this.label94.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label94.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label94.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label94.Location = new System.Drawing.Point(235, 24);
+            this.label94.Location = new System.Drawing.Point(167, 24);
             this.label94.Name = "label94";
             this.label94.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label94.Size = new System.Drawing.Size(150, 45);
@@ -3337,7 +3337,7 @@
             // 
             this.label95.BackColor = System.Drawing.Color.Transparent;
             this.label95.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label95.Location = new System.Drawing.Point(149, 24);
+            this.label95.Location = new System.Drawing.Point(81, 24);
             this.label95.Name = "label95";
             this.label95.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label95.Size = new System.Drawing.Size(80, 45);
@@ -3352,7 +3352,7 @@
             this.label96.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label96.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label96.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label96.Location = new System.Drawing.Point(321, 69);
+            this.label96.Location = new System.Drawing.Point(253, 69);
             this.label96.Name = "label96";
             this.label96.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label96.Size = new System.Drawing.Size(150, 45);
@@ -3363,7 +3363,7 @@
             // 
             this.label97.BackColor = System.Drawing.Color.Transparent;
             this.label97.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label97.Location = new System.Drawing.Point(235, 69);
+            this.label97.Location = new System.Drawing.Point(167, 69);
             this.label97.Name = "label97";
             this.label97.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label97.Size = new System.Drawing.Size(80, 45);
@@ -3378,7 +3378,7 @@
             this.label98.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label98.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label98.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label98.Location = new System.Drawing.Point(79, 69);
+            this.label98.Location = new System.Drawing.Point(11, 69);
             this.label98.Name = "label98";
             this.label98.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label98.Size = new System.Drawing.Size(150, 45);
@@ -3395,7 +3395,7 @@
             this.pnlActiveStaffInfo1.Controls.Add(this.label100);
             this.pnlActiveStaffInfo1.Controls.Add(this.label101);
             this.pnlActiveStaffInfo1.Controls.Add(this.label102);
-            this.pnlActiveStaffInfo1.Location = new System.Drawing.Point(613, 19);
+            this.pnlActiveStaffInfo1.Location = new System.Drawing.Point(545, 19);
             this.pnlActiveStaffInfo1.Name = "pnlActiveStaffInfo1";
             this.pnlActiveStaffInfo1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pnlActiveStaffInfo1.Size = new System.Drawing.Size(510, 140);
@@ -4202,8 +4202,8 @@
             this.tabSellReport.ResumeLayout(false);
             this.pnlInfo3.ResumeLayout(false);
             this.pnlInfo3.PerformLayout();
-            this.pnlDatabase3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.pnlMainDatabase3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain3)).EndInit();
             this.pnlDatabaseSearch3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
@@ -4213,8 +4213,8 @@
             this.tabCostumers.ResumeLayout(false);
             this.pnlInfo2.ResumeLayout(false);
             this.pnlInfo2.PerformLayout();
-            this.pnlDatabase2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAllCostumers)).EndInit();
+            this.pnlMainDatabase2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain2)).EndInit();
             this.pnlDatabaseSearch2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -4224,8 +4224,8 @@
             this.tabProducts.ResumeLayout(false);
             this.pnlInfo1.ResumeLayout(false);
             this.pnlInfo1.PerformLayout();
-            this.pnlDatabase1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnlMainDatabase1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain1)).EndInit();
             this.pnlDatabaseSearch1.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
@@ -4321,7 +4321,6 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label lblCostumerInfo;
         private System.Windows.Forms.FlowLayoutPanel pnlInfo2;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label lblCostumerSignupDate;
@@ -4360,9 +4359,9 @@
         private System.Windows.Forms.Button btnCostumerInfoDelete;
         private System.Windows.Forms.Button btnCostumerInfoErase;
         private System.Windows.Forms.Button btnCostumerInfoChooseAsBuyer;
-        private System.Windows.Forms.Label lblCostumersDatabase;
-        private System.Windows.Forms.Panel pnlDatabase2;
-        private System.Windows.Forms.DataGridView dgvAllCostumers;
+        private System.Windows.Forms.Label lblMainDatabase2;
+        private System.Windows.Forms.Panel pnlMainDatabase2;
+        private System.Windows.Forms.DataGridView dgvMain2;
         private System.Windows.Forms.GroupBox pnlDatabaseSearch2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ComboBox cmbCostumersDatabaseSearchStandardGroup;
@@ -4385,7 +4384,7 @@
         private System.Windows.Forms.Label lblActiveStaffFullname;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lblInfoPanel1;
         private System.Windows.Forms.FlowLayoutPanel pnlInfo1;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
@@ -4424,9 +4423,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Panel pnlDatabase1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblMainDatabase1;
+        private System.Windows.Forms.Panel pnlMainDatabase1;
+        private System.Windows.Forms.DataGridView dgvMain1;
         private System.Windows.Forms.GroupBox pnlDatabaseSearch1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -4462,7 +4461,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label lblInfoPanel3;
         private System.Windows.Forms.FlowLayoutPanel pnlInfo3;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
@@ -4501,9 +4500,9 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Panel pnlDatabase3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label lblMainDatabase3;
+        private System.Windows.Forms.Panel pnlMainDatabase3;
+        private System.Windows.Forms.DataGridView dgvMain3;
         private System.Windows.Forms.GroupBox pnlDatabaseSearch3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.ComboBox comboBox7;
@@ -4526,6 +4525,7 @@
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label lblInfoPanel2;
     }
 }
 

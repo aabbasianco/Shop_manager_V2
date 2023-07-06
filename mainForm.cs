@@ -20,11 +20,14 @@ namespace Shop_manager_V2
         int[] menuLogoPicProp;
         int[] userPicProp;
         Control[] costumersDatabaseSearchControlsArr;
-        Control[] databasePanelsArr;
+        Control[] mainDatabasePanelsArr;
         Control[] infoPanelsArr;
         Control[] dateAndTimePanelsArr;
         Control[] ActiveStaffInfoPanelsArr;
         Control[] databaseSearchPanelsArr;
+        Control[] mainDatabaseDgvArr;
+        Control[] mainDatabaseLabelArr;
+        Control[] infoPanelLabelArr;
 
         // MAIN FORM ON LOAD --------------------------------------------------------------
         public mainForm()
@@ -34,24 +37,32 @@ namespace Shop_manager_V2
             costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
             cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
             lblCostumersDatabaseSearchStandardHour};
-            databasePanelsArr = new Control[3] { pnlDatabase1, pnlDatabase2, pnlDatabase3 };
+            mainDatabasePanelsArr = new Control[3] { pnlMainDatabase1, pnlMainDatabase2, pnlMainDatabase3 };
             infoPanelsArr = new Control[3] { pnlInfo1, pnlInfo2, pnlInfo3 };
             dateAndTimePanelsArr = new Control[7] { pnlTabDateAndTime0, pnlTabDateAndTime1, pnlTabDateAndTime2
             , pnlTabDateAndTime3, pnlTabDateAndTime4, pnlTabDateAndTime5, pnlTabDateAndTime6};
             ActiveStaffInfoPanelsArr = new Control[7] { pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
             , pnlActiveStaffInfo3, pnlActiveStaffInfo4, pnlActiveStaffInfo5, pnlActiveStaffInfo6};
             databaseSearchPanelsArr = new Control[3] { pnlDatabaseSearch1, pnlDatabaseSearch2, pnlDatabaseSearch3 };
-            for (int i = 0; i < databasePanelsArr.Length; i++)
+            mainDatabaseDgvArr = new Control[3] { dgvMain1, dgvMain2, dgvMain3 };
+            mainDatabaseLabelArr = new Control[3] { lblMainDatabase1, lblMainDatabase2, lblMainDatabase3 };
+            infoPanelLabelArr = new Control[3] { lblInfoPanel1, lblInfoPanel2, lblInfoPanel3 };
+            for (int i = 0; i < mainDatabasePanelsArr.Length; i++)
             {
-                databasePanelsArr[i].Width = 1120;
+                mainDatabasePanelsArr[i].Width = 1120;
                 infoPanelsArr[i].Width = 1120;
-                databasePanelsArr[i].Location = new Point(20, 187);
+                infoPanelsArr[i].Height = infoPanelsArr[i].Controls[infoPanelsArr[i].Controls.Count - 1].Top + infoPanelsArr[i].Controls[0].Top;
+                mainDatabasePanelsArr[i].Location = new Point(20, 187);
                 infoPanelsArr[i].Location = new Point(20, 792);
+                mainDatabaseDgvArr[i].Height = pnlMainDatabase2.Height - pnlDatabaseSearch2.Height - pnlDatabaseSearch2.Top - 10;
+                mainDatabaseLabelArr[i].Location = new Point(988, 169);
+                infoPanelLabelArr[i].Location = new Point(988, 773);
+                //databaseSearchPanelsArr[i].Height = 130;
             }
             for (int i = 0; i < ActiveStaffInfoPanelsArr.Length; i++)
             {
                 ActiveStaffInfoPanelsArr[i].Left = pnlTabDateAndTime0.Left + pnlTabDateAndTime0.Width + 100;
-                dateAndTimePanelsArr[i].Width = pnlDatabase2.Width - pnlActiveStaffInfo0.Width - 100;
+                dateAndTimePanelsArr[i].Width = pnlMainDatabase2.Width - pnlActiveStaffInfo0.Width - 100;
                 ActiveStaffInfoPanelsArr[i].Top = 20;
                 dateAndTimePanelsArr[i].Top = 20;
             }
@@ -127,10 +138,7 @@ namespace Shop_manager_V2
                 pnlInfo2.SetFlowBreak(txtCostumerEmail, true);
             }
             CostumerInfoPanelHeight();
-            CostumerInfoPanelHeightAndTopFunc(pnlInfo2, pnlDatabase2, tabCostumers, lblCostumerInfo);
-            pnlDatabaseSearch2.Height = lblCostumersDatabaseSearchStandardHour.Top + 90 + lblCostumersDatabaseSearchStandardHour.Height +
-                cmbCostumersDatabaseSearchStandardGroup.Top;
-            dgvAllCostumers.Height = pnlDatabase2.Height - pnlDatabaseSearch2.Height - pnlDatabaseSearch2.Top - 10;
+            CostumerInfoPanelHeightAndTopFunc(pnlInfo2, pnlMainDatabase2, tabCostumers, lblInfoPanel2);
         }
 
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
