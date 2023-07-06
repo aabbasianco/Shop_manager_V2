@@ -1994,7 +1994,8 @@
             this.cmbCostumerType.AutoCompleteCustomSource.AddRange(new string[] {
             "عادی",
             "شرکت",
-            "همکار"});
+            "همکار",
+            "مدیر"});
             this.cmbCostumerType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbCostumerType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.pnlInfo2.SetFlowBreak(this.cmbCostumerType, true);
@@ -2002,7 +2003,8 @@
             this.cmbCostumerType.Items.AddRange(new object[] {
             "عادی",
             "شرکت",
-            "همکار"});
+            "همکار",
+            "مدیر"});
             this.cmbCostumerType.Location = new System.Drawing.Point(727, 60);
             this.cmbCostumerType.Name = "cmbCostumerType";
             this.cmbCostumerType.Size = new System.Drawing.Size(200, 44);
@@ -4359,22 +4361,21 @@
             this.label127.Name = "label127";
             this.label127.Size = new System.Drawing.Size(150, 47);
             this.label127.TabIndex = 14;
-            this.label127.Text = "نوع مشتری :";
+            this.label127.Text = "نوع کارمند :";
             this.label127.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // comboBox11
             // 
             this.comboBox11.AutoCompleteCustomSource.AddRange(new string[] {
             "عادی",
-            "شرکت"});
+            "مدیر"});
             this.comboBox11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.pnlInfo6.SetFlowBreak(this.comboBox11, true);
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
             "عادی",
-            "شرکت",
-            "همکار"});
+            "مدیر"});
             this.comboBox11.Location = new System.Drawing.Point(744, 60);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(200, 44);
