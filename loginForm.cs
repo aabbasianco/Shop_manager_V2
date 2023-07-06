@@ -23,7 +23,7 @@ namespace Shop_manager_V2
         private void tmrWelcomeLabel_Tick(object sender, EventArgs e)
         {
             welcomeTimerCounter += 1;
-            if (lblWelcome.Left > 403)
+            if (lblWelcome.Left > 423)
             {
                 lblWelcome.Left -= welcomeTimerCounter;
             }

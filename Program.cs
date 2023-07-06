@@ -16,7 +16,8 @@ namespace Shop_manager_V2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainForm());
+            //Application.Run(new mainForm());
+            Application.Run(new loginForm());
         }
     }
 }

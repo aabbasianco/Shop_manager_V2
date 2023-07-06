@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -57,8 +58,9 @@
             // 
             // pnlLogin
             // 
-            this.pnlLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pnlLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pnlLogin.Controls.Add(this.txtPassword);
+            this.pnlLogin.Controls.Add(this.picSmallLogo);
             this.pnlLogin.Controls.Add(this.txtUsername);
             this.pnlLogin.Controls.Add(this.btnLogin);
             this.pnlLogin.Controls.Add(this.chkRememberme);
@@ -80,25 +82,25 @@
             // txtPassword
             // 
             this.txtPassword.AccessibleDescription = "scsxdxc";
-            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Montserrat", 16F);
             this.txtPassword.Location = new System.Drawing.Point(132, 312);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(228, 27);
-            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabIndex = 1;
             // 
             // txtUsername
             // 
             this.txtUsername.AccessibleDescription = "scsxdxc";
-            this.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Montserrat", 16F);
             this.txtUsername.Location = new System.Drawing.Point(132, 216);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(228, 27);
-            this.txtUsername.TabIndex = 5;
+            this.txtUsername.TabIndex = 0;
             // 
             // btnLogin
             // 
@@ -107,7 +109,7 @@
             this.btnLogin.Location = new System.Drawing.Point(81, 444);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(298, 55);
-            this.btnLogin.TabIndex = 4;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "ورود";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
@@ -117,7 +119,7 @@
             this.chkRememberme.Name = "chkRememberme";
             this.chkRememberme.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkRememberme.Size = new System.Drawing.Size(171, 40);
-            this.chkRememberme.TabIndex = 3;
+            this.chkRememberme.TabIndex = 2;
             this.chkRememberme.Text = "نمایش رمز";
             this.chkRememberme.UseVisualStyleBackColor = true;
             this.chkRememberme.CheckedChanged += new System.EventHandler(this.chkRememberme_CheckedChanged);
@@ -160,7 +162,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Koodak", 30F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(0, 0);
@@ -196,8 +198,8 @@
             // 
             // picPasswordTextbox
             // 
-            this.picPasswordTextbox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.picPasswordTextbox.Image = global::Shop_manager_V2.Properties.Resources.TextBox;
+            this.picPasswordTextbox.BackColor = System.Drawing.Color.Transparent;
+            this.picPasswordTextbox.Image = ((System.Drawing.Image)(resources.GetObject("picPasswordTextbox.Image")));
             this.picPasswordTextbox.Location = new System.Drawing.Point(81, 297);
             this.picPasswordTextbox.Margin = new System.Windows.Forms.Padding(8);
             this.picPasswordTextbox.Name = "picPasswordTextbox";
@@ -208,8 +210,8 @@
             // 
             // picUsernameTextbox
             // 
-            this.picUsernameTextbox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.picUsernameTextbox.Image = global::Shop_manager_V2.Properties.Resources.TextBox;
+            this.picUsernameTextbox.BackColor = System.Drawing.Color.Transparent;
+            this.picUsernameTextbox.Image = ((System.Drawing.Image)(resources.GetObject("picUsernameTextbox.Image")));
             this.picUsernameTextbox.Location = new System.Drawing.Point(81, 201);
             this.picUsernameTextbox.Margin = new System.Windows.Forms.Padding(8);
             this.picUsernameTextbox.Name = "picUsernameTextbox";
@@ -226,10 +228,9 @@
             // pnlLogo
             // 
             this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.pnlLogo.BackgroundImage = global::Shop_manager_V2.Properties.Resources.LoginFormBackground;
+            this.pnlLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogo.BackgroundImage")));
             this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlLogo.Controls.Add(this.lblWelcome);
-            this.pnlLogo.Controls.Add(this.picSmallLogo);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Margin = new System.Windows.Forms.Padding(8);
@@ -239,24 +240,27 @@
             // 
             // lblWelcome
             // 
+            this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Koodak", 50F, System.Drawing.FontStyle.Bold);
-            this.lblWelcome.Location = new System.Drawing.Point(737, 385);
+            this.lblWelcome.Location = new System.Drawing.Point(737, 450);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(329, 116);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "خوش آمدید";
+            this.lblWelcome.Visible = false;
             // 
             // picSmallLogo
             // 
+            this.picSmallLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picSmallLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.MainLogoSmall;
-            this.picSmallLogo.Location = new System.Drawing.Point(556, 17);
+            this.picSmallLogo.Image = global::Shop_manager_V2.Properties.Resources.MainLogoBig;
+            this.picSmallLogo.Location = new System.Drawing.Point(357, 8);
             this.picSmallLogo.Margin = new System.Windows.Forms.Padding(8);
             this.picSmallLogo.Name = "picSmallLogo";
-            this.picSmallLogo.Size = new System.Drawing.Size(162, 160);
+            this.picSmallLogo.Size = new System.Drawing.Size(85, 75);
             this.picSmallLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSmallLogo.TabIndex = 0;
             this.picSmallLogo.TabStop = false;
