@@ -32,13 +32,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlMessageText = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtMessageText = new System.Windows.Forms.RichTextBox();
             this.pnlMessageSenderInfo = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMessageTitle = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnlMessageText.SuspendLayout();
             this.pnlMessageSenderInfo.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,21 @@
             this.pnlMessageText.Size = new System.Drawing.Size(700, 168);
             this.pnlMessageText.TabIndex = 11;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label2.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(597, 0);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(101, 166);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "متن پیام";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txtMessageText
             // 
             this.txtMessageText.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -85,7 +100,6 @@
             this.txtMessageText.Font = new System.Drawing.Font("Koodak", 16F, System.Drawing.FontStyle.Bold);
             this.txtMessageText.Location = new System.Drawing.Point(0, 0);
             this.txtMessageText.Name = "txtMessageText";
-            this.txtMessageText.ReadOnly = true;
             this.txtMessageText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.txtMessageText.Size = new System.Drawing.Size(597, 166);
             this.txtMessageText.TabIndex = 0;
@@ -101,6 +115,18 @@
             this.pnlMessageSenderInfo.Name = "pnlMessageSenderInfo";
             this.pnlMessageSenderInfo.Size = new System.Drawing.Size(700, 75);
             this.pnlMessageSenderInfo.TabIndex = 10;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.Font = new System.Drawing.Font("Koodak", 29F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox1.Size = new System.Drawing.Size(597, 75);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.Text = "به ترکیب فیلد های اسم و فامیل وصل بشه";
             // 
             // label1
             // 
@@ -141,33 +167,6 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "پاک کردن";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Koodak", 29F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(0, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(597, 75);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "به ترکیب فیلد های اسم و فامیل وصل بشه";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(597, 0);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(101, 166);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "متن پیام";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // messageMakerForm
             // 

@@ -59,6 +59,9 @@ namespace Shop_manager_V2
                 infoPanelLabelArr[i].Location = new Point(988, 773);
                 //databaseSearchPanelsArr[i].Height = 130;
             }
+            pnlMainDatabase5.Width = 1120;
+            pnlMainDatabase5.Location = new Point(20, 187);
+            lblMainDatabase5.Location = new Point(988, 169);
             for (int i = 0; i < ActiveStaffInfoPanelsArr.Length; i++)
             {
                 ActiveStaffInfoPanelsArr[i].Left = pnlTabDateAndTime0.Left + pnlTabDateAndTime0.Width + 100;
