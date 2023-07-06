@@ -20,9 +20,11 @@ namespace Shop_manager_V2
         int[] menuLogoPicProp;
         int[] userPicProp;
         Control[] costumersDatabaseSearchControlsArr;
-        Control[] panelsWidthArr;
-        Control[] dateAndTimePanelsWidthArr;
-        Control[] ActiveStaffInfoPanelsWidthArr;
+        Control[] databasePanelsArr;
+        Control[] infoPanelsArr;
+        Control[] dateAndTimePanelsArr;
+        Control[] ActiveStaffInfoPanelsArr;
+        Control[] databaseSearchPanelsArr;
 
         // MAIN FORM ON LOAD --------------------------------------------------------------
         public mainForm()
@@ -32,19 +34,26 @@ namespace Shop_manager_V2
             costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
             cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
             lblCostumersDatabaseSearchStandardHour};
-            panelsWidthArr=new Control[4] {pnlCostumerInfo,pnlCostumersDatabase, pnlProductInfo,pnlProductsDatabase};
-            dateAndTimePanelsWidthArr = new Control[7] { pnlTabDateAndTime0, pnlTabDateAndTime1, pnlTabDateAndTime2
+            databasePanelsArr = new Control[3] { pnlDatabase1, pnlDatabase2, pnlDatabase3 };
+            infoPanelsArr = new Control[3] { pnlInfo1, pnlInfo2, pnlInfo3 };
+            dateAndTimePanelsArr = new Control[7] { pnlTabDateAndTime0, pnlTabDateAndTime1, pnlTabDateAndTime2
             , pnlTabDateAndTime3, pnlTabDateAndTime4, pnlTabDateAndTime5, pnlTabDateAndTime6};
-            ActiveStaffInfoPanelsWidthArr = new Control[7] { pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
+            ActiveStaffInfoPanelsArr = new Control[7] { pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
             , pnlActiveStaffInfo3, pnlActiveStaffInfo4, pnlActiveStaffInfo5, pnlActiveStaffInfo6};
-            foreach (var item in panelsWidthArr)
+            databaseSearchPanelsArr = new Control[3] { pnlDatabaseSearch1, pnlDatabaseSearch2, pnlDatabaseSearch3 };
+            for (int i = 0; i < databasePanelsArr.Length; i++)
             {
-                item.Width = 1120;
+                databasePanelsArr[i].Width = 1120;
+                infoPanelsArr[i].Width = 1120;
+                databasePanelsArr[i].Location = new Point(20, 187);
+                infoPanelsArr[i].Location = new Point(20, 792);
             }
-            for (int i = 0; i < ActiveStaffInfoPanelsWidthArr.Length; i++)
+            for (int i = 0; i < ActiveStaffInfoPanelsArr.Length; i++)
             {
-                dateAndTimePanelsWidthArr[i].Width = pnlCostumersDatabase.Width - pnlActiveStaffInfo0.Width - 100;
-                ActiveStaffInfoPanelsWidthArr[i].Left = pnlTabDateAndTime0.Left + pnlTabDateAndTime0.Width+100;
+                ActiveStaffInfoPanelsArr[i].Left = pnlTabDateAndTime0.Left + pnlTabDateAndTime0.Width + 100;
+                dateAndTimePanelsArr[i].Width = pnlDatabase2.Width - pnlActiveStaffInfo0.Width - 100;
+                ActiveStaffInfoPanelsArr[i].Top = 20;
+                dateAndTimePanelsArr[i].Top = 20;
             }
         }
 
@@ -103,25 +112,25 @@ namespace Shop_manager_V2
         {
             if (this.WindowState != FormWindowState.Maximized)
             {
-                pnlCostumerInfo.SetFlowBreak(txtCostumerUsername, true);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerHomePhone, true);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerProvince, true);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerId, false);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, false);
+                pnlInfo2.SetFlowBreak(txtCostumerUsername, true);
+                pnlInfo2.SetFlowBreak(txtCostumerHomePhone, true);
+                pnlInfo2.SetFlowBreak(txtCostumerProvince, true);
+                pnlInfo2.SetFlowBreak(txtCostumerId, false);
+                pnlInfo2.SetFlowBreak(txtCostumerEmail, false);
             }
             else
             {
-                pnlCostumerInfo.SetFlowBreak(txtCostumerUsername, false);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerHomePhone, false);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerProvince, false);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerId, true);
-                pnlCostumerInfo.SetFlowBreak(txtCostumerEmail, true);
+                pnlInfo2.SetFlowBreak(txtCostumerUsername, false);
+                pnlInfo2.SetFlowBreak(txtCostumerHomePhone, false);
+                pnlInfo2.SetFlowBreak(txtCostumerProvince, false);
+                pnlInfo2.SetFlowBreak(txtCostumerId, true);
+                pnlInfo2.SetFlowBreak(txtCostumerEmail, true);
             }
             CostumerInfoPanelHeight();
-            CostumerInfoPanelHeightAndTopFunc(pnlCostumerInfo, pnlCostumersDatabase, tabCostumers, lblCostumerInfo);
-            pnlCostumersDatabaseSearch.Height = lblCostumersDatabaseSearchStandardHour.Top +90+ lblCostumersDatabaseSearchStandardHour.Height+
+            CostumerInfoPanelHeightAndTopFunc(pnlInfo2, pnlDatabase2, tabCostumers, lblCostumerInfo);
+            pnlDatabaseSearch2.Height = lblCostumersDatabaseSearchStandardHour.Top + 90 + lblCostumersDatabaseSearchStandardHour.Height +
                 cmbCostumersDatabaseSearchStandardGroup.Top;
-            dgvAllCostumers.Height = pnlCostumersDatabase.Height - pnlCostumersDatabaseSearch.Height - pnlCostumersDatabaseSearch.Top- 10; 
+            dgvAllCostumers.Height = pnlDatabase2.Height - pnlDatabaseSearch2.Height - pnlDatabaseSearch2.Top - 10;
         }
 
         // COSTUMER TYPE COMBO BOX ON LEAVE --------------------------------------------------
@@ -152,7 +161,7 @@ namespace Shop_manager_V2
         // COSTUMER INFO PANEL HIGHT SETTER FUNCTION -----------------------------------------
         void CostumerInfoPanelHeight()
         {
-            pnlCostumerInfo.Height = btnCostumerInfoChooseAsBuyer.Top + btnCostumerInfoChooseAsBuyer.Height + pnlCostumerInfo.Padding.Top;
+            pnlInfo2.Height = btnCostumerInfoChooseAsBuyer.Top + btnCostumerInfoChooseAsBuyer.Height + pnlInfo2.Padding.Top;
         }
 
         // COSTUMERS DATABASE PANEL HIGHT AND TOP SETTER FUNCTION ----------------------------
