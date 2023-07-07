@@ -17,6 +17,7 @@ namespace Shop_manager_V2
         // VARIABLES -------------------------------------------------------------------------
 
         bool menubarDisplayButtonBool;
+        bool darkModeBool;
         int[] menuLogoPicProp;
         int[] userPicProp;
         Control[] costumersDatabaseSearchControlsArr;
@@ -33,6 +34,7 @@ namespace Shop_manager_V2
         public mainForm()
         {
             InitializeComponent();
+            darkModeBool = false;
             menubarDisplayButtonBool = true;
             costumersDatabaseSearchControlsArr = new Control[6] { txtCostumersDatabaseSearchNormal,cmbCostumersDatabaseSearchStandardPersonalInfo,
             cmbCostumersDatabaseSearchStandardPlaceInfo,cmbCostumersDatabaseSearchStandardDate,lblCostumersDatabaseSearchStandardDate,
@@ -87,8 +89,14 @@ namespace Shop_manager_V2
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowLeftWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25;
                 btnMenuRecivedProducts.Text = null;
-                btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
-
+                if (darkModeBool == false)
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
+                }
+                else
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.DarkModeWhite;
+                }
             }
             else
             {
@@ -96,7 +104,14 @@ namespace Shop_manager_V2
                 btnMenubarDisplay.BackgroundImage = Properties.Resources.DoubleArrowRightWhite;
                 pnlMenubar.Width = btnMenuMainPageLogo.Width + 25 + btnMenuMainPage.Width;
                 btnMenuRecivedProducts.Text = "حواله ورود محصول";
-                btnMenuTheme.BackgroundImage = Properties.Resources.LightMode;
+                if (darkModeBool == false)
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.LightMode;
+                }
+                else
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.DarkMode;
+                }
             }
             menubarDisplayButtonBool = !menubarDisplayButtonBool;
         }
@@ -207,6 +222,86 @@ namespace Shop_manager_V2
             {
                 visibleControl.Visible = true;
             }
+        }
+
+        private void btnMenuTheme_Click(object sender, EventArgs e)
+        {
+            darkModeBool = !darkModeBool;
+            if (darkModeBool == true)
+            {
+                //MessageBox.Show(tabCtrlMain.Controls.Count.ToString());
+                this.BackColor = ColorTranslator.FromHtml("#101019");
+                Control[] themeControls = new Control[] {tabCtrlMain, pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
+                , pnlActiveStaffInfo3 , pnlActiveStaffInfo4, pnlActiveStaffInfo5,pnlActiveStaffInfo6,tabMainPage,tabProducts,tabCostumers,
+                tabSellReport, tabRecivedProducts,tabCart,tabStaff,pnlMainDatabase1,pnlMainDatabase2,pnlMainDatabase3
+                ,pnlMainDatabase6};
+                for (int i = 0; i < themeControls.Length; i++)
+                {
+                    for (int j = 0; j < themeControls[i].Controls.Count; j++)
+                    {
+                        themeControls[i].Controls[j].BackColor = ColorTranslator.FromHtml("#101019");
+                        themeControls[i].Controls[j].ForeColor = Color.White;
+                    }
+                }
+                dgvMain1.BackgroundColor = ColorTranslator.FromHtml("#101019");
+                dgvMain2.BackgroundColor = ColorTranslator.FromHtml("#101019");
+                dgvMain3.BackgroundColor = ColorTranslator.FromHtml("#101019");
+                dgvMain6.BackgroundColor = ColorTranslator.FromHtml("#101019");
+                dgvMain1.ForeColor = Color.White;
+                dgvMain2.ForeColor = Color.White;
+                dgvMain3.ForeColor = Color.White;
+                dgvMain6.ForeColor = Color.White;
+            }
+            else
+            {
+                this.BackColor = Color.White;
+                Control[] themeControls = new Control[] {tabCtrlMain, pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
+                , pnlActiveStaffInfo3 , pnlActiveStaffInfo4, pnlActiveStaffInfo5,pnlActiveStaffInfo6,tabMainPage,tabProducts,tabCostumers,
+                tabSellReport, tabRecivedProducts,tabCart,tabStaff,pnlMainDatabase1,pnlMainDatabase2,pnlMainDatabase3
+                ,pnlMainDatabase6};
+                for (int i = 0; i < themeControls.Length; i++)
+                {
+                    for (int j = 0; j < themeControls[i].Controls.Count; j++)
+                    {
+                        themeControls[i].Controls[j].BackColor = Color.White;
+                        themeControls[i].Controls[j].ForeColor = Color.Black;
+                    }
+                }
+                dgvMain1.BackgroundColor = Color.White;
+                dgvMain2.BackgroundColor = Color.White;
+                dgvMain3.BackgroundColor = Color.White;
+                dgvMain6.BackgroundColor = Color.White;
+                dgvMain1.ForeColor = Color.Black;
+                dgvMain2.ForeColor = Color.Black;
+                dgvMain3.ForeColor = Color.Black;
+                dgvMain6.ForeColor = Color.Black;
+            }
+
+
+            // THEME ICON
+            if (menubarDisplayButtonBool == false)
+            {
+                if (darkModeBool == false)
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.LightModeWhite;
+                }
+                else
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.DarkModeWhite;
+                }
+            }
+            else
+            {
+                if (darkModeBool == false)
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.LightMode;
+                }
+                else
+                {
+                    btnMenuTheme.BackgroundImage = Properties.Resources.DarkMode;
+                }
+            }
+
         }
     }
 }
