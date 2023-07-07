@@ -5019,7 +5019,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox9.Image = global::Shop_manager_V2.Properties.Resources.Trash;
-            this.pictureBox9.Location = new System.Drawing.Point(732, 142);
+            this.pictureBox9.Location = new System.Drawing.Point(727, 142);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(27, 42);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5044,7 +5044,7 @@
             this.label143.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label143.BackColor = System.Drawing.Color.Transparent;
             this.label143.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label143.Location = new System.Drawing.Point(262, 142);
+            this.label143.Location = new System.Drawing.Point(229, 142);
             this.label143.Name = "label143";
             this.label143.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label143.Size = new System.Drawing.Size(190, 42);
@@ -5058,7 +5058,7 @@
             this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown2.Font = new System.Drawing.Font("Koodak", 15F, System.Drawing.FontStyle.Bold);
             this.numericUpDown2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.numericUpDown2.Location = new System.Drawing.Point(201, 142);
+            this.numericUpDown2.Location = new System.Drawing.Point(168, 142);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(55, 42);
             this.numericUpDown2.TabIndex = 4;
@@ -5074,7 +5074,7 @@
             this.label144.BackColor = System.Drawing.Color.Transparent;
             this.label144.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label144.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label144.Location = new System.Drawing.Point(86, 142);
+            this.label144.Location = new System.Drawing.Point(53, 142);
             this.label144.Name = "label144";
             this.label144.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label144.Size = new System.Drawing.Size(109, 42);
@@ -5116,7 +5116,7 @@
             this.label147.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label147.BackColor = System.Drawing.Color.Transparent;
             this.label147.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label147.Location = new System.Drawing.Point(262, 27);
+            this.label147.Location = new System.Drawing.Point(229, 27);
             this.label147.Name = "label147";
             this.label147.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label147.Size = new System.Drawing.Size(190, 42);
@@ -5129,7 +5129,7 @@
             this.maskedTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maskedTextBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.maskedTextBox7.Culture = new System.Globalization.CultureInfo("fr-IR");
-            this.maskedTextBox7.Location = new System.Drawing.Point(86, 28);
+            this.maskedTextBox7.Location = new System.Drawing.Point(53, 28);
             this.maskedTextBox7.Mask = "000000000000ريال";
             this.maskedTextBox7.Name = "maskedTextBox7";
             this.maskedTextBox7.ReadOnly = true;
@@ -5143,7 +5143,7 @@
             this.label148.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label148.BackColor = System.Drawing.Color.Transparent;
             this.label148.Font = new System.Drawing.Font("Koodak", 18F, System.Drawing.FontStyle.Bold);
-            this.label148.Location = new System.Drawing.Point(262, 85);
+            this.label148.Location = new System.Drawing.Point(229, 85);
             this.label148.Name = "label148";
             this.label148.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label148.Size = new System.Drawing.Size(190, 42);
@@ -5156,7 +5156,7 @@
             this.maskedTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maskedTextBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.maskedTextBox8.Culture = new System.Globalization.CultureInfo("fr-IR");
-            this.maskedTextBox8.Location = new System.Drawing.Point(86, 86);
+            this.maskedTextBox8.Location = new System.Drawing.Point(53, 86);
             this.maskedTextBox8.Mask = "000000000000ريال";
             this.maskedTextBox8.Name = "maskedTextBox8";
             this.maskedTextBox8.ReadOnly = true;
