@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(messageMakerForm));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlMessageText = new System.Windows.Forms.Panel();
@@ -103,7 +102,7 @@
             this.txtMessageText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.txtMessageText.Size = new System.Drawing.Size(597, 166);
             this.txtMessageText.TabIndex = 0;
-            this.txtMessageText.Text = resources.GetString("txtMessageText.Text");
+            this.txtMessageText.Text = "";
             // 
             // pnlMessageSenderInfo
             // 
