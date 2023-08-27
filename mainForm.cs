@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Remoting.Channels;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Shop_manager_V2
@@ -233,8 +225,8 @@ namespace Shop_manager_V2
                 this.BackColor = ColorTranslator.FromHtml("#101019");
                 Control[] themeControls = new Control[] {tabCtrlMain, pnlActiveStaffInfo0, pnlActiveStaffInfo1, pnlActiveStaffInfo2
                 , pnlActiveStaffInfo3 , pnlActiveStaffInfo4, pnlActiveStaffInfo5,pnlActiveStaffInfo6,tabMainPage,tabProducts,tabCostumers,
-                tabSellReport, tabRecivedProducts,tabCart,tabStaff,pnlMainDatabase1,pnlMainDatabase2,pnlMainDatabase3
-                ,pnlMainDatabase6};
+                tabSellReport, tabRecivedProducts, tabCart, tabStaff, pnlMainDatabase1, pnlMainDatabase2, pnlMainDatabase3
+                , pnlMainDatabase6};
                 for (int i = 0; i < themeControls.Length; i++)
                 {
                     for (int j = 0; j < themeControls[i].Controls.Count; j++)
@@ -277,7 +269,6 @@ namespace Shop_manager_V2
                 dgvMain6.ForeColor = Color.Black;
             }
 
-
             // THEME ICON
             if (menubarDisplayButtonBool == false)
             {
@@ -302,6 +293,143 @@ namespace Shop_manager_V2
                 }
             }
 
+            dgvMain1.ForeColor = Color.Black;
+            dgvMain2.ForeColor = Color.Black;
+            dgvMain3.ForeColor = Color.Black;
+            dgvMain6.ForeColor = Color.Black;
+
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            // TODO: This line of code loads data into the 'application_DBDataSet.Products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.application_DBDataSet.Products);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Control[] textBoxes = new Control[] { textBox0, textBox1, textBox2, textBox3, textBox4, textBox5 };
+            int emptyCounter = 0;
+            for (int i = 0; i < textBoxes.Length; i++)
+            {
+                if (textBoxes[i].Text.Length > 0)
+                {
+                    emptyCounter++;
+                }
+            }
+            if (emptyCounter > 0)
+            {
+                productsTableAdapter.FillByName_Brand(application_DBDataSet.Products, textBox0.Text, textBox4.Text);
+                productsTableAdapter.Fill(application_DBDataSet.Products);
+                int index = dgvMain1.CurrentCell.RowIndex;
+                string oldStock = dgvMain1.Rows[index].Cells[3].Value.ToString();
+                int rowCounter = dgvMain1.RowCount;
+                if (rowCounter > 0)
+                {
+                    short a = short.Parse(textBox3.Text);
+                    short sOldStock = short.Parse(oldStock);
+                    a += sOldStock;
+                    productsTableAdapter.UpdateQueryInsertAgainProduct(textBox1.Text, int.Parse(textBox2.Text), a, (textBox4.Text).ToString(), DateTime.Parse(textBox5.Text), textBox1.Text, textBox4.Text);
+                    productsTableAdapter.Fill(application_DBDataSet.Products);
+                    MessageBox.Show("محصولی با همین مشخصات وجود داشت و  به موجودی آن اضافه گردید");
+                }
+                else
+                {
+                    productsTableAdapter.InsertQueryProduct(textBox1.Text, int.Parse(textBox2.Text), short.Parse(textBox3.Text), textBox4.Text, DateTime.Parse(textBox5.Text));
+                    productsTableAdapter.Fill(application_DBDataSet.Products);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("لطفا تمامی مقادیر را پر کنید");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Control[] textBoxes = new Control[] { textBox0, textBox1, textBox2, textBox3, textBox4, textBox5 };
+            int emptyCounter = 0;
+            for (int i = 0; i < textBoxes.Length; i++)
+            {
+                if (textBoxes[i].Text.Length > 0)
+                {
+                    emptyCounter++;
+                }
+            }
+            if (emptyCounter > 0)
+            {
+                productsTableAdapter.UpdateQueryProduct(textBox1.Text, int.Parse(textBox2.Text), short.Parse(textBox3.Text), textBox4.Text, DateTime.Parse(textBox5.Text), int.Parse(textBox0.Text));
+                productsTableAdapter.Fill(application_DBDataSet.Products);
+            }
+            else
+            {
+                MessageBox.Show("برای ویرایش لطفا تمامی مقادیر را پر کنید");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox0.Text.Length > 0)
+            {
+                productsTableAdapter.DeleteQueryProduct(int.Parse(textBox0.Text));
+                productsTableAdapter.Fill(application_DBDataSet.Products);
+            }
+            else
+            {
+                MessageBox.Show("برای حذف لطفا کد محصول را پر کنید");
+            }
+        }
+
+        private void dgvMain1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = dgvMain1.CurrentCell.RowIndex;
+            textBox0.Text = dgvMain1.Rows[index].Cells[0].Value.ToString();
+            textBox1.Text = dgvMain1.Rows[index].Cells[1].Value.ToString();
+            textBox2.Text = dgvMain1.Rows[index].Cells[2].Value.ToString();
+            textBox3.Text = dgvMain1.Rows[index].Cells[3].Value.ToString();
+            textBox4.Text = dgvMain1.Rows[index].Cells[4].Value.ToString();
+            textBox5.Text = dgvMain1.Rows[index].Cells[5].Value.ToString();
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Today;
+            DateTime now = DateTime.Now;
+            string dayOfWeek = today.DayOfWeek.ToString();
+            Control[] todayLabels = new Control[] { label27, label34, label152, label2, lblCostumerSignupDate, label115, label44, label53, label63, label73, label92 };
+            Control[] timeLabels = new Control[] { label18, label94, label36, label97, lblCostumerSignupTime, label117, label46, label55, label65, label75, label124 };
+            Control[] dayLabels = new Control[] { label153, label96, label38, label154, lblCostumerSignupDay, label119, label48, label57, label67, label77, label126 };
+            for (int i = 0; i < todayLabels.Length; i++)
+            {
+                todayLabels[i].Text = today.Date.ToString("MM/dd/yy");
+                timeLabels[i].Text = now.ToString("hh:mm tt");
+                dayLabels[i].Text = today.Day.ToString();
+            }
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox0.Text = "";
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
         }
     }
 }
